@@ -24,33 +24,110 @@
     }
   });
 
-  /* ── Article search / filter (articles page) ── */
+  /* ── Article search / filter / pagination (articles page) ── */
   var searchInput  = document.querySelector(".search-input");
   var typeFilter   = document.querySelector("#filter-type");
   var yearFilter   = document.querySelector("#filter-year");
   var articleCards = document.querySelectorAll(".article-card");
+  var pageButtons  = document.querySelectorAll(".page-btn");
+  var ARTICLES_PER_PAGE = 4;
+  var currentPage = 1;
 
-  function filterArticles() {
+  function getMatchingCards() {
     var q    = searchInput  ? searchInput.value.toLowerCase()  : "";
     var type = typeFilter   ? typeFilter.value                 : "all";
     var year = yearFilter   ? yearFilter.value                 : "all";
-
+    var matched = [];
     articleCards.forEach(function (card) {
       var text  = card.textContent.toLowerCase();
       var ctype = card.getAttribute("data-type") || "all";
       var cyear = card.getAttribute("data-year") || "all";
-
       var matchQ    = !q    || text.indexOf(q) !== -1;
       var matchType = type === "all" || ctype === type;
       var matchYear = year === "all" || cyear === year;
-
-      card.style.display = (matchQ && matchType && matchYear) ? "" : "none";
+      if (matchQ && matchType && matchYear) matched.push(card);
     });
+    return matched;
+  }
+
+  function renderPage(page) {
+    var matched = getMatchingCards();
+    var totalPages = Math.max(1, Math.ceil(matched.length / ARTICLES_PER_PAGE));
+    if (page < 1) page = 1;
+    if (page > totalPages) page = totalPages;
+    currentPage = page;
+    var start = (page - 1) * ARTICLES_PER_PAGE;
+    var end   = start + ARTICLES_PER_PAGE;
+
+    /* Show/hide cards */
+    articleCards.forEach(function (card) { card.style.display = "none"; });
+    matched.forEach(function (card, idx) {
+      card.style.display = (idx >= start && idx < end) ? "" : "none";
+    });
+
+    /* Show/hide volume headers based on visible cards */
+    document.querySelectorAll(".volume-header").forEach(function (hdr) {
+      var body = hdr.nextElementSibling;
+      if (!body) return;
+      var visible = false;
+      body.querySelectorAll(".article-card").forEach(function (c) {
+        if (c.style.display !== "none") visible = true;
+      });
+      hdr.style.display = visible ? "" : "none";
+      body.style.display = visible ? "" : "none";
+    });
+
+    /* Update pagination buttons */
+    updatePagination(totalPages, page);
+  }
+
+  function updatePagination(totalPages, activePage) {
+    var pagination = document.querySelector(".pagination");
+    if (!pagination) return;
+    pagination.innerHTML = "";
+
+    /* Prev button */
+    var prev = document.createElement("button");
+    prev.className = "page-btn";
+    prev.textContent = "← 上一页";
+    prev.disabled = (activePage <= 1);
+    prev.addEventListener("click", function () { renderPage(currentPage - 1); });
+    pagination.appendChild(prev);
+
+    /* Numbered buttons */
+    for (var i = 1; i <= totalPages; i++) {
+      (function(p) {
+        var btn = document.createElement("button");
+        btn.className = "page-btn" + (p === activePage ? " active" : "");
+        btn.textContent = p;
+        btn.addEventListener("click", function () { renderPage(p); });
+        pagination.appendChild(btn);
+      })(i);
+    }
+
+    /* Next button */
+    var next = document.createElement("button");
+    next.className = "page-btn";
+    next.setAttribute("data-i18n", "pagination.next");
+    next.textContent = "下一页 →";
+    next.disabled = (activePage >= totalPages);
+    next.addEventListener("click", function () { renderPage(currentPage + 1); });
+    pagination.appendChild(next);
+  }
+
+  function filterArticles() {
+    currentPage = 1;
+    renderPage(1);
   }
 
   if (searchInput)  searchInput.addEventListener("input",  filterArticles);
   if (typeFilter)   typeFilter.addEventListener("change",  filterArticles);
   if (yearFilter)   yearFilter.addEventListener("change",  filterArticles);
+
+  /* Initialize pagination if on articles page */
+  if (articleCards.length > 0 && document.querySelector(".pagination")) {
+    renderPage(1);
+  }
 
   /* ── Smooth counter animation for stats ── */
   var counters = document.querySelectorAll(".stat-num[data-target]");
@@ -78,10 +155,22 @@
   if (contactForm) {
     contactForm.addEventListener("submit", function (e) {
       e.preventDefault();
+      var required = contactForm.querySelectorAll("[required]");
+      var valid = true;
+      required.forEach(function (field) {
+        field.style.borderColor = "";
+        if (!field.value.trim()) { field.style.borderColor = "#b5292a"; valid = false; }
+      });
+      if (!valid) return;
       var btn = contactForm.querySelector('[type="submit"]');
       btn.textContent = "已发送 ✓";
       btn.disabled = true;
-      setTimeout(function () { contactForm.reset(); btn.textContent = "提交"; btn.disabled = false; }, 3000);
+      setTimeout(function () {
+        contactForm.reset();
+        btn.textContent = "提交";
+        btn.disabled = false;
+        required.forEach(function (f) { f.style.borderColor = ""; });
+      }, 3000);
     });
   }
 
@@ -89,6 +178,13 @@
   if (submitForm) {
     submitForm.addEventListener("submit", function (e) {
       e.preventDefault();
+      var required = submitForm.querySelectorAll("[required]");
+      var valid = true;
+      required.forEach(function (field) {
+        field.style.borderColor = "";
+        if (!field.value.trim()) { field.style.borderColor = "#b5292a"; valid = false; }
+      });
+      if (!valid) return;
       var btn = submitForm.querySelector('[type="submit"]');
       btn.textContent = "投稿已提交 ✓";
       btn.disabled = true;

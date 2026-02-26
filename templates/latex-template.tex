@@ -1,0 +1,105 @@
+% SCP异常科学学报 (JSAS) — LaTeX稿件模板
+% =====================================================
+% 使用前请阅读投稿指南：http://localhost/submit.html
+
+\documentclass[12pt, a4paper]{article}
+
+% 中文支持
+\usepackage{ctex}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\setCJKmainfont{SimSun}
+
+% 页面设置
+\usepackage[top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage{setspace}
+\setstretch{1.5}
+
+% 常用包
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{cite}
+\usepackage{authblk}
+
+% ---- 标题信息（双盲评审：提交前请删除作者信息）----
+\title{
+  {\large SCP异常科学学报 (JSAS) · Vol. X, No. X · 研究论文}\\[10pt]
+  \textbf{稿件中文标题}\\
+  \textit{English Title of the Manuscript}
+}
+
+\author[1]{作者姓名（脱敏编号）}
+\author[1,2]{Second Author}
+\affil[1]{SCP异常科学研究院，具体部门}
+\affil[2]{另一机构（地址保密）}
+
+\date{投稿日期：\today}
+
+\begin{document}
+
+\maketitle
+
+% ---- 中文摘要 ----
+\begin{abstract}
+  \textbf{摘要：}请在此处填写中文摘要，字数不超过400字。
+  包括研究背景、目的、方法、主要结果和结论。
+
+  \textbf{关键词：}关键词1；关键词2；关键词3（3–8个）
+\end{abstract}
+
+% ---- English Abstract ----
+\begin{abstract}
+  \textbf{Abstract:} Please provide the English abstract here, within 250 words.
+  Include background, objectives, methods, main results, and conclusions.
+
+  \textbf{Keywords:} keyword1; keyword2; keyword3 (3–8 items)
+\end{abstract}
+
+\section{引言}
+在此处撰写引言部分。
+
+\section{材料与方法}
+\subsection{实验设计}
+说明涉及的SCP编号（如SCP-XXX）及其收容级别，操作安全等级。
+
+\subsection{分析方法}
+
+\section{结果}
+
+% 表格示例
+\begin{table}[h]
+  \centering
+  \caption{表1. 数据汇总}
+  \begin{tabular}{lccc}
+    \toprule
+    组别 & 样本量 & 均值 & 标准差 \\
+    \midrule
+    对照组 & 30 & 1.00 & 0.12 \\
+    实验组 & 30 & 1.84 & 0.23 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\section{讨论}
+
+\section{结论}
+
+\section*{利益冲突声明}
+所有作者声明与本研究不存在任何利益冲突。
+
+\section*{致谢}
+感谢……
+
+% ---- 参考文献 ----
+\bibliographystyle{gbt7714-numerical}
+\bibliography{references}
+
+% 手动参考文献示例（如不使用BibTeX）：
+% \begin{thebibliography}{99}
+% \bibitem{ref1} 张远航, 李明哲. SCP-682再生机制的量子纠缠假说[J].
+%   SCP异常科学学报, 2026, 3(1): 1-18.
+% \end{thebibliography}
+
+\end{document}
