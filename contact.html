@@ -68,7 +68,7 @@
 <!-- PAGE HERO -->
 <section class="page-hero">
   <div class="container">
-    <div class="breadcrumb"><a href="index.html">首页</a><span>›</span>联系我们</div>
+    <div class="breadcrumb"><a href="index.html" data-i18n="nav.home">首页</a><span>›</span><span class="bc-text" data-i18n="breadcrumb.contact">联系我们</span></div>
     <h1 data-i18n="page.contact.title">联系我们</h1>
     <p data-i18n="page.contact.desc">SCP异常科学研究院编辑部联系方式与常见问题</p>
   </div>
@@ -185,7 +185,7 @@
             <label for="c-msg">留言内容 *</label>
             <textarea id="c-msg" rows="6" required placeholder="请详细描述您的问题或咨询内容…"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary btn-block" style="padding:12px;">提 交</button>
+          <button type="submit" class="btn btn-primary btn-block" style="padding:12px;" data-i18n="contact.btn">提 交</button>
         </form>
       </div>
 
@@ -213,10 +213,10 @@
     <div class="indexed-logos">
       <span class="indexed-db">CrossRef</span>
       <span class="indexed-db">Google Scholar</span>
-      <span class="indexed-db">DOAJ <small>(申请中)</small></span>
-      <span class="indexed-db">CNKI <small>(申请中)</small></span>
-      <span class="indexed-db">OpenAIRE <small>(申请中)</small></span>
-      <span class="indexed-db">Dimensions <small>(申请中)</small></span>
+      <span class="indexed-db">DOAJ <small>(<span data-i18n="indexed.pending">申请中</span>)</small></span>
+      <span class="indexed-db">CNKI <small>(<span data-i18n="indexed.pending">申请中</span>)</small></span>
+      <span class="indexed-db">OpenAIRE <small>(<span data-i18n="indexed.pending">申请中</span>)</small></span>
+      <span class="indexed-db">Dimensions <small>(<span data-i18n="indexed.pending">申请中</span>)</small></span>
     </div>
   </div>
 </div>
@@ -227,7 +227,7 @@
     <div class="footer-grid">
       <div class="footer-about">
         <div class="footer-brand">SCP异常科学学报</div>
-        <p>
+        <p data-i18n="footer.about.text">
           Journal of SCP Anomalous Sciences (JSAS) 由SCP异常科学研究院主办，
           致力于在严格的同行评审框架下推动异常科学领域的学术交流与知识积累。
         </p>
@@ -235,46 +235,46 @@
       <div class="footer-col">
         <h4 data-i18n="footer.navigation">导航</h4>
         <ul>
-          <li><a href="index.html">首页</a></li>
-          <li><a href="articles.html">文章</a></li>
-          <li><a href="about.html">关于期刊</a></li>
-          <li><a href="submit.html">投稿指南</a></li>
-          <li><a href="contact.html">联系我们</a></li>
+          <li><a href="index.html" data-i18n="nav.home">首页</a></li>
+          <li><a href="articles.html" data-i18n="nav.articles">文章</a></li>
+          <li><a href="about.html" data-i18n="nav.about">关于期刊</a></li>
+          <li><a href="submit.html" data-i18n="footer.nav.submit_guide">投稿指南</a></li>
+          <li><a href="contact.html" data-i18n="footer.nav.contact_us">联系我们</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4 data-i18n="footer.research_areas">研究方向</h4>
         <ul>
-          <li><a href="#">异常物理学</a></li>
-          <li><a href="#">生物异常学</a></li>
-          <li><a href="#">认知信息异常</a></li>
-          <li><a href="#">跨维度研究</a></li>
-          <li><a href="#">收容科学</a></li>
-          <li><a href="#">时间异常学</a></li>
-          <li><a href="#">量子拓扑异常</a></li>
-          <li><a href="#">异常信息技术</a></li>
+          <li><a href="#" data-i18n="footer.area.physics">异常物理学</a></li>
+          <li><a href="#" data-i18n="footer.area.biology">生物异常学</a></li>
+          <li><a href="#" data-i18n="footer.area.cognition">认知信息异常</a></li>
+          <li><a href="#" data-i18n="footer.area.dimensional">跨维度研究</a></li>
+          <li><a href="#" data-i18n="footer.area.containment">收容科学</a></li>
+          <li><a href="#" data-i18n="footer.area.temporal">时间异常学</a></li>
+          <li><a href="#" data-i18n="footer.area.quantum">量子拓扑异常</a></li>
+          <li><a href="#" data-i18n="footer.area.infotech">异常信息技术</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4 data-i18n="footer.services">服务</h4>
         <ul>
-          <li><a href="submit.html">在线投稿</a></li>
-          <li><a href="about.html#board">编委会</a></li>
-          <li><a href="#">同行评审政策</a></li>
-          <li><a href="#">伦理声明</a></li>
-          <li><a href="#">版权政策</a></li>
+          <li><a href="submit.html" data-i18n="footer.svc.submit">在线投稿</a></li>
+          <li><a href="about.html#board" data-i18n="footer.svc.board">编委会</a></li>
+          <li><a href="#" data-i18n="footer.svc.review">同行评审政策</a></li>
+          <li><a href="#" data-i18n="footer.svc.ethics">伦理声明</a></li>
+          <li><a href="#" data-i18n="footer.svc.copyright">版权政策</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
       <div>
         <span class="issn-badge">ISSN 2XXX-XXXX</span>
-        &copy; 2024–2026 SCP异常科学研究院. 保留所有权利.
+        <span data-i18n="footer.copyright">&copy; 2024–2026 SCP异常科学研究院. 保留所有权利.</span>
       </div>
       <div>
-        <a href="#">隐私政策</a> &nbsp;·&nbsp;
-        <a href="#">使用条款</a> &nbsp;·&nbsp;
-        <a href="contact.html">联系</a>
+        <a href="#" data-i18n="footer.privacy">隐私政策</a> &nbsp;·&nbsp;
+        <a href="#" data-i18n="footer.terms">使用条款</a> &nbsp;·&nbsp;
+        <a href="contact.html" data-i18n="footer.contact_link">联系</a>
       </div>
     </div>
   </div>

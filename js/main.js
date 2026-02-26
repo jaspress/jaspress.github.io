@@ -100,6 +100,14 @@
 (function () {
   "use strict";
 
+  /* ── Header shrink on scroll ── */
+  var header = document.querySelector(".site-header");
+  if (header) {
+    window.addEventListener("scroll", function () {
+      header.classList.toggle("scrolled", window.scrollY > 40);
+    }, { passive: true });
+  }
+
   /* Particle animation */
   var canvas = document.getElementById("hero-canvas");
   if (canvas) {
@@ -111,7 +119,7 @@
     }
     resizeCanvas();
     window.addEventListener("resize", resizeCanvas);
-    for (var i = 0; i < 60; i++) {
+    for (var i = 0; i < 70; i++) {
       particles.push({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
@@ -123,6 +131,23 @@
     }
     function animateParticles() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
+      /* Draw connection lines between nearby particles */
+      for (var a = 0; a < particles.length; a++) {
+        for (var b = a + 1; b < particles.length; b++) {
+          var dx = particles[a].x - particles[b].x;
+          var dy = particles[a].y - particles[b].y;
+          var dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < 90) {
+            ctx.beginPath();
+            ctx.moveTo(particles[a].x, particles[a].y);
+            ctx.lineTo(particles[b].x, particles[b].y);
+            ctx.strokeStyle = "rgba(255,255,255," + (0.12 * (1 - dist / 90)) + ")";
+            ctx.lineWidth = 0.6;
+            ctx.stroke();
+          }
+        }
+      }
+      /* Draw particles */
       particles.forEach(function(p) {
         p.x += p.dx; p.y += p.dy;
         if (p.x < 0) p.x = canvas.width;

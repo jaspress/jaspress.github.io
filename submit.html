@@ -68,7 +68,7 @@
 <!-- PAGE HERO -->
 <section class="page-hero">
   <div class="container">
-    <div class="breadcrumb"><a href="index.html">首页</a><span>›</span>投稿指南</div>
+    <div class="breadcrumb"><a href="index.html" data-i18n="nav.home">首页</a><span>›</span><span class="bc-text" data-i18n="breadcrumb.submit">投稿指南</span></div>
     <h1 data-i18n="page.submit.title">投稿指南</h1>
     <p data-i18n="page.submit.desc">在提交稿件前，请仔细阅读以下要求与流程说明</p>
   </div>
@@ -234,7 +234,7 @@
             <label for="ms-file">上传稿件文件 * （.docx / .tex，≤20MB）</label>
             <input type="file" id="ms-file" accept=".docx,.doc,.tex,.pdf" required />
           </div>
-          <button type="submit" class="btn btn-danger btn-block" style="padding:12px;">提 交 稿 件</button>
+          <button type="submit" class="btn btn-danger btn-block" style="padding:12px;" data-i18n="submit.btn">提 交 稿 件</button>
         </form>
       </div>
     </div>
@@ -242,7 +242,7 @@
     <!-- Right: Quick Info Sidebar -->
     <aside>
       <div class="sidebar-widget">
-        <div class="widget-header">重要日期</div>
+        <div class="widget-header" data-i18n="submit.sidebar.dates">重要日期</div>
         <div class="widget-body">
           <ul>
             <li><strong>2026年第2期</strong><br/><span style="font-size:.8rem;color:var(--muted);">截稿：2026-03-31</span></li>
@@ -253,7 +253,7 @@
       </div>
 
       <div class="sidebar-widget">
-        <div class="widget-header">审稿时间线</div>
+        <div class="widget-header" data-i18n="submit.sidebar.timeline">审稿时间线</div>
         <div class="widget-body" style="font-size:.85rem; color:#444; line-height:1.8;">
           <div>📋 初审：<strong>7个工作日</strong></div>
           <div>🔍 外审：<strong>约45天</strong></div>
@@ -263,7 +263,7 @@
       </div>
 
       <div class="sidebar-widget">
-        <div class="widget-header">版面费政策</div>
+        <div class="widget-header" data-i18n="submit.sidebar.fee">版面费政策</div>
         <div class="widget-body" style="font-size:.85rem; color:#444; line-height:1.7;">
           <p><strong>院内成员：</strong>免费</p>
           <p><strong>非成员：</strong>¥2,000/篇</p>
@@ -273,7 +273,7 @@
       </div>
 
       <div class="sidebar-widget">
-        <div class="widget-header">有疑问？</div>
+        <div class="widget-header" data-i18n="submit.sidebar.questions">有疑问？</div>
         <div class="widget-body" style="font-size:.85rem;">
           <p>如对投稿流程有疑问，请联系编辑部：</p>
           <p style="margin-top:8px;"><strong>📧</strong> <a href="mailto:editorial@jsas.scp.org">editorial@jsas.scp.org</a></p>
@@ -282,7 +282,7 @@
       </div>
 
       <div class="sidebar-widget">
-        <div class="widget-header">下载模板</div>
+        <div class="widget-header" data-i18n="submit.sidebar.templates">下载模板</div>
         <div class="widget-body">
           <ul>
             <li><a href="#">📄 Word稿件模板 (.docx)</a></li>
@@ -304,10 +304,10 @@
     <div class="indexed-logos">
       <span class="indexed-db">CrossRef</span>
       <span class="indexed-db">Google Scholar</span>
-      <span class="indexed-db">DOAJ <small>(申请中)</small></span>
-      <span class="indexed-db">CNKI <small>(申请中)</small></span>
-      <span class="indexed-db">OpenAIRE <small>(申请中)</small></span>
-      <span class="indexed-db">Dimensions <small>(申请中)</small></span>
+      <span class="indexed-db">DOAJ <small>(<span data-i18n="indexed.pending">申请中</span>)</small></span>
+      <span class="indexed-db">CNKI <small>(<span data-i18n="indexed.pending">申请中</span>)</small></span>
+      <span class="indexed-db">OpenAIRE <small>(<span data-i18n="indexed.pending">申请中</span>)</small></span>
+      <span class="indexed-db">Dimensions <small>(<span data-i18n="indexed.pending">申请中</span>)</small></span>
     </div>
   </div>
 </div>
@@ -318,7 +318,7 @@
     <div class="footer-grid">
       <div class="footer-about">
         <div class="footer-brand">SCP异常科学学报</div>
-        <p>
+        <p data-i18n="footer.about.text">
           Journal of SCP Anomalous Sciences (JSAS) 由SCP异常科学研究院主办，
           致力于在严格的同行评审框架下推动异常科学领域的学术交流与知识积累。
         </p>
@@ -326,46 +326,46 @@
       <div class="footer-col">
         <h4 data-i18n="footer.navigation">导航</h4>
         <ul>
-          <li><a href="index.html">首页</a></li>
-          <li><a href="articles.html">文章</a></li>
-          <li><a href="about.html">关于期刊</a></li>
-          <li><a href="submit.html">投稿指南</a></li>
-          <li><a href="contact.html">联系我们</a></li>
+          <li><a href="index.html" data-i18n="nav.home">首页</a></li>
+          <li><a href="articles.html" data-i18n="nav.articles">文章</a></li>
+          <li><a href="about.html" data-i18n="nav.about">关于期刊</a></li>
+          <li><a href="submit.html" data-i18n="footer.nav.submit_guide">投稿指南</a></li>
+          <li><a href="contact.html" data-i18n="footer.nav.contact_us">联系我们</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4 data-i18n="footer.research_areas">研究方向</h4>
         <ul>
-          <li><a href="#">异常物理学</a></li>
-          <li><a href="#">生物异常学</a></li>
-          <li><a href="#">认知信息异常</a></li>
-          <li><a href="#">跨维度研究</a></li>
-          <li><a href="#">收容科学</a></li>
-          <li><a href="#">时间异常学</a></li>
-          <li><a href="#">量子拓扑异常</a></li>
-          <li><a href="#">异常信息技术</a></li>
+          <li><a href="#" data-i18n="footer.area.physics">异常物理学</a></li>
+          <li><a href="#" data-i18n="footer.area.biology">生物异常学</a></li>
+          <li><a href="#" data-i18n="footer.area.cognition">认知信息异常</a></li>
+          <li><a href="#" data-i18n="footer.area.dimensional">跨维度研究</a></li>
+          <li><a href="#" data-i18n="footer.area.containment">收容科学</a></li>
+          <li><a href="#" data-i18n="footer.area.temporal">时间异常学</a></li>
+          <li><a href="#" data-i18n="footer.area.quantum">量子拓扑异常</a></li>
+          <li><a href="#" data-i18n="footer.area.infotech">异常信息技术</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4 data-i18n="footer.services">服务</h4>
         <ul>
-          <li><a href="submit.html">在线投稿</a></li>
-          <li><a href="about.html#board">编委会</a></li>
-          <li><a href="#">同行评审政策</a></li>
-          <li><a href="#">伦理声明</a></li>
-          <li><a href="#">版权政策</a></li>
+          <li><a href="submit.html" data-i18n="footer.svc.submit">在线投稿</a></li>
+          <li><a href="about.html#board" data-i18n="footer.svc.board">编委会</a></li>
+          <li><a href="#" data-i18n="footer.svc.review">同行评审政策</a></li>
+          <li><a href="#" data-i18n="footer.svc.ethics">伦理声明</a></li>
+          <li><a href="#" data-i18n="footer.svc.copyright">版权政策</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
       <div>
         <span class="issn-badge">ISSN 2XXX-XXXX</span>
-        &copy; 2024–2026 SCP异常科学研究院. 保留所有权利.
+        <span data-i18n="footer.copyright">&copy; 2024–2026 SCP异常科学研究院. 保留所有权利.</span>
       </div>
       <div>
-        <a href="#">隐私政策</a> &nbsp;·&nbsp;
-        <a href="#">使用条款</a> &nbsp;·&nbsp;
-        <a href="contact.html">联系</a>
+        <a href="#" data-i18n="footer.privacy">隐私政策</a> &nbsp;·&nbsp;
+        <a href="#" data-i18n="footer.terms">使用条款</a> &nbsp;·&nbsp;
+        <a href="contact.html" data-i18n="footer.contact_link">联系</a>
       </div>
     </div>
   </div>
