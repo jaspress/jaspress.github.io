@@ -166,7 +166,7 @@ a:hover { color: var(--link-hov); text-decoration: underline; }
    HERO (homepage)
    ============================================================ */
 .hero {
-  background: linear-gradient(135deg, #1a2a3a 0%, #2c3e50 30%, #1a3a4a 60%, #2c3e50 100%);
+  background: linear-gradient(135deg, var(--primary) 0%, #2c3e50 30%, var(--primary) 60%, #2c3e50 100%);
   background-size: 300% 300%;
   animation: gradientShift 10s ease infinite;
   color: var(--white);
@@ -428,6 +428,7 @@ a:hover { color: var(--link-hov); text-decoration: underline; }
 .breadcrumb a { color: rgba(255,255,255,.8); }
 .breadcrumb a:hover { color: #fff; }
 .breadcrumb span { opacity: .6; margin: 0 6px; }
+.breadcrumb span.bc-text { opacity: 1; margin: 0; }
 
 /* ============================================================
    ABOUT PAGE
