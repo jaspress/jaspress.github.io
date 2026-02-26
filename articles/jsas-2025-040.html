@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>基于机器学习的SCP异常等级自动分类模型 — SCP异常科学学报</title>
+  <meta name="description" content="构建基于大语言模型微调的SCP异常等级自动分类系统，宏平均F1值达0.847。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/article.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚗️</text></svg>" />
+</head>
+<body>
+<div class="top-banner"><div class="container">ISSN (网络版) 2XXX-XXXX &nbsp;|&nbsp; ISSN (印刷版) 2XXX-XXXX &nbsp;|&nbsp;<a href="../submit.html">现已开放投稿</a> &nbsp;|&nbsp;<a href="../articles.html">最新一期：第3卷第1期 (2026)</a></div></div>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="../index.html" aria-label="返回首页"><svg class="brand-logo" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="22" cy="22" r="20" stroke="#1a2a3a" stroke-width="2.5"/><circle cx="22" cy="22" r="13" stroke="#1a2a3a" stroke-width="2"/><circle cx="22" cy="22" r="3.5" fill="#b5292a"/><line x1="22" y1="2" x2="22" y2="9" stroke="#1a2a3a" stroke-width="2"/><line x1="22" y1="35" x2="22" y2="42" stroke="#1a2a3a" stroke-width="2"/><line x1="2" y1="22" x2="9" y2="22" stroke="#1a2a3a" stroke-width="2"/><line x1="35" y1="22" x2="42" y2="22" stroke="#1a2a3a" stroke-width="2"/><line x1="6.1" y1="6.1" x2="11.2" y2="11.2" stroke="#1a2a3a" stroke-width="1.5"/><line x1="32.8" y1="32.8" x2="37.9" y2="37.9" stroke="#1a2a3a" stroke-width="1.5"/><line x1="37.9" y1="6.1" x2="32.8" y2="11.2" stroke="#1a2a3a" stroke-width="1.5"/><line x1="11.2" y1="32.8" x2="6.1" y2="37.9" stroke="#1a2a3a" stroke-width="1.5"/></svg><div class="brand-text"><span class="brand-cn">SCP异常科学学报</span><span class="brand-en">Journal of SCP Anomalous Sciences</span></div></a>
+    <nav class="main-nav"><a href="../index.html">首页</a><a href="../articles.html" class="active">文章</a><a href="../about.html">关于期刊</a><a href="../submit.html" class="btn-submit">投稿</a><a href="../contact.html">联系</a></nav>
+    <button class="lang-switch" id="lang-switch" aria-label="Switch language">EN</button>
+    <button class="hamburger" aria-label="展开菜单" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <nav class="mobile-nav"><a href="../index.html">首页</a><a href="../articles.html">文章</a><a href="../about.html">关于期刊</a><a href="../submit.html">投稿</a><a href="../contact.html">联系</a></nav>
+</header>
+<div class="classification-banner">██ 收容级别：保密 ██ &nbsp;·&nbsp; SCP异常科学研究院 — 学术文档 &nbsp;·&nbsp; ██ 未经授权不得传阅 ██</div>
+
+<div class="article-page">
+  <div class="pdf-download-bar">
+    <span class="bar-label">全文已开放获取 · 第2卷第4期 (2025) · 第88–111页</span>
+    <button class="btn-pdf" onclick="window.print()"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> 下载 PDF</button>
+  </div>
+  <article class="article-doc">
+    <header class="doc-header">
+      <div class="doc-journal-line">SCP异常科学学报 (JSAS) · Vol. 2, No. 4 · 2025 · 研究论文</div>
+      <span class="doc-type-badge type-research">研究论文</span>
+      <h1 class="doc-title">基于机器学习的SCP异常等级自动分类模型：Safe/Euclid/Keter三类识别精度评估</h1>
+      <p class="doc-authors"><strong>王思远<sup>1</sup>, 陈晓琳<sup>2</sup>, Kumar P.<sup>3</sup></strong></p>
+      <p class="doc-affil"><sup>1</sup>SCP基金会数据科学与信息系统部<br/><sup>2</sup>SCP异常科学研究院认知信息学研究所<br/><sup>3</sup>站点-73异常物质分析实验室</p>
+      <div class="doc-meta-row">
+        <span class="meta-item"><strong>收稿日期：</strong>2025-08-15</span>
+        <span class="meta-item"><strong>接收日期：</strong>2025-10-20</span>
+        <span class="meta-item"><strong>发布日期：</strong>2025-11-10</span>
+        <span class="meta-item"><strong>DOI：</strong>10.21950/JSAS.2025.040</span>
+      </div>
+    </header>
+
+    <div class="abstract-box" id="abstract">
+      <div class="abstract-label">摘要</div>
+      <p>本研究构建了基于大语言模型微调（fine-tuned LLM）的SCP异常等级自动分类系统（AutoSCP-Class v1.0），在包含8,476份历史收容档案的测试集上，Safe/Euclid/Keter三类识别的宏平均F1值达到0.847（Safe: F1=0.891, Euclid: F1=0.834, Keter: F1=0.816）。模型基于SCP基金会收容档案数据库（共23,481份已标注档案）训练，采用基于LLaMA-3架构的基础模型，经两阶段微调后部署于基金会内部分类辅助系统。错误分析显示，主要误分类发生在Euclid/Keter边界（占所有错误的61.3%），这与人类专家的分歧模式高度一致，表明该边界存在本质上的模糊性。本研究还探讨了自动分类系统在收容协议快速评估和新发现异常预警中的潜在应用。</p>
+    </div>
+
+    <div class="keywords-row">
+      <strong>关键词：</strong>
+      <span class="kw-tag">机器学习</span><span class="kw-tag">SCP分类</span><span class="kw-tag">大语言模型</span><span class="kw-tag">异常等级</span><span class="kw-tag">自然语言处理</span><span class="kw-tag">收容科学</span>
+    </div>
+
+    <div class="article-body">
+      <h2>1. 引言</h2>
+      <p>SCP基金会目前收容的已记录异常实体超过6,000例，每年新发现异常约400–600例。现行的Safe/Euclid/Keter三级分类系统（以及部分特殊类别如Thaumiel、Apollyon等）是收容协议制定、资源分配和安全响应的核心依据。然而，等级评定目前主要依赖于经验丰富的高级研究人员的主观判断，既耗时又存在一定的评分者间差异（研究显示Euclid/Keter边界的人类专家一致率仅约73%，Gears等, 2023）。</p>
+      <p>随着基金会收容档案数字化率的提升（截至2025年，已有23,481份档案完成结构化标注），利用机器学习技术辅助甚至自动化分类评定已具备数据基础。本研究填补了这一领域的方法学空白，提供了首个系统性评估LLM微调方法在SCP异常分类任务上的性能研究。</p>
+
+      <h2>2. 方法</h2>
+      <h3>2.1 数据集</h3>
+      <p>训练集：15,005份档案（Safe: 6,801, Euclid: 5,523, Keter: 2,681）；验证集：2,000份；测试集：8,476份（均不重叠）。所有标签均经过三名高级研究员的独立审核，不一致案例通过多数投票确定最终标签（一致率：Safe 97.2%，Euclid 91.4%，Keter 88.7%）。每份档案的输入特征包括：全文描述（截取前4096 tokens）、收容特殊规程关键词、已知危险事件记录次数等。</p>
+
+      <h3>2.2 模型架构与训练</h3>
+      <p>基础模型：LLaMA-3-8B-Instruct（基金会内部部署版，已通过信息安全审查）。微调方法：LoRA（Low-Rank Adaptation），rank=16，alpha=32，目标层：所有注意力矩阵。第一阶段：在完整数据集上进行分类任务微调（3 epochs，学习率2e-4）；第二阶段：在Euclid/Keter边界案例上进行针对性增强训练（1 epoch，学习率5e-5）。训练硬件：A100 GPU × 8（基金会数据中心）。</p>
+
+      <h2>3. 结果</h2>
+      <h3>3.1 总体分类性能</h3>
+
+      <table class="data-table">
+        <caption class="table-caption">表1. AutoSCP-Class v1.0在测试集上的分类性能（n=8,476）</caption>
+        <thead><tr><th>类别</th><th>精确率 (P)</th><th>召回率 (R)</th><th>F1值</th><th>支持样本数</th></tr></thead>
+        <tbody>
+          <tr><td>Safe</td><td>0.903</td><td>0.879</td><td>0.891</td><td>3,842</td></tr>
+          <tr><td>Euclid</td><td>0.821</td><td>0.848</td><td>0.834</td><td>3,157</td></tr>
+          <tr><td>Keter</td><td>0.831</td><td>0.801</td><td>0.816</td><td>1,477</td></tr>
+          <tr><td><strong>宏平均</strong></td><td><strong>0.852</strong></td><td><strong>0.843</strong></td><td><strong>0.847</strong></td><td><strong>8,476</strong></td></tr>
+          <tr><td>加权平均</td><td>0.869</td><td>0.862</td><td>0.865</td><td>8,476</td></tr>
+        </tbody>
+      </table>
+
+      <h3>3.2 错误分析</h3>
+      <p>在测试集的1,282个误分类案例中：Euclid→Keter误判占34.1%，Keter→Euclid误判占27.2%（合计61.3%集中在Euclid/Keter边界）；Safe→Euclid误判占21.4%；Euclid→Safe误判占12.1%；其他错误占5.2%。Euclid/Keter边界误判案例的人工复核显示，63.8%的误判案例在人类专家间同样存在分歧，支持该边界存在本质模糊性的假说。</p>
+
+      <h3>3.3 消融实验</h3>
+      <p>第二阶段针对性增强训练使Euclid/Keter F1均值从0.803提升至0.825（+2.7%），整体宏平均F1从0.831提升至0.847（+1.9%）。收容特殊规程关键词特征的加入使整体性能提升约0.8%，对Keter类别提升最显著（+2.1%）。</p>
+
+      <div class="classified-notice"><strong>⚠ 使用限制：</strong>AutoSCP-Class v1.0目前仅作为辅助决策工具，其输出不能替代经授权的高级研究人员的最终等级评定。对于可能影响收容协议的分类决定，须经至少一名4级及以上研究人员人工确认。</div>
+
+      <h2>4. 结论</h2>
+      <p>本研究证明，基于LLM微调的自动分类系统能够以0.847的宏平均F1值完成SCP异常等级分类任务，在Safe类别上尤为准确（F1=0.891）。系统已被批准整合进基金会内部档案管理平台的"分类辅助"模块，预计可将人工初审时间缩短约60%，同时为新收容异常的快速风险评估提供数据支持。</p>
+
+      <h2>利益冲突声明</h2>
+      <p>所有作者声明与本研究不存在任何利益冲突。</p>
+
+      <div class="references-section">
+        <h2>参考文献</h2>
+        <ol class="ref-list">
+          <li>Gears M.F., 陈晓琳, 王思远 (2023). Inter-rater reliability in SCP containment class assessment: A multi-site study. <em>JSAS</em>, 2(3), 77–91.</li>
+          <li>Hu E.J., Shen Y., Wallis P. et al. (2022). LoRA: Low-rank adaptation of large language models. <em>ICLR 2022</em>.</li>
+          <li>Meta AI (2024). LLaMA-3: Meta's open foundation and fine-tuned chat models. Technical report.</li>
+          <li>王思远 (2024). SCP档案数字化标注规范及质量控制方案. <em>基金会技术通报</em>, 13(2), 1–15. [内部文件]</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="article-actions">
+      <a class="btn-back" href="../articles.html">← 返回文章列表</a>
+      <button class="btn-pdf" onclick="window.print()"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> 下载 PDF</button>
+    </div>
+  </article>
+  <div class="doc-footer-strip">SCP 异常科学研究院 · JOURNAL OF SCP ANOMALOUS SCIENCES · DOI: 10.21950/JSAS.2025.040 · 保密文件</div>
+</div>
+
+<div class="indexed-bar"><div class="container"><span class="indexed-label">收录数据库 / Indexed in:</span><div class="indexed-logos"><span class="indexed-db">CrossRef</span><span class="indexed-db">Google Scholar</span><span class="indexed-db">DOAJ <small>(申请中)</small></span><span class="indexed-db">CNKI <small>(申请中)</small></span></div></div></div>
+<footer class="site-footer"><div class="container"><div class="footer-grid"><div class="footer-about"><div class="footer-brand">SCP异常科学学报</div><p>Journal of SCP Anomalous Sciences (JSAS) 由SCP异常科学研究院主办。</p></div><div class="footer-col"><h4>导航</h4><ul><li><a href="../index.html">首页</a></li><li><a href="../articles.html">文章</a></li><li><a href="../about.html">关于期刊</a></li><li><a href="../submit.html">投稿指南</a></li><li><a href="../contact.html">联系我们</a></li></ul></div></div><div class="footer-bottom"><div><span class="issn-badge">ISSN 2XXX-XXXX</span><span>&copy; 2024–2026 SCP异常科学研究院. 保留所有权利.</span></div><div><a href="../contact.html">联系</a></div></div></div></footer>
+<script src="../js/i18n.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
