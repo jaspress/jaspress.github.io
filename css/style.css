@@ -709,3 +709,130 @@ a:hover { color: var(--link-hov); text-decoration: underline; }
   .stat-num { font-size: 1.6rem; }
   .footer-grid { grid-template-columns: 1fr; }
 }
+
+/* ============================================================
+   LANGUAGE SWITCHER
+   ============================================================ */
+.lang-switch {
+  background: transparent;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 4px 10px;
+  font-size: .78rem;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  color: var(--text);
+  letter-spacing: .04em;
+  transition: all .2s;
+  margin-left: 8px;
+}
+.lang-switch:hover { background: var(--primary); color: #fff; border-color: var(--primary); }
+
+/* ============================================================
+   HERO CANVAS (particle background)
+   ============================================================ */
+#hero-canvas {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.25;
+  pointer-events: none;
+}
+.hero > .container { position: relative; z-index: 1; }
+
+/* ============================================================
+   SCROLL-REVEAL ANIMATIONS
+   ============================================================ */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity .6s ease, transform .6s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ============================================================
+   ENHANCED ARTICLE CARD
+   ============================================================ */
+.article-card {
+  border-left: 3px solid transparent;
+  transition: box-shadow .25s, border-color .25s, transform .2s;
+}
+.article-card:hover {
+  box-shadow: 0 8px 32px rgba(26,42,58,.13);
+  border-left-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+/* ============================================================
+   GLOWING STATS BAR
+   ============================================================ */
+.stat-num {
+  text-shadow: 0 0 20px rgba(181,41,42,.3);
+}
+
+/* ============================================================
+   HERO GRADIENT ANIMATION
+   ============================================================ */
+@keyframes gradientShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ============================================================
+   WIDGET HEADER GRADIENT
+   ============================================================ */
+.widget-header {
+  background: linear-gradient(135deg, var(--primary) 0%, #2c3e50 100%);
+}
+
+/* ============================================================
+   INDEXED-IN BAR
+   ============================================================ */
+.indexed-bar {
+  background: var(--white);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 14px 0;
+}
+.indexed-bar .container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.indexed-label {
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  white-space: nowrap;
+}
+.indexed-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+.indexed-db {
+  font-size: .8rem;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-weight: 600;
+  color: var(--primary);
+  padding: 3px 10px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: var(--bg);
+  letter-spacing: .02em;
+}
+.indexed-db small {
+  font-weight: 400;
+  color: var(--muted);
+  font-size: .7rem;
+}

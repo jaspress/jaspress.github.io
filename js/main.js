@@ -95,3 +95,54 @@
     });
   }
 })();
+
+/* ── Hero canvas particle animation ── */
+var canvas = document.getElementById("hero-canvas");
+if (canvas) {
+  var ctx = canvas.getContext("2d");
+  var particles = [];
+  function resizeCanvas() {
+    canvas.width  = canvas.offsetWidth;
+    canvas.height = canvas.offsetHeight;
+  }
+  resizeCanvas();
+  window.addEventListener("resize", resizeCanvas);
+  for (var i = 0; i < 60; i++) {
+    particles.push({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      r: Math.random() * 1.8 + 0.5,
+      dx: (Math.random() - 0.5) * 0.4,
+      dy: (Math.random() - 0.5) * 0.4,
+      alpha: Math.random() * 0.6 + 0.2
+    });
+  }
+  function animateParticles() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    particles.forEach(function(p) {
+      p.x += p.dx; p.y += p.dy;
+      if (p.x < 0) p.x = canvas.width;
+      if (p.x > canvas.width) p.x = 0;
+      if (p.y < 0) p.y = canvas.height;
+      if (p.y > canvas.height) p.y = 0;
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+      ctx.fillStyle = "rgba(255,255,255," + p.alpha + ")";
+      ctx.fill();
+    });
+    requestAnimationFrame(animateParticles);
+  }
+  animateParticles();
+}
+
+/* ── Scroll-reveal ── */
+var revealEls = document.querySelectorAll(".article-card, .sidebar-widget, .info-box, .board-card, .content-card, .contact-card, .stat-item");
+revealEls.forEach(function(el) { el.classList.add("reveal"); });
+if ("IntersectionObserver" in window) {
+  var revealObs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) { e.target.classList.add("visible"); revealObs.unobserve(e.target); }
+    });
+  }, { threshold: 0.1 });
+  revealEls.forEach(function(el) { revealObs.observe(el); });
+}
