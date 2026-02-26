@@ -17,8 +17,8 @@
 <div class="top-banner">
   <div class="container">
     ISSN (网络版) 2XXX-XXXX &nbsp;|&nbsp; ISSN (印刷版) 2XXX-XXXX &nbsp;|&nbsp;
-    <a href="submit.html">现已开放投稿</a> &nbsp;|&nbsp;
-    <a href="articles.html">最新一期：第3卷第1期 (2026)</a>
+    <a href="submit.html" data-i18n="banner.submit">现已开放投稿</a> &nbsp;|&nbsp;
+    <a href="articles.html" data-i18n="banner.latest">最新一期：第3卷第1期 (2026)</a>
   </div>
 </div>
 
@@ -45,22 +45,23 @@
       </div>
     </a>
     <nav class="main-nav" aria-label="主导航">
-      <a href="index.html">首页</a>
-      <a href="articles.html">文章</a>
-      <a href="about.html">关于期刊</a>
-      <a href="submit.html" class="btn-submit active">投稿</a>
-      <a href="contact.html">联系</a>
+      <a href="index.html" data-i18n="nav.home">首页</a>
+      <a href="articles.html" data-i18n="nav.articles">文章</a>
+      <a href="about.html" data-i18n="nav.about">关于期刊</a>
+      <a href="submit.html" class="btn-submit active" data-i18n="nav.submit">投稿</a>
+      <a href="contact.html" data-i18n="nav.contact">联系</a>
     </nav>
+    <button class="lang-switch" id="lang-switch" aria-label="Switch language">EN</button>
     <button class="hamburger" aria-label="展开菜单" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
   <nav class="mobile-nav" aria-label="移动导航">
-    <a href="index.html">首页</a>
-    <a href="articles.html">文章</a>
-    <a href="about.html">关于期刊</a>
-    <a href="submit.html">投稿</a>
-    <a href="contact.html">联系</a>
+    <a href="index.html" data-i18n="nav.home">首页</a>
+    <a href="articles.html" data-i18n="nav.articles">文章</a>
+    <a href="about.html" data-i18n="nav.about">关于期刊</a>
+    <a href="submit.html" data-i18n="nav.submit">投稿</a>
+    <a href="contact.html" data-i18n="nav.contact">联系</a>
   </nav>
 </header>
 
@@ -68,8 +69,8 @@
 <section class="page-hero">
   <div class="container">
     <div class="breadcrumb"><a href="index.html">首页</a><span>›</span>投稿指南</div>
-    <h1>投稿指南</h1>
-    <p>在提交稿件前，请仔细阅读以下要求与流程说明</p>
+    <h1 data-i18n="page.submit.title">投稿指南</h1>
+    <p data-i18n="page.submit.desc">在提交稿件前，请仔细阅读以下要求与流程说明</p>
   </div>
 </section>
 
@@ -296,6 +297,21 @@
   </div><!-- /submit-layout -->
 </div><!-- /container -->
 
+<!-- INDEXED BAR -->
+<div class="indexed-bar">
+  <div class="container">
+    <span class="indexed-label" data-i18n="indexed.label">收录数据库 / Indexed in:</span>
+    <div class="indexed-logos">
+      <span class="indexed-db">CrossRef</span>
+      <span class="indexed-db">Google Scholar</span>
+      <span class="indexed-db">DOAJ <small>(申请中)</small></span>
+      <span class="indexed-db">CNKI <small>(申请中)</small></span>
+      <span class="indexed-db">OpenAIRE <small>(申请中)</small></span>
+      <span class="indexed-db">Dimensions <small>(申请中)</small></span>
+    </div>
+  </div>
+</div>
+
 <!-- FOOTER -->
 <footer class="site-footer">
   <div class="container">
@@ -308,7 +324,7 @@
         </p>
       </div>
       <div class="footer-col">
-        <h4>导航</h4>
+        <h4 data-i18n="footer.navigation">导航</h4>
         <ul>
           <li><a href="index.html">首页</a></li>
           <li><a href="articles.html">文章</a></li>
@@ -318,17 +334,20 @@
         </ul>
       </div>
       <div class="footer-col">
-        <h4>研究方向</h4>
+        <h4 data-i18n="footer.research_areas">研究方向</h4>
         <ul>
           <li><a href="#">异常物理学</a></li>
           <li><a href="#">生物异常学</a></li>
           <li><a href="#">认知信息异常</a></li>
           <li><a href="#">跨维度研究</a></li>
           <li><a href="#">收容科学</a></li>
+          <li><a href="#">时间异常学</a></li>
+          <li><a href="#">量子拓扑异常</a></li>
+          <li><a href="#">异常信息技术</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>服务</h4>
+        <h4 data-i18n="footer.services">服务</h4>
         <ul>
           <li><a href="submit.html">在线投稿</a></li>
           <li><a href="about.html#board">编委会</a></li>
@@ -352,6 +371,7 @@
   </div>
 </footer>
 
+<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

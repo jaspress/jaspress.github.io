@@ -17,8 +17,8 @@
 <div class="top-banner">
   <div class="container">
     ISSN (网络版) 2XXX-XXXX &nbsp;|&nbsp; ISSN (印刷版) 2XXX-XXXX &nbsp;|&nbsp;
-    <a href="submit.html">现已开放投稿</a> &nbsp;|&nbsp;
-    <a href="articles.html">最新一期：第3卷第1期 (2026)</a>
+    <a href="submit.html" data-i18n="banner.submit">现已开放投稿</a> &nbsp;|&nbsp;
+    <a href="articles.html" data-i18n="banner.latest">最新一期：第3卷第1期 (2026)</a>
   </div>
 </div>
 
@@ -45,22 +45,23 @@
       </div>
     </a>
     <nav class="main-nav" aria-label="主导航">
-      <a href="index.html">首页</a>
-      <a href="articles.html">文章</a>
-      <a href="about.html" class="active">关于期刊</a>
-      <a href="submit.html" class="btn-submit">投稿</a>
-      <a href="contact.html">联系</a>
+      <a href="index.html" data-i18n="nav.home">首页</a>
+      <a href="articles.html" data-i18n="nav.articles">文章</a>
+      <a href="about.html" class="active" data-i18n="nav.about">关于期刊</a>
+      <a href="submit.html" class="btn-submit" data-i18n="nav.submit">投稿</a>
+      <a href="contact.html" data-i18n="nav.contact">联系</a>
     </nav>
+    <button class="lang-switch" id="lang-switch" aria-label="Switch language">EN</button>
     <button class="hamburger" aria-label="展开菜单" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
   <nav class="mobile-nav" aria-label="移动导航">
-    <a href="index.html">首页</a>
-    <a href="articles.html">文章</a>
-    <a href="about.html">关于期刊</a>
-    <a href="submit.html">投稿</a>
-    <a href="contact.html">联系</a>
+    <a href="index.html" data-i18n="nav.home">首页</a>
+    <a href="articles.html" data-i18n="nav.articles">文章</a>
+    <a href="about.html" data-i18n="nav.about">关于期刊</a>
+    <a href="submit.html" data-i18n="nav.submit">投稿</a>
+    <a href="contact.html" data-i18n="nav.contact">联系</a>
   </nav>
 </header>
 
@@ -68,8 +69,8 @@
 <section class="page-hero">
   <div class="container">
     <div class="breadcrumb"><a href="index.html">首页</a><span>›</span>关于期刊</div>
-    <h1>关于期刊</h1>
-    <p>SCP基金会异常科学学报 (JSAS) — 宗旨、范围与编委会</p>
+    <h1 data-i18n="page.about.title">关于期刊</h1>
+    <p data-i18n="page.about.desc">SCP基金会异常科学学报 (JSAS) — 宗旨、范围与编委会</p>
   </div>
 </section>
 
@@ -122,7 +123,7 @@
         <li><strong>快速发表通道：</strong>加急审稿（需额外申请）</li>
         <li><strong>数据共享政策：</strong>鼓励数据开放，涉密数据可申请豁免</li>
         <li><strong>撤稿政策：</strong>遵循COPE撤稿准则</li>
-        <li><strong>收录数据库：</strong>SCP-DB、AxisMundi Index（申请中）</li>
+        <li><strong>收录数据库：</strong>CrossRef（已注册）、Google Scholar（收录中）、DOAJ（申请中）、CNKI（申请中）、OpenAIRE（申请中）、Dimensions（申请中）</li>
       </ul>
     </div>
   </div>
@@ -134,14 +135,21 @@
       本刊接受涵盖（但不限于）以下方向的原创研究、综述、案例报告与快报：
     </p>
     <ul class="scope-list">
-      <li><strong>异常物理学：</strong>超光速现象、负质量物质、局部时空扭曲、零点能量异常利用</li>
-      <li><strong>生物异常学：</strong>异常生物的分类、形态学、行为学及进化假说</li>
-      <li><strong>认知与信息异常：</strong>认知渗透型异常机制、信息危害防护与脱敏技术</li>
-      <li><strong>跨维度与多宇宙研究：</strong>平行宇宙证据收集、维度裂缝形成机制与封堵技术</li>
-      <li><strong>收容科学：</strong>新型收容材料、收容设施设计标准、应急收容协议</li>
-      <li><strong>异常化学与材料科学：</strong>非标准元素、跨相态物质、异常催化现象</li>
-      <li><strong>时间异常学：</strong>局部时间逆流、时间圈检测与终止方法论</li>
-      <li><strong>异常伦理学与政策研究：</strong>人道主义收容原则、异常体权益讨论（限评述类）</li>
+      <li><strong>异常物理学 (Anomalous Physics)：</strong>超光速现象、负质量物质、局部时空扭曲、零点能量异常</li>
+      <li><strong>生物异常学 (Biological Anomalics)：</strong>异常生物的分类、形态学、行为学及进化假说</li>
+      <li><strong>认知与信息异常 (Cognitive &amp; Information Anomalics)：</strong>认知渗透机制、信息危害防护与脱敏技术</li>
+      <li><strong>跨维度与多宇宙研究 (Trans-Dimensional &amp; Multiverse Research)：</strong>平行宇宙证据、维度裂缝机制与封堵技术</li>
+      <li><strong>收容科学 (Containment Science)：</strong>新型收容材料、设施设计标准、应急收容协议</li>
+      <li><strong>异常化学与材料科学 (Anomalous Chemistry &amp; Materials)：</strong>非标准元素、跨相态物质、异常催化</li>
+      <li><strong>时间异常学 (Temporal Anomalics)：</strong>局部时间逆流、时间圈检测与终止方法论</li>
+      <li><strong>异常伦理学与政策 (Anomalous Ethics &amp; Policy)：</strong>人道主义收容原则、异常体权益（限评述）</li>
+      <li><strong>量子拓扑异常学 (Quantum Topological Anomalics)：</strong>非欧几何空间、拓扑缺陷与高维流形中的异常表征</li>
+      <li><strong>神经接口与灵能学 (Neural Interface &amp; Parapsychics)：</strong>遥感、心灵感应、精神控制型异常的神经科学机制</li>
+      <li><strong>异常信息技术 (Anomalous Information Technology)：</strong>异常计算系统、自主AI异常、信息型异常传播模型</li>
+      <li><strong>语言与符号危害学 (Linguistic &amp; Memetic Hazards)：</strong>触发型话语、符文学、模因型信息危害的作用机制</li>
+      <li><strong>异常生态学 (Anomalous Ecology)：</strong>异常生物的种群动态、生态位、与正常生物圈的交互作用</li>
+      <li><strong>反物质与暗能量异常 (Antimatter &amp; Dark Energy Anomalics)：</strong>与反物质/暗能量相关异常现象的观测与理论</li>
+      <li><strong>收容失效模式分析 (Containment Failure Analysis)：</strong>收容失效的系统性分析、预测模型与灾难预防框架</li>
     </ul>
     <p style="margin-top:12px; font-size:.88rem; color: var(--muted);">
       * 涉及Apollyon级异常的研究须附加SCP基金会O5委员会审批文件方可提交。
@@ -243,6 +251,21 @@
 
 </div><!-- /container -->
 
+<!-- INDEXED BAR -->
+<div class="indexed-bar">
+  <div class="container">
+    <span class="indexed-label" data-i18n="indexed.label">收录数据库 / Indexed in:</span>
+    <div class="indexed-logos">
+      <span class="indexed-db">CrossRef</span>
+      <span class="indexed-db">Google Scholar</span>
+      <span class="indexed-db">DOAJ <small>(申请中)</small></span>
+      <span class="indexed-db">CNKI <small>(申请中)</small></span>
+      <span class="indexed-db">OpenAIRE <small>(申请中)</small></span>
+      <span class="indexed-db">Dimensions <small>(申请中)</small></span>
+    </div>
+  </div>
+</div>
+
 <!-- FOOTER -->
 <footer class="site-footer">
   <div class="container">
@@ -255,7 +278,7 @@
         </p>
       </div>
       <div class="footer-col">
-        <h4>导航</h4>
+        <h4 data-i18n="footer.navigation">导航</h4>
         <ul>
           <li><a href="index.html">首页</a></li>
           <li><a href="articles.html">文章</a></li>
@@ -265,17 +288,20 @@
         </ul>
       </div>
       <div class="footer-col">
-        <h4>研究方向</h4>
+        <h4 data-i18n="footer.research_areas">研究方向</h4>
         <ul>
           <li><a href="#">异常物理学</a></li>
           <li><a href="#">生物异常学</a></li>
           <li><a href="#">认知信息异常</a></li>
           <li><a href="#">跨维度研究</a></li>
           <li><a href="#">收容科学</a></li>
+          <li><a href="#">时间异常学</a></li>
+          <li><a href="#">量子拓扑异常</a></li>
+          <li><a href="#">异常信息技术</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>服务</h4>
+        <h4 data-i18n="footer.services">服务</h4>
         <ul>
           <li><a href="submit.html">在线投稿</a></li>
           <li><a href="about.html#board">编委会</a></li>
@@ -299,6 +325,7 @@
   </div>
 </footer>
 
+<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

@@ -17,8 +17,8 @@
 <div class="top-banner">
   <div class="container">
     ISSN (网络版) 2XXX-XXXX &nbsp;|&nbsp; ISSN (印刷版) 2XXX-XXXX &nbsp;|&nbsp;
-    <a href="submit.html">现已开放投稿</a> &nbsp;|&nbsp;
-    <a href="articles.html">最新一期：第3卷第1期 (2026)</a>
+    <a href="submit.html" data-i18n="banner.submit">现已开放投稿</a> &nbsp;|&nbsp;
+    <a href="articles.html" data-i18n="banner.latest">最新一期：第3卷第1期 (2026)</a>
   </div>
 </div>
 
@@ -46,22 +46,23 @@
       </div>
     </a>
     <nav class="main-nav" aria-label="主导航">
-      <a href="index.html">首页</a>
-      <a href="articles.html">文章</a>
-      <a href="about.html">关于期刊</a>
-      <a href="submit.html" class="btn-submit">投稿</a>
-      <a href="contact.html">联系</a>
+      <a href="index.html" data-i18n="nav.home">首页</a>
+      <a href="articles.html" data-i18n="nav.articles">文章</a>
+      <a href="about.html" data-i18n="nav.about">关于期刊</a>
+      <a href="submit.html" class="btn-submit" data-i18n="nav.submit">投稿</a>
+      <a href="contact.html" data-i18n="nav.contact">联系</a>
     </nav>
+    <button class="lang-switch" id="lang-switch" aria-label="Switch language">EN</button>
     <button class="hamburger" aria-label="展开菜单" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
   <nav class="mobile-nav" aria-label="移动导航">
-    <a href="index.html">首页</a>
-    <a href="articles.html">文章</a>
-    <a href="about.html">关于期刊</a>
-    <a href="submit.html">投稿</a>
-    <a href="contact.html">联系</a>
+    <a href="index.html" data-i18n="nav.home">首页</a>
+    <a href="articles.html" data-i18n="nav.articles">文章</a>
+    <a href="about.html" data-i18n="nav.about">关于期刊</a>
+    <a href="submit.html" data-i18n="nav.submit">投稿</a>
+    <a href="contact.html" data-i18n="nav.contact">联系</a>
   </nav>
 </header>
 
@@ -69,19 +70,20 @@
      HERO
 ================================================================ -->
 <section class="hero">
+  <canvas id="hero-canvas"></canvas>
   <div class="container">
-    <div class="hero-tag">同行评审 · 开放获取</div>
+    <div class="hero-tag" data-i18n="hero.tag">同行评审 · 开放获取</div>
     <h1>
-      SCP基金会异常科学学报
-      <small>Journal of SCP Anomalous Sciences (JSAS)</small>
+      <span data-i18n="hero.title">SCP基金会异常科学学报</span>
+      <small data-i18n="hero.subtitle">Journal of SCP Anomalous Sciences (JSAS)</small>
     </h1>
-    <p>
+    <p data-i18n="hero.desc">
       由SCP异常科学研究院主办，发表异常现象、跨维度物理学、生物异常学、
       记忆信息学及相关领域的高水准原创研究，推动人类对未知边界的科学认知。
     </p>
     <div class="hero-actions">
-      <a href="articles.html" class="btn btn-primary">浏览全部文章</a>
-      <a href="about.html"    class="btn btn-outline">了解期刊</a>
+      <a href="articles.html" class="btn btn-primary" data-i18n="hero.btn.articles">浏览全部文章</a>
+      <a href="about.html"    class="btn btn-outline" data-i18n="hero.btn.about">了解期刊</a>
     </div>
   </div>
 </section>
@@ -92,23 +94,23 @@
     <div class="stats-inner">
       <div class="stat-item">
         <div class="stat-num" data-target="312">0</div>
-        <div class="stat-label">已发表文章</div>
+        <div class="stat-label" data-i18n="stat.articles">已发表文章</div>
       </div>
       <div class="stat-item">
         <div class="stat-num" data-target="87">0</div>
-        <div class="stat-label">编委会成员</div>
+        <div class="stat-label" data-i18n="stat.editors">编委会成员</div>
       </div>
       <div class="stat-item">
         <div class="stat-num" data-target="42">0</div>
-        <div class="stat-label">参与研究院</div>
+        <div class="stat-label" data-i18n="stat.institutes">参与研究院</div>
       </div>
       <div class="stat-item">
         <div class="stat-num" data-target="9800">0</div>
-        <div class="stat-label">月均下载量</div>
+        <div class="stat-label" data-i18n="stat.downloads">月均下载量</div>
       </div>
       <div class="stat-item">
         <div class="stat-num" data-target="3">0</div>
-        <div class="stat-label">已出版卷次</div>
+        <div class="stat-label" data-i18n="stat.volumes">已出版卷次</div>
       </div>
     </div>
   </div>
@@ -122,7 +124,7 @@
 
     <!-- ── LEFT: Latest Articles ── -->
     <main>
-      <h2 class="section-title">最新发表文章</h2>
+      <h2 class="section-title" data-i18n="section.latest">最新发表文章</h2>
 
       <!-- Article 1 -->
       <article class="article-card" data-type="research" data-year="2026">
@@ -242,7 +244,7 @@
 
       <!-- Current Issue -->
       <div class="sidebar-widget">
-        <div class="widget-header">当前期次</div>
+        <div class="widget-header" data-i18n="sidebar.current_issue">当前期次</div>
         <div class="widget-body">
           <p style="font-size:.85rem;color:#444;margin-bottom:10px;">
             <strong>第3卷第1期</strong><br/>
@@ -254,7 +256,7 @@
 
       <!-- Issue Archive -->
       <div class="sidebar-widget">
-        <div class="widget-header">历史期次</div>
+        <div class="widget-header" data-i18n="sidebar.archive">历史期次</div>
         <div class="widget-body">
           <ul>
             <li>
@@ -293,7 +295,7 @@
 
       <!-- Announcements -->
       <div class="sidebar-widget">
-        <div class="widget-header">公告</div>
+        <div class="widget-header" data-i18n="sidebar.announcements">公告</div>
         <div class="widget-body">
           <div class="announcement-item">
             <div class="ann-date">2026-02-10</div>
@@ -305,7 +307,7 @@
           </div>
           <div class="announcement-item">
             <div class="ann-date">2025-12-01</div>
-            <div class="ann-title"><a href="#">本刊已获SCP-DB数据库收录</a></div>
+            <div class="ann-title"><a href="#">本刊已完成 CrossRef DOI 注册，Google Scholar 收录进行中</a></div>
           </div>
           <div class="announcement-item">
             <div class="ann-date">2025-11-05</div>
@@ -316,7 +318,7 @@
 
       <!-- Article Types -->
       <div class="sidebar-widget">
-        <div class="widget-header">文章类型</div>
+        <div class="widget-header" data-i18n="sidebar.article_types">文章类型</div>
         <div class="widget-body">
           <ul>
             <li><a href="articles.html">研究论文 (Original Research)</a></li>
@@ -333,6 +335,21 @@
   </div><!-- /main-layout -->
 </div><!-- /container -->
 
+<!-- INDEXED BAR -->
+<div class="indexed-bar">
+  <div class="container">
+    <span class="indexed-label" data-i18n="indexed.label">收录数据库 / Indexed in:</span>
+    <div class="indexed-logos">
+      <span class="indexed-db">CrossRef</span>
+      <span class="indexed-db">Google Scholar</span>
+      <span class="indexed-db">DOAJ <small>(申请中)</small></span>
+      <span class="indexed-db">CNKI <small>(申请中)</small></span>
+      <span class="indexed-db">OpenAIRE <small>(申请中)</small></span>
+      <span class="indexed-db">Dimensions <small>(申请中)</small></span>
+    </div>
+  </div>
+</div>
+
 <!-- ===============================================================
      FOOTER
 ================================================================ -->
@@ -348,7 +365,7 @@
         </p>
       </div>
       <div class="footer-col">
-        <h4>导航</h4>
+        <h4 data-i18n="footer.navigation">导航</h4>
         <ul>
           <li><a href="index.html">首页</a></li>
           <li><a href="articles.html">文章</a></li>
@@ -358,17 +375,20 @@
         </ul>
       </div>
       <div class="footer-col">
-        <h4>研究方向</h4>
+        <h4 data-i18n="footer.research_areas">研究方向</h4>
         <ul>
           <li><a href="#">异常物理学</a></li>
           <li><a href="#">生物异常学</a></li>
           <li><a href="#">认知信息异常</a></li>
           <li><a href="#">跨维度研究</a></li>
           <li><a href="#">收容科学</a></li>
+          <li><a href="#">时间异常学</a></li>
+          <li><a href="#">量子拓扑异常</a></li>
+          <li><a href="#">异常信息技术</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>服务</h4>
+        <h4 data-i18n="footer.services">服务</h4>
         <ul>
           <li><a href="submit.html">在线投稿</a></li>
           <li><a href="about.html#board">编委会</a></li>
@@ -392,6 +412,7 @@
   </div>
 </footer>
 
+<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
