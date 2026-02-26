@@ -68,7 +68,7 @@
 <!-- PAGE HERO -->
 <section class="page-hero">
   <div class="container">
-    <div class="breadcrumb"><a href="index.html">首页</a><span>›</span>文章</div>
+    <div class="breadcrumb"><a href="index.html" data-i18n="nav.home">首页</a><span>›</span><span data-i18n="breadcrumb.articles">文章</span></div>
     <h1 data-i18n="page.articles.title">文章</h1>
     <p data-i18n="page.articles.desc">浏览 SCP异常科学学报 全部已发表文章</p>
   </div>
@@ -79,33 +79,33 @@
 
   <!-- Filter Bar -->
   <div class="filter-bar">
-    <label for="filter-type">类型：</label>
+    <label for="filter-type" data-i18n="filter.type">类型：</label>
     <select id="filter-type" class="filter-select">
-      <option value="all">全部</option>
-      <option value="research">研究论文</option>
-      <option value="review">综述文章</option>
-      <option value="case">案例报告</option>
-      <option value="letter">研究快报</option>
+      <option value="all" data-i18n="filter.all">全部</option>
+      <option value="research" data-i18n="filter.research">研究论文</option>
+      <option value="review" data-i18n="filter.review">综述文章</option>
+      <option value="case" data-i18n="filter.case">案例报告</option>
+      <option value="letter" data-i18n="filter.letter">研究快报</option>
     </select>
-    <label for="filter-year">年份：</label>
+    <label for="filter-year" data-i18n="filter.year">年份：</label>
     <select id="filter-year" class="filter-select">
-      <option value="all">全部</option>
+      <option value="all" data-i18n="filter.all">全部</option>
       <option value="2026">2026</option>
       <option value="2025">2025</option>
       <option value="2024">2024</option>
     </select>
-    <input type="search" class="search-input" placeholder="搜索关键词、作者、摘要…" aria-label="搜索文章" />
+    <input type="search" class="search-input" placeholder="搜索关键词、作者、摘要…" aria-label="搜索文章" data-i18n-placeholder="filter.search" />
   </div>
 
   <!-- Volume 3 -->
-  <div class="volume-header">第3卷 (2026)</div>
+  <div class="volume-header" data-i18n="vol.3">第3卷 (2026)</div>
   <div class="volume-body">
     <!-- Issue 1 -->
     <div style="padding: 12px 0 4px; font-size:.88rem; font-weight:600; color:var(--muted); font-family:sans-serif;">第1期 · 2026年2月</div>
 
     <article class="article-card" data-type="research" data-year="2026">
       <div class="article-meta">
-        <span class="article-type type-research">研究论文</span>
+        <span class="article-type type-research" data-i18n="type.research">研究论文</span>
         <span class="article-date">2026-02-14</span>
       </div>
       <h3><a href="#">SCP-682再生机制的量子纠缠假说：基于多世界诠释框架的理论分析</a></h3>
@@ -123,7 +123,7 @@
 
     <article class="article-card" data-type="review" data-year="2026">
       <div class="article-meta">
-        <span class="article-type type-review">综述文章</span>
+        <span class="article-type type-review" data-i18n="type.review">综述文章</span>
         <span class="article-date">2026-02-10</span>
       </div>
       <h3><a href="#">异常记忆信息学：SCP-1425类异常的认知渗透机制综述（2019–2025）</a></h3>
@@ -141,7 +141,7 @@
 
     <article class="article-card" data-type="research" data-year="2026">
       <div class="article-meta">
-        <span class="article-type type-research">研究论文</span>
+        <span class="article-type type-research" data-i18n="type.research">研究论文</span>
         <span class="article-date">2026-02-05</span>
       </div>
       <h3><a href="#">非欧几里得空间SCP-106侵蚀产物的化学组成分析</a></h3>
@@ -160,7 +160,7 @@
 
     <article class="article-card" data-type="case" data-year="2026">
       <div class="article-meta">
-        <span class="article-type type-case">案例报告</span>
+        <span class="article-type type-case" data-i18n="type.case">案例报告</span>
         <span class="article-date">2026-01-20</span>
       </div>
       <h3><a href="#">SCP-049接触后罹患者组织样本的蛋白质组学分析：案例报告三则</a></h3>
@@ -179,13 +179,13 @@
   </div>
 
   <!-- Volume 2 -->
-  <div class="volume-header">第2卷 (2025)</div>
+  <div class="volume-header" data-i18n="vol.2">第2卷 (2025)</div>
   <div class="volume-body">
     <div style="padding: 12px 0 4px; font-size:.88rem; font-weight:600; color:var(--muted); font-family:sans-serif;">第4期 · 2025年11月</div>
 
     <article class="article-card" data-type="case" data-year="2025">
       <div class="article-meta">
-        <span class="article-type type-case">案例报告</span>
+        <span class="article-type type-case" data-i18n="type.case">案例报告</span>
         <span class="article-date">2025-11-18</span>
       </div>
       <h3><a href="#">SCP-2399木星异常信号的频谱分析与潜在通讯解码尝试</a></h3>
@@ -204,7 +204,7 @@
 
     <article class="article-card" data-type="research" data-year="2025">
       <div class="article-meta">
-        <span class="article-type type-research">研究论文</span>
+        <span class="article-type type-research" data-i18n="type.research">研究论文</span>
         <span class="article-date">2025-11-10</span>
       </div>
       <h3><a href="#">基于机器学习的SCP异常等级自动分类模型：Safe/Euclid/Keter三类识别精度评估</a></h3>
@@ -225,7 +225,7 @@
 
     <article class="article-card" data-type="research" data-year="2025">
       <div class="article-meta">
-        <span class="article-type type-research">研究论文</span>
+        <span class="article-type type-research" data-i18n="type.research">研究论文</span>
         <span class="article-date">2025-08-22</span>
       </div>
       <h3><a href="#">跨维度材料SCP-294液态输出物的热力学特性研究</a></h3>
@@ -243,7 +243,7 @@
 
     <article class="article-card" data-type="letter" data-year="2025">
       <div class="article-meta">
-        <span class="article-type type-letter">研究快报</span>
+        <span class="article-type type-letter" data-i18n="type.letter">研究快报</span>
         <span class="article-date">2025-08-05</span>
       </div>
       <h3><a href="#">关于SCP-500"万能药"分子作用机制的简报：蛋白折叠修正路径的初步证据</a></h3>
@@ -262,11 +262,11 @@
   </div>
 
   <!-- Volume 1 -->
-  <div class="volume-header">第1卷 (2024)</div>
+  <div class="volume-header" data-i18n="vol.1">第1卷 (2024)</div>
   <div class="volume-body">
     <article class="article-card" data-type="research" data-year="2024">
       <div class="article-meta">
-        <span class="article-type type-research">研究论文</span>
+        <span class="article-type type-research" data-i18n="type.research">研究论文</span>
         <span class="article-date">2024-10-01</span>
       </div>
       <h3><a href="#">创刊词：建立异常科学的规范化学术体系 — 理念、挑战与展望</a></h3>
@@ -285,7 +285,7 @@
 
     <article class="article-card" data-type="review" data-year="2024">
       <div class="article-meta">
-        <span class="article-type type-review">综述文章</span>
+        <span class="article-type type-review" data-i18n="type.review">综述文章</span>
         <span class="article-date">2024-10-15</span>
       </div>
       <h3><a href="#">人形异常SCP收容标准的人道主义审视：现有框架缺陷与改进建议</a></h3>
@@ -308,7 +308,7 @@
     <button class="page-btn active">1</button>
     <button class="page-btn">2</button>
     <button class="page-btn">3</button>
-    <button class="page-btn">下一页 →</button>
+    <button class="page-btn" data-i18n="pagination.next">下一页 →</button>
   </div>
 
 </div><!-- /container -->
@@ -321,10 +321,10 @@
     <div class="indexed-logos">
       <span class="indexed-db">CrossRef</span>
       <span class="indexed-db">Google Scholar</span>
-      <span class="indexed-db">DOAJ <small>(申请中)</small></span>
-      <span class="indexed-db">CNKI <small>(申请中)</small></span>
-      <span class="indexed-db">OpenAIRE <small>(申请中)</small></span>
-      <span class="indexed-db">Dimensions <small>(申请中)</small></span>
+      <span class="indexed-db">DOAJ <small>(<span data-i18n="indexed.pending">申请中</span>)</small></span>
+      <span class="indexed-db">CNKI <small>(<span data-i18n="indexed.pending">申请中</span>)</small></span>
+      <span class="indexed-db">OpenAIRE <small>(<span data-i18n="indexed.pending">申请中</span>)</small></span>
+      <span class="indexed-db">Dimensions <small>(<span data-i18n="indexed.pending">申请中</span>)</small></span>
     </div>
   </div>
 </div>
@@ -334,7 +334,7 @@
     <div class="footer-grid">
       <div class="footer-about">
         <div class="footer-brand">SCP异常科学学报</div>
-        <p>
+        <p data-i18n="footer.about.text">
           Journal of SCP Anomalous Sciences (JSAS) 由SCP异常科学研究院主办，
           致力于在严格的同行评审框架下推动异常科学领域的学术交流与知识积累。
         </p>
@@ -342,46 +342,46 @@
       <div class="footer-col">
         <h4 data-i18n="footer.navigation">导航</h4>
         <ul>
-          <li><a href="index.html">首页</a></li>
-          <li><a href="articles.html">文章</a></li>
-          <li><a href="about.html">关于期刊</a></li>
-          <li><a href="submit.html">投稿指南</a></li>
-          <li><a href="contact.html">联系我们</a></li>
+          <li><a href="index.html" data-i18n="nav.home">首页</a></li>
+          <li><a href="articles.html" data-i18n="nav.articles">文章</a></li>
+          <li><a href="about.html" data-i18n="nav.about">关于期刊</a></li>
+          <li><a href="submit.html" data-i18n="footer.nav.submit_guide">投稿指南</a></li>
+          <li><a href="contact.html" data-i18n="footer.nav.contact_us">联系我们</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4 data-i18n="footer.research_areas">研究方向</h4>
         <ul>
-          <li><a href="#">异常物理学</a></li>
-          <li><a href="#">生物异常学</a></li>
-          <li><a href="#">认知信息异常</a></li>
-          <li><a href="#">跨维度研究</a></li>
-          <li><a href="#">收容科学</a></li>
-          <li><a href="#">时间异常学</a></li>
-          <li><a href="#">量子拓扑异常</a></li>
-          <li><a href="#">异常信息技术</a></li>
+          <li><a href="#" data-i18n="footer.area.physics">异常物理学</a></li>
+          <li><a href="#" data-i18n="footer.area.biology">生物异常学</a></li>
+          <li><a href="#" data-i18n="footer.area.cognition">认知信息异常</a></li>
+          <li><a href="#" data-i18n="footer.area.dimensional">跨维度研究</a></li>
+          <li><a href="#" data-i18n="footer.area.containment">收容科学</a></li>
+          <li><a href="#" data-i18n="footer.area.temporal">时间异常学</a></li>
+          <li><a href="#" data-i18n="footer.area.quantum">量子拓扑异常</a></li>
+          <li><a href="#" data-i18n="footer.area.infotech">异常信息技术</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4 data-i18n="footer.services">服务</h4>
         <ul>
-          <li><a href="submit.html">在线投稿</a></li>
-          <li><a href="about.html#board">编委会</a></li>
-          <li><a href="#">同行评审政策</a></li>
-          <li><a href="#">伦理声明</a></li>
-          <li><a href="#">版权政策</a></li>
+          <li><a href="submit.html" data-i18n="footer.svc.submit">在线投稿</a></li>
+          <li><a href="about.html#board" data-i18n="footer.svc.board">编委会</a></li>
+          <li><a href="#" data-i18n="footer.svc.review">同行评审政策</a></li>
+          <li><a href="#" data-i18n="footer.svc.ethics">伦理声明</a></li>
+          <li><a href="#" data-i18n="footer.svc.copyright">版权政策</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
       <div>
         <span class="issn-badge">ISSN 2XXX-XXXX</span>
-        &copy; 2024–2026 SCP异常科学研究院. 保留所有权利.
+        <span data-i18n="footer.copyright">&copy; 2024–2026 SCP异常科学研究院. 保留所有权利.</span>
       </div>
       <div>
-        <a href="#">隐私政策</a> &nbsp;·&nbsp;
-        <a href="#">使用条款</a> &nbsp;·&nbsp;
-        <a href="contact.html">联系</a>
+        <a href="#" data-i18n="footer.privacy">隐私政策</a> &nbsp;·&nbsp;
+        <a href="#" data-i18n="footer.terms">使用条款</a> &nbsp;·&nbsp;
+        <a href="contact.html" data-i18n="footer.contact_link">联系</a>
       </div>
     </div>
   </div>

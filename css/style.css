@@ -166,7 +166,9 @@ a:hover { color: var(--link-hov); text-decoration: underline; }
    HERO (homepage)
    ============================================================ */
 .hero {
-  background: linear-gradient(135deg, var(--primary) 0%, #2c3e50 100%);
+  background: linear-gradient(135deg, #1a2a3a 0%, #2c3e50 30%, #1a3a4a 60%, #2c3e50 100%);
+  background-size: 300% 300%;
+  animation: gradientShift 10s ease infinite;
   color: var(--white);
   padding: 72px 0 56px;
   text-align: center;
@@ -835,4 +837,158 @@ a:hover { color: var(--link-hov); text-decoration: underline; }
   font-weight: 400;
   color: var(--muted);
   font-size: .7rem;
+}
+
+/* ============================================================
+   HEADER SCROLL SHRINK
+   ============================================================ */
+.site-header {
+  transition: box-shadow .3s, background .3s;
+}
+.site-header.scrolled {
+  box-shadow: 0 4px 24px rgba(0,0,0,.15);
+}
+.site-header.scrolled .header-inner {
+  height: 54px;
+  transition: height .3s ease;
+}
+.header-inner {
+  transition: height .3s ease;
+}
+
+/* ============================================================
+   PAGE LOAD FADE-IN
+   ============================================================ */
+@keyframes pageLoad {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: none; }
+}
+body {
+  animation: pageLoad .45s ease both;
+}
+
+/* ============================================================
+   HERO PARTICLE CANVAS UPGRADE
+   ============================================================ */
+#hero-canvas {
+  opacity: 0.35;
+}
+
+/* ============================================================
+   BRAND LOGO HOVER SPIN
+   ============================================================ */
+.brand:hover .brand-logo {
+  animation: logoPulse .6s ease;
+}
+@keyframes logoPulse {
+  0%   { transform: scale(1) rotate(0deg); }
+  50%  { transform: scale(1.12) rotate(10deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+/* ============================================================
+   STAT ITEM HOVER HIGHLIGHT
+   ============================================================ */
+.stat-item {
+  transition: background .2s;
+  cursor: default;
+}
+.stat-item:hover {
+  background: rgba(181,41,42,.04);
+}
+.stat-item:hover .stat-num {
+  color: var(--primary);
+  text-shadow: 0 0 24px rgba(26,42,58,.2);
+}
+
+/* ============================================================
+   NAV ACTIVE INDICATOR LINE
+   ============================================================ */
+.main-nav a {
+  position: relative;
+}
+.main-nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  border-radius: 2px;
+  transition: width .2s ease, left .2s ease;
+}
+.main-nav a:hover::after,
+.main-nav a.active::after {
+  width: calc(100% - 24px);
+  left: 12px;
+}
+.main-nav a.active,
+.main-nav a:hover {
+  background: transparent;
+  color: var(--primary);
+  text-decoration: none;
+}
+.main-nav a.active {
+  color: var(--accent);
+}
+.main-nav a.btn-submit::after { display: none; }
+.main-nav a.btn-submit,
+.main-nav a.btn-submit:hover {
+  background: var(--accent);
+  color: var(--white);
+}
+.main-nav a.btn-submit:hover {
+  background: var(--accent-lt);
+}
+
+/* ============================================================
+   ARTICLE CARD UPGRADE
+   ============================================================ */
+.article-card {
+  position: relative;
+  overflow: hidden;
+}
+.article-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 0;
+  background: linear-gradient(135deg, rgba(181,41,42,.03) 0%, transparent 100%);
+  transition: height .3s ease;
+}
+.article-card:hover::before {
+  height: 100%;
+}
+
+/* ============================================================
+   BUTTON GLOW ON HOVER
+   ============================================================ */
+.btn-primary:hover {
+  box-shadow: 0 4px 16px rgba(181,41,42,.35);
+}
+
+/* ============================================================
+   SIDEBAR WIDGET SUBTLE ENTRANCE
+   ============================================================ */
+.sidebar-widget {
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.sidebar-widget:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(0,0,0,.10);
+}
+
+/* ============================================================
+   INDEXED BAR HOVER EFFECT
+   ============================================================ */
+.indexed-db {
+  transition: background .15s, color .15s, border-color .15s, transform .15s;
+  cursor: default;
+}
+.indexed-db:hover {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+  transform: translateY(-1px);
 }
