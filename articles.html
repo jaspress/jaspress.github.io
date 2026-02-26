@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>文章列表 — SCP异常科学学报</title>
+  <meta name="description" content="浏览SCP基金会异常科学学报发表的全部学术文章。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚗️</text></svg>" />
+</head>
+<body>
+
+<!-- TOP BANNER -->
+<div class="top-banner">
+  <div class="container">
+    ISSN (网络版) 2XXX-XXXX &nbsp;|&nbsp; ISSN (印刷版) 2XXX-XXXX &nbsp;|&nbsp;
+    <a href="submit.html">现已开放投稿</a> &nbsp;|&nbsp;
+    <a href="articles.html">最新一期：第3卷第1期 (2026)</a>
+  </div>
+</div>
+
+<!-- SITE HEADER -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="返回首页">
+      <svg class="brand-logo" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="22" cy="22" r="20" stroke="#1a2a3a" stroke-width="2.5"/>
+        <circle cx="22" cy="22" r="13" stroke="#1a2a3a" stroke-width="2"/>
+        <circle cx="22" cy="22" r="3.5" fill="#b5292a"/>
+        <line x1="22" y1="2" x2="22" y2="9" stroke="#1a2a3a" stroke-width="2"/>
+        <line x1="22" y1="35" x2="22" y2="42" stroke="#1a2a3a" stroke-width="2"/>
+        <line x1="2" y1="22" x2="9" y2="22" stroke="#1a2a3a" stroke-width="2"/>
+        <line x1="35" y1="22" x2="42" y2="22" stroke="#1a2a3a" stroke-width="2"/>
+        <line x1="6.1" y1="6.1" x2="11.2" y2="11.2" stroke="#1a2a3a" stroke-width="1.5"/>
+        <line x1="32.8" y1="32.8" x2="37.9" y2="37.9" stroke="#1a2a3a" stroke-width="1.5"/>
+        <line x1="37.9" y1="6.1" x2="32.8" y2="11.2" stroke="#1a2a3a" stroke-width="1.5"/>
+        <line x1="11.2" y1="32.8" x2="6.1" y2="37.9" stroke="#1a2a3a" stroke-width="1.5"/>
+      </svg>
+      <div class="brand-text">
+        <span class="brand-cn">SCP异常科学学报</span>
+        <span class="brand-en">Journal of SCP Anomalous Sciences</span>
+      </div>
+    </a>
+    <nav class="main-nav" aria-label="主导航">
+      <a href="index.html">首页</a>
+      <a href="articles.html" class="active">文章</a>
+      <a href="about.html">关于期刊</a>
+      <a href="submit.html" class="btn-submit">投稿</a>
+      <a href="contact.html">联系</a>
+    </nav>
+    <button class="hamburger" aria-label="展开菜单" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="mobile-nav" aria-label="移动导航">
+    <a href="index.html">首页</a>
+    <a href="articles.html">文章</a>
+    <a href="about.html">关于期刊</a>
+    <a href="submit.html">投稿</a>
+    <a href="contact.html">联系</a>
+  </nav>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">首页</a><span>›</span>文章</div>
+    <h1>文章</h1>
+    <p>浏览 SCP异常科学学报 全部已发表文章</p>
+  </div>
+</section>
+
+<!-- MAIN CONTENT -->
+<div class="container" style="padding: 40px 0;">
+
+  <!-- Filter Bar -->
+  <div class="filter-bar">
+    <label for="filter-type">类型：</label>
+    <select id="filter-type" class="filter-select">
+      <option value="all">全部</option>
+      <option value="research">研究论文</option>
+      <option value="review">综述文章</option>
+      <option value="case">案例报告</option>
+      <option value="letter">研究快报</option>
+    </select>
+    <label for="filter-year">年份：</label>
+    <select id="filter-year" class="filter-select">
+      <option value="all">全部</option>
+      <option value="2026">2026</option>
+      <option value="2025">2025</option>
+      <option value="2024">2024</option>
+    </select>
+    <input type="search" class="search-input" placeholder="搜索关键词、作者、摘要…" aria-label="搜索文章" />
+  </div>
+
+  <!-- Volume 3 -->
+  <div class="volume-header">第3卷 (2026)</div>
+  <div class="volume-body">
+    <!-- Issue 1 -->
+    <div style="padding: 12px 0 4px; font-size:.88rem; font-weight:600; color:var(--muted); font-family:sans-serif;">第1期 · 2026年2月</div>
+
+    <article class="article-card" data-type="research" data-year="2026">
+      <div class="article-meta">
+        <span class="article-type type-research">研究论文</span>
+        <span class="article-date">2026-02-14</span>
+      </div>
+      <h3><a href="#">SCP-682再生机制的量子纠缠假说：基于多世界诠释框架的理论分析</a></h3>
+      <p class="article-authors">张远航, 李明哲, Kondraki W.L., 王思远</p>
+      <p class="article-abstract">
+        本文提出一种基于量子多世界诠释（MWI）框架的新型理论模型，用以解释SCP-682超常再生能力的物理机制。通过对682收容记录的系统性分析，我们发现其组织修复速率与局部宇宙分支密度存在显著正相关（r=0.91，p&lt;0.001）。
+      </p>
+      <div class="article-footer">
+        <span>第3卷第1期 · 第1–18页</span>
+        <span class="doi">DOI: 10.21950/JSAS.2026.001</span>
+        <a href="#">PDF ↓</a>
+        <a href="#">摘要</a>
+      </div>
+    </article>
+
+    <article class="article-card" data-type="review" data-year="2026">
+      <div class="article-meta">
+        <span class="article-type type-review">综述文章</span>
+        <span class="article-date">2026-02-10</span>
+      </div>
+      <h3><a href="#">异常记忆信息学：SCP-1425类异常的认知渗透机制综述（2019–2025）</a></h3>
+      <p class="article-authors">陈晓琳, Dr. Gears, 伊藤千夏</p>
+      <p class="article-abstract">
+        我们对2019至2025年间发表的147篇涉及信息型异常的研究文献进行系统性综述，重点梳理SCP-1425类认知渗透异常的作用机制、传播路径与防护策略。
+      </p>
+      <div class="article-footer">
+        <span>第3卷第1期 · 第19–51页</span>
+        <span class="doi">DOI: 10.21950/JSAS.2026.002</span>
+        <a href="#">PDF ↓</a>
+        <a href="#">摘要</a>
+      </div>
+    </article>
+
+    <article class="article-card" data-type="research" data-year="2026">
+      <div class="article-meta">
+        <span class="article-type type-research">研究论文</span>
+        <span class="article-date">2026-02-05</span>
+      </div>
+      <h3><a href="#">非欧几里得空间SCP-106侵蚀产物的化学组成分析</a></h3>
+      <p class="article-authors">赵雯静, Kumar P., 刘宇峰</p>
+      <p class="article-abstract">
+        本研究通过X射线荧光光谱法（XRF）和质谱分析对SCP-106"口袋空间"回收的侵蚀产物进行了系统化学表征，
+        发现其中含有13种地球上尚未登记的元素同位素，以及多种具有高度反应性的非标准共价键结构。
+      </p>
+      <div class="article-footer">
+        <span>第3卷第1期 · 第52–73页</span>
+        <span class="doi">DOI: 10.21950/JSAS.2026.003</span>
+        <a href="#">PDF ↓</a>
+        <a href="#">摘要</a>
+      </div>
+    </article>
+
+    <article class="article-card" data-type="case" data-year="2026">
+      <div class="article-meta">
+        <span class="article-type type-case">案例报告</span>
+        <span class="article-date">2026-01-20</span>
+      </div>
+      <h3><a href="#">SCP-049接触后罹患者组织样本的蛋白质组学分析：案例报告三则</a></h3>
+      <p class="article-authors">石原莉子, Wright E.H.</p>
+      <p class="article-abstract">
+        本文报告三例经D级人员知情同意参与的SCP-049接触后存活案例（接触程度：轻度），
+        对其皮下活检样本进行蛋白质组学深度测序，发现与细胞凋亡通路相关的异常蛋白亚型。
+      </p>
+      <div class="article-footer">
+        <span>第3卷第1期 · 第74–89页</span>
+        <span class="doi">DOI: 10.21950/JSAS.2026.004</span>
+        <a href="#">PDF ↓</a>
+        <a href="#">摘要</a>
+      </div>
+    </article>
+  </div>
+
+  <!-- Volume 2 -->
+  <div class="volume-header">第2卷 (2025)</div>
+  <div class="volume-body">
+    <div style="padding: 12px 0 4px; font-size:.88rem; font-weight:600; color:var(--muted); font-family:sans-serif;">第4期 · 2025年11月</div>
+
+    <article class="article-card" data-type="case" data-year="2025">
+      <div class="article-meta">
+        <span class="article-type type-case">案例报告</span>
+        <span class="article-date">2025-11-18</span>
+      </div>
+      <h3><a href="#">SCP-2399木星异常信号的频谱分析与潜在通讯解码尝试</a></h3>
+      <p class="article-authors">Bright J.D., 刘宇峰, Clef A.</p>
+      <p class="article-abstract">
+        通过引入经改进的非线性傅里叶变换方法，我们在信号中识别出若干具有周期性结构的子序列，
+        其信息熵显著低于随机噪声基线（p&lt;0.0001）。
+      </p>
+      <div class="article-footer">
+        <span>第2卷第4期 · 第112–134页</span>
+        <span class="doi">DOI: 10.21950/JSAS.2025.041</span>
+        <a href="#">PDF ↓</a>
+        <a href="#">摘要</a>
+      </div>
+    </article>
+
+    <article class="article-card" data-type="research" data-year="2025">
+      <div class="article-meta">
+        <span class="article-type type-research">研究论文</span>
+        <span class="article-date">2025-11-10</span>
+      </div>
+      <h3><a href="#">基于机器学习的SCP异常等级自动分类模型：Safe/Euclid/Keter三类识别精度评估</a></h3>
+      <p class="article-authors">王思远, 陈晓琳, Kumar P.</p>
+      <p class="article-abstract">
+        本研究构建了基于大语言模型微调的SCP异常等级自动分类系统，在包含8,476份历史收容档案的测试集上，
+        Safe/Euclid/Keter三类识别的宏平均F1值达到0.847。
+      </p>
+      <div class="article-footer">
+        <span>第2卷第4期 · 第88–111页</span>
+        <span class="doi">DOI: 10.21950/JSAS.2025.040</span>
+        <a href="#">PDF ↓</a>
+        <a href="#">摘要</a>
+      </div>
+    </article>
+
+    <div style="padding: 12px 0 4px; font-size:.88rem; font-weight:600; color:var(--muted); font-family:sans-serif;">第3期 · 2025年8月</div>
+
+    <article class="article-card" data-type="research" data-year="2025">
+      <div class="article-meta">
+        <span class="article-type type-research">研究论文</span>
+        <span class="article-date">2025-08-22</span>
+      </div>
+      <h3><a href="#">跨维度材料SCP-294液态输出物的热力学特性研究</a></h3>
+      <p class="article-authors">Wright E.H., 赵雯静, Kumar P.</p>
+      <p class="article-abstract">
+        结果表明，约23%的样本在标准大气压下表现出多稳态相共存现象，部分样本的热导率超出已知物质理论上限3.7倍。
+      </p>
+      <div class="article-footer">
+        <span>第2卷第3期 · 第67–89页</span>
+        <span class="doi">DOI: 10.21950/JSAS.2025.032</span>
+        <a href="#">PDF ↓</a>
+        <a href="#">摘要</a>
+      </div>
+    </article>
+
+    <article class="article-card" data-type="letter" data-year="2025">
+      <div class="article-meta">
+        <span class="article-type type-letter">研究快报</span>
+        <span class="article-date">2025-08-05</span>
+      </div>
+      <h3><a href="#">关于SCP-500"万能药"分子作用机制的简报：蛋白折叠修正路径的初步证据</a></h3>
+      <p class="article-authors">石原莉子, Gears M.F.</p>
+      <p class="article-abstract">
+        利用冷冻电子断层扫描（Cryo-ET）技术对SCP-500有效成分与错误折叠蛋白质相互作用的首批直接可视化结果，
+        速率比已知分子伴侣快约10^6倍。
+      </p>
+      <div class="article-footer">
+        <span>第2卷第2期 · 第3–8页</span>
+        <span class="doi">DOI: 10.21950/JSAS.2025.021</span>
+        <a href="#">PDF ↓</a>
+        <a href="#">摘要</a>
+      </div>
+    </article>
+  </div>
+
+  <!-- Volume 1 -->
+  <div class="volume-header">第1卷 (2024)</div>
+  <div class="volume-body">
+    <article class="article-card" data-type="research" data-year="2024">
+      <div class="article-meta">
+        <span class="article-type type-research">研究论文</span>
+        <span class="article-date">2024-10-01</span>
+      </div>
+      <h3><a href="#">创刊词：建立异常科学的规范化学术体系 — 理念、挑战与展望</a></h3>
+      <p class="article-authors">张远航</p>
+      <p class="article-abstract">
+        本文作为学报创刊号首篇，系统阐述了建立异常科学规范化学术体系的必要性与可行路径，
+        提出了异常研究范式的四个核心原则：可重复性、可证伪性、安全优先性与跨学科整合性。
+      </p>
+      <div class="article-footer">
+        <span>第1卷第1期 · 第1–14页</span>
+        <span class="doi">DOI: 10.21950/JSAS.2024.001</span>
+        <a href="#">PDF ↓</a>
+        <a href="#">摘要</a>
+      </div>
+    </article>
+
+    <article class="article-card" data-type="review" data-year="2024">
+      <div class="article-meta">
+        <span class="article-type type-review">综述文章</span>
+        <span class="article-date">2024-10-15</span>
+      </div>
+      <h3><a href="#">人形异常SCP收容标准的人道主义审视：现有框架缺陷与改进建议</a></h3>
+      <p class="article-authors">陈晓琳, Dr. Gears, Bright J.D.</p>
+      <p class="article-abstract">
+        本综述系统梳理了现有人形SCP收容指引中的伦理盲区，援引国际人权法框架，
+        提出在保障安全前提下提升人形异常收容条件的16项具体建议。
+      </p>
+      <div class="article-footer">
+        <span>第1卷第2期 · 第22–55页</span>
+        <span class="doi">DOI: 10.21950/JSAS.2024.009</span>
+        <a href="#">PDF ↓</a>
+        <a href="#">摘要</a>
+      </div>
+    </article>
+  </div>
+
+  <!-- Pagination -->
+  <div class="pagination">
+    <button class="page-btn active">1</button>
+    <button class="page-btn">2</button>
+    <button class="page-btn">3</button>
+    <button class="page-btn">下一页 →</button>
+  </div>
+
+</div><!-- /container -->
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <div class="footer-brand">SCP异常科学学报</div>
+        <p>
+          Journal of SCP Anomalous Sciences (JSAS) 由SCP异常科学研究院主办，
+          致力于在严格的同行评审框架下推动异常科学领域的学术交流与知识积累。
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>导航</h4>
+        <ul>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="articles.html">文章</a></li>
+          <li><a href="about.html">关于期刊</a></li>
+          <li><a href="submit.html">投稿指南</a></li>
+          <li><a href="contact.html">联系我们</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>研究方向</h4>
+        <ul>
+          <li><a href="#">异常物理学</a></li>
+          <li><a href="#">生物异常学</a></li>
+          <li><a href="#">认知信息异常</a></li>
+          <li><a href="#">跨维度研究</a></li>
+          <li><a href="#">收容科学</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>服务</h4>
+        <ul>
+          <li><a href="submit.html">在线投稿</a></li>
+          <li><a href="about.html#board">编委会</a></li>
+          <li><a href="#">同行评审政策</a></li>
+          <li><a href="#">伦理声明</a></li>
+          <li><a href="#">版权政策</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>
+        <span class="issn-badge">ISSN 2XXX-XXXX</span>
+        &copy; 2024–2026 SCP异常科学研究院. 保留所有权利.
+      </div>
+      <div>
+        <a href="#">隐私政策</a> &nbsp;·&nbsp;
+        <a href="#">使用条款</a> &nbsp;·&nbsp;
+        <a href="contact.html">联系</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
