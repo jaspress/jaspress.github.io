@@ -23,7 +23,7 @@
 html { scroll-behavior: smooth; font-size: 16px; }
 
 body {
-  font-family: "Source Serif Pro", "Noto Serif SC", "Georgia", serif;
+  font-family: "Source Serif Pro", "Noto Serif SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", "Georgia", serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.7;
