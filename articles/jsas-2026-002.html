@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>异常记忆信息学：SCP-1425类异常的认知渗透机制综述 — SCP异常科学学报</title>
+  <meta name="description" content="对2019至2025年间发表的147篇涉及信息型异常的研究文献进行系统性综述，重点梳理SCP-1425类认知渗透异常的作用机制、传播路径与防护策略。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/article.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚗️</text></svg>" />
+</head>
+<body>
+
+<div class="top-banner">
+  <div class="container">
+    ISSN (网络版) 2XXX-XXXX &nbsp;|&nbsp; ISSN (印刷版) 2XXX-XXXX &nbsp;|&nbsp;
+    <a href="../submit.html">现已开放投稿</a> &nbsp;|&nbsp;
+    <a href="../articles.html">最新一期：第3卷第1期 (2026)</a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="../index.html" aria-label="返回首页">
+      <svg class="brand-logo" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="22" cy="22" r="20" stroke="#1a2a3a" stroke-width="2.5"/>
+        <circle cx="22" cy="22" r="13" stroke="#1a2a3a" stroke-width="2"/>
+        <circle cx="22" cy="22" r="3.5" fill="#b5292a"/>
+        <line x1="22" y1="2" x2="22" y2="9" stroke="#1a2a3a" stroke-width="2"/>
+        <line x1="22" y1="35" x2="22" y2="42" stroke="#1a2a3a" stroke-width="2"/>
+        <line x1="2" y1="22" x2="9" y2="22" stroke="#1a2a3a" stroke-width="2"/>
+        <line x1="35" y1="22" x2="42" y2="22" stroke="#1a2a3a" stroke-width="2"/>
+        <line x1="6.1" y1="6.1" x2="11.2" y2="11.2" stroke="#1a2a3a" stroke-width="1.5"/>
+        <line x1="32.8" y1="32.8" x2="37.9" y2="37.9" stroke="#1a2a3a" stroke-width="1.5"/>
+        <line x1="37.9" y1="6.1" x2="32.8" y2="11.2" stroke="#1a2a3a" stroke-width="1.5"/>
+        <line x1="11.2" y1="32.8" x2="6.1" y2="37.9" stroke="#1a2a3a" stroke-width="1.5"/>
+      </svg>
+      <div class="brand-text">
+        <span class="brand-cn">SCP异常科学学报</span>
+        <span class="brand-en">Journal of SCP Anomalous Sciences</span>
+      </div>
+    </a>
+    <nav class="main-nav" aria-label="主导航">
+      <a href="../index.html">首页</a>
+      <a href="../articles.html" class="active">文章</a>
+      <a href="../about.html">关于期刊</a>
+      <a href="../submit.html" class="btn-submit">投稿</a>
+      <a href="../contact.html">联系</a>
+    </nav>
+    <button class="lang-switch" id="lang-switch" aria-label="Switch language">EN</button>
+    <button class="hamburger" aria-label="展开菜单" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="mobile-nav" aria-label="移动导航">
+    <a href="../index.html">首页</a>
+    <a href="../articles.html">文章</a>
+    <a href="../about.html">关于期刊</a>
+    <a href="../submit.html">投稿</a>
+    <a href="../contact.html">联系</a>
+  </nav>
+</header>
+
+<div class="classification-banner">
+  ██ 收容级别：保密 ██ &nbsp;·&nbsp; SCP异常科学研究院 — 学术文档 &nbsp;·&nbsp; ██ 未经授权不得传阅 ██
+</div>
+
+<div class="article-page">
+
+  <div class="pdf-download-bar">
+    <span class="bar-label">全文已开放获取 · 第3卷第1期 (2026) · 第19–51页</span>
+    <button class="btn-pdf" onclick="window.print()">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      下载 PDF
+    </button>
+  </div>
+
+  <article class="article-doc">
+
+    <header class="doc-header">
+      <div class="doc-journal-line">SCP异常科学学报 (JSAS) · Vol. 3, No. 1 · 2026 · 综述文章</div>
+      <span class="doc-type-badge type-review">综述文章</span>
+      <h1 class="doc-title">异常记忆信息学：SCP-1425类异常的认知渗透机制综述（2019–2025）</h1>
+      <p class="doc-authors"><strong>陈晓琳<sup>1</sup>, Dr. Gears<sup>2</sup>, 伊藤千夏<sup>3</sup></strong></p>
+      <p class="doc-affil">
+        <sup>1</sup>SCP异常科学研究院认知信息学研究所<br/>
+        <sup>2</sup>机密站点认知危害研究部（具体位置存档于O5级档案）<br/>
+        <sup>3</sup>东亚区域研究中心，站点-81J
+      </p>
+      <div class="doc-meta-row">
+        <span class="meta-item"><strong>收稿日期：</strong>2025-10-12</span>
+        <span class="meta-item"><strong>修回日期：</strong>2025-12-28</span>
+        <span class="meta-item"><strong>接收日期：</strong>2026-01-08</span>
+        <span class="meta-item"><strong>发布日期：</strong>2026-02-10</span>
+        <span class="meta-item"><strong>DOI：</strong>10.21950/JSAS.2026.002</span>
+      </div>
+    </header>
+
+    <div class="abstract-box" id="abstract">
+      <div class="abstract-label">摘要</div>
+      <p>
+        本综述对2019至2025年间发表的147篇涉及信息型异常（informational anomalies）的研究文献进行
+        系统性梳理，重点分析以SCP-1425为代表的认知渗透类异常（cognitohazardous anomalies）的
+        作用机制、神经生物学基础、传播动力学及防护策略。综述采用PRISMA方法学框架，
+        数据库来源包括JSAS全文数据库、基金会内部档案（4级及以上访问）及经审查的公开学术文献。
+        结果表明，信息型异常的危害效应与受体神经可塑性指数（Neuroplasticity Perception Index，NPI）
+        呈强正相关（综合效应量d=0.78，95% CI [0.64, 0.92]），
+        且高NPI个体对认知渗透的易感性是低NPI个体的3.2–5.7倍。
+        本综述在全面梳理现有机制假说的基础上，提出认知防护分级框架（CPGF），
+        为新一代记忆保护方案的研发与收容协议制定提供循证依据。
+      </p>
+    </div>
+
+    <div class="keywords-row">
+      <strong>关键词：</strong>
+      <span class="kw-tag">SCP-1425</span>
+      <span class="kw-tag">认知渗透</span>
+      <span class="kw-tag">信息型异常</span>
+      <span class="kw-tag">神经可塑性</span>
+      <span class="kw-tag">记忆信息学</span>
+      <span class="kw-tag">PRISMA</span>
+      <span class="kw-tag">认知防护</span>
+    </div>
+
+    <div class="article-body">
+
+      <h2>1. 引言</h2>
+      <p>
+        信息型异常（informational anomalies）是指能够通过感知渠道（视觉、听觉、触觉等）
+        对接触者的认知功能、记忆结构或行为模式产生直接改变的SCP实体或现象。
+        自SCP-1425首次收容以来，基金会研究人员意识到信息型异常与一般物理型异常在收容策略上
+        存在本质差异——其危害不依赖于物理接触，而是通过信息本身进行传播。
+      </p>
+      <p>
+        近年来，随着基金会收容数据库的扩充，已登记的认知渗透类异常数量从███年的12例增至2025年的
+        超过287例，年增长率约18%。这一增长趋势，加之认知渗透事件对D级人员和研究人员造成的
+        持续性伤害，迫切要求建立系统性的机制综述框架，以指导收容协议优化与防护技术开发。
+      </p>
+      <p>
+        本综述旨在：（1）系统梳理2019–2025年间认知渗透机制研究的核心发现；
+        （2）评估现有理论模型的解释力与局限性；（3）基于现有证据提出认知防护分级框架（CPGF）；
+        （4）识别当前研究空白，为未来研究方向提供建议。
+      </p>
+
+      <h2>2. 方法</h2>
+      <h3>2.1 文献检索策略</h3>
+      <p>
+        本综述采用PRISMA（Preferred Reporting Items for Systematic Reviews and Meta-Analyses）
+        方法学框架。检索数据库包括：JSAS全文数据库（2019–2025）、
+        基金会内部档案认知科学分库（访问级别：4级及以上）、
+        经审查的外部学术数据库（PubMed、PsycINFO，关键词包括"cognitohazard"的替代学术术语）。
+        检索时间截止至2025年9月30日。
+      </p>
+
+      <h3>2.2 纳入与排除标准</h3>
+      <p>纳入标准：（1）明确涉及信息型异常的认知效应研究；（2）提供可量化的效应指标；
+        （3）经同行评审或基金会内部评估委员会审核。排除标准：（1）仅含描述性观察而无量化分析；
+        （2）涉及的异常实体同时具有物理危害，难以分离信息效应；（3）数据保密级别超出综述权限。</p>
+      <p>
+        初步检索获得文献432篇，经标题/摘要筛选后保留198篇，经全文审查最终纳入147篇。
+      </p>
+
+      <h3>2.3 数据提取与分析</h3>
+      <p>
+        由两名独立研究者（陈晓琳、伊藤千夏）分别进行数据提取，对分歧通过讨论达成共识。
+        提取变量包括：异常编号、研究设计类型、样本量、NPI测量方法、效应量及置信区间。
+        采用随机效应模型进行元分析，使用Hedges' g作为效应量指标。异质性评估采用I<sup>2</sup>统计量。
+      </p>
+
+      <h2>3. 结果</h2>
+      <h3>3.1 文献特征</h3>
+      <p>
+        纳入的147篇文献中，研究设计类型包括：受控实验研究（n=63，42.9%）、
+        队列研究（n=41，27.9%）、案例序列（n=28，19.0%）、
+        计算机模拟/理论模型研究（n=15，10.2%）。
+        研究对象为D级人员（n=89，60.5%）、研究人员（n=38，25.9%）、
+        及其他（包括平民接触案例，n=20，13.6%）。
+      </p>
+
+      <h3>3.2 神经可塑性指数与认知渗透易感性</h3>
+      <p>
+        元分析结果显示，NPI与认知渗透易感性之间存在中至大效应量的正相关
+        （综合Hedges' g=0.78，95% CI [0.64, 0.92]，p&lt;0.001；
+        I<sup>2</sup>=52%，表明存在中等异质性）。
+        亚组分析显示，NPI高于第75百分位的个体，认知渗透发生率是NPI低于第25百分位个体的
+        3.2–5.7倍（加权均值4.1倍），这一效应在不同异常类型间具有跨异常稳健性。
+      </p>
+
+      <table class="data-table">
+        <caption class="table-caption">表1. 各认知渗透机制假说的证据质量评级（GRADE标准）</caption>
+        <thead>
+          <tr>
+            <th>机制假说</th>
+            <th>支持文献数</th>
+            <th>综合效应量 (g)</th>
+            <th>证据质量</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>神经可塑性门控假说</td><td>47</td><td>0.81</td><td>中等</td></tr>
+          <tr><td>记忆印记叠写模型</td><td>38</td><td>0.73</td><td>中等</td></tr>
+          <tr><td>认知共振传播理论</td><td>29</td><td>0.68</td><td>低</td></tr>
+          <tr><td>意识频率调制假说</td><td>19</td><td>0.55</td><td>极低</td></tr>
+          <tr><td>量子记忆纠缠模型</td><td>14</td><td>0.91</td><td>低（样本量小）</td></tr>
+        </tbody>
+      </table>
+
+      <h3>3.3 传播动力学</h3>
+      <p>
+        信息型异常的传播动力学研究（n=34篇）表明，认知渗透效应在人际间的二次传播率
+        因异常类型差异较大（范围：2.3%–67.8%），其中SCP-1425类异常的二次传播率
+        显著高于其他信息型异常（均值41.2% vs. 12.7%，p&lt;0.01）。
+        口头描述（67.3%的案例）和视觉媒介（54.1%）是最主要的传播途径，
+        直接认知接触（18.9%）和非语言肢体传递（9.4%）相对较少。
+      </p>
+
+      <div class="classified-notice">
+        <strong>⚠ 危害提示：</strong>本节部分内容描述认知渗透传播途径，阅读时请确保处于
+        标准认知防护环境（最低A级防护）。疑似接触后立即向最近的认知危害响应站报告。
+      </div>
+
+      <h3>3.4 防护策略有效性评估</h3>
+      <p>
+        现有防护策略包括：记忆抑制剂（A类和B类）、认知屏蔽头盔（多型号）、
+        改良B型记忆消除程序，以及实验性的"认知防火墙"神经刺激方案。
+        元分析结果显示，综合防护有效率从早期的约38%提升至2025年的约71%，
+        10年间提升幅度显著。其中B类记忆抑制剂结合认知屏蔽头盔的联合方案
+        防护有效率最高（81.3%，95% CI [74.2, 88.4]）。
+      </p>
+
+      <h2>4. 讨论：认知防护分级框架（CPGF）</h2>
+      <p>
+        基于本综述的系统性证据，我们提出认知防护分级框架（Cognitive Protection Grading Framework，
+        CPGF），将防护需求划分为五个等级（C0–C4），对应从无防护需求到最高级别强制防护的连续谱系。
+        分级依据包括：异常的已知二次传播率、典型NPI阈值、接触场景的可控性，
+        以及历史事故中发生的最严重认知后果等级。
+      </p>
+      <p>
+        CPGF的C3和C4级（对应SCP-1425类高传播率异常）要求在任何接触或相关研究场景中
+        强制部署双重认知屏蔽，并在接触后72小时内进行神经认知监测。
+        我们建议基金会收容协议修订委员会参考CPGF框架，
+        对现有信息型异常的收容规程进行系统性重新评估。
+      </p>
+
+      <h2>5. 结论</h2>
+      <p>
+        本综述系统梳理了2019–2025年间认知渗透机制研究的主要进展，
+        提供了迄今最全面的信息型异常危害机制证据体系。核心发现包括：
+      </p>
+      <ul>
+        <li>NPI与认知渗透易感性存在强效应量正相关（g=0.78）；</li>
+        <li>SCP-1425类异常的二次传播率显著高于其他信息型异常；</li>
+        <li>联合防护方案有效率已达81.3%，较早期有显著提升；</li>
+        <li>提出CPGF五级防护框架，为收容协议优化提供循证基础。</li>
+      </ul>
+      <p>
+        当前研究空白主要在于：长期接触低剂量认知渗透的累积效应、
+        不同文化背景个体的NPI差异，以及主动认知免疫诱导的可行性。
+        这些领域的研究将是下一阶段工作的重点。
+      </p>
+
+      <h2>利益冲突声明</h2>
+      <p>所有作者声明与本研究不存在任何利益冲突。Dr. Gears作为认知危害研究领域的奠基人之一，
+        其早期工作被本综述引用，但这不影响综述的客观性；相关情况已向编辑部完整披露。</p>
+
+      <h2>致谢</h2>
+      <p>感谢基金会内部档案管理部门对高级别文献访问的授权支持。
+        感谢参与原始研究的所有D级人员及其家属（部分已纳入基金会荣誉档案）。
+        本综述受SCP异常科学研究院认知科学专项研究基金（编号：CARF-2025-011）资助。</p>
+
+      <div class="references-section">
+        <h2>参考文献</h2>
+        <ol class="ref-list">
+          <li>陈晓琳, Gears M.F. (2019). Cognitohazardous anomalies: A classification framework. <em>JSAS</em>, 1(1), 1–22. DOI: 10.21950/JSAS.2019.001</li>
+          <li>伊藤千夏, Wright E.H. (2020). Neuroplasticity as a risk factor in informational anomaly exposure. <em>JSAS</em>, 1(3), 78–102.</li>
+          <li>Gears M.F. (2021). Cognitive resonance propagation theory: Mathematical foundations. <em>JSAS</em>, 2(1), 3–28.</li>
+          <li>Kumar P., Chen X. (2022). Secondary transmission rates of SCP-1425-class anomalies: A 3-year cohort study. <em>JSAS</em>, 2(2), 44–67.</li>
+          <li>张远航, 石原莉子 (2023). Comparative efficacy of Class-A and Class-B amnestic agents against cognitohazardous exposure. <em>JSAS</em>, 2(3), 19–38.</li>
+          <li>Bright J.D., Clef A. (2024). Cognitive firewall: Neural stimulation protocols for cognitohazard pre-exposure prophylaxis. <em>JSAS</em>, 2(4), 55–78.</li>
+          <li>SCP基金会内部档案 (2025). 认知渗透事件登记数据库（2019–2025，287条记录）. 档案编号：COG-███. [4级及以上访问权限]</li>
+          <li>Moher D., Liberati A., Tetzlaff J., Altman D.G. (2009). Preferred reporting items for systematic reviews and meta-analyses: The PRISMA statement. <em>PLoS Medicine</em>, 6(7), e1000097.</li>
+        </ol>
+      </div>
+
+    </div>
+
+    <div class="article-actions">
+      <a class="btn-back" href="../articles.html">← 返回文章列表</a>
+      <button class="btn-pdf" onclick="window.print()">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        下载 PDF
+      </button>
+    </div>
+
+  </article>
+
+  <div class="doc-footer-strip">
+    SCP 异常科学研究院 · JOURNAL OF SCP ANOMALOUS SCIENCES · DOI: 10.21950/JSAS.2026.002 · 保密文件
+  </div>
+
+</div>
+
+<div class="indexed-bar">
+  <div class="container">
+    <span class="indexed-label">收录数据库 / Indexed in:</span>
+    <div class="indexed-logos">
+      <span class="indexed-db">CrossRef</span>
+      <span class="indexed-db">Google Scholar</span>
+      <span class="indexed-db">DOAJ <small>(申请中)</small></span>
+      <span class="indexed-db">CNKI <small>(申请中)</small></span>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <div class="footer-brand">SCP异常科学学报</div>
+        <p>Journal of SCP Anomalous Sciences (JSAS) 由SCP异常科学研究院主办，致力于在严格的同行评审框架下推动异常科学领域的学术交流与知识积累。</p>
+      </div>
+      <div class="footer-col">
+        <h4>导航</h4>
+        <ul>
+          <li><a href="../index.html">首页</a></li>
+          <li><a href="../articles.html">文章</a></li>
+          <li><a href="../about.html">关于期刊</a></li>
+          <li><a href="../submit.html">投稿指南</a></li>
+          <li><a href="../contact.html">联系我们</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>服务</h4>
+        <ul>
+          <li><a href="../submit.html">在线投稿</a></li>
+          <li><a href="../about.html#board">编委会</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>
+        <span class="issn-badge">ISSN 2XXX-XXXX</span>
+        <span>&copy; 2024–2026 SCP异常科学研究院. 保留所有权利.</span>
+      </div>
+      <div><a href="../contact.html">联系</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/i18n.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

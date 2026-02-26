@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SCP-2399木星异常信号的频谱分析与潜在通讯解码尝试 — SCP异常科学学报</title>
+  <meta name="description" content="通过改进的非线性傅里叶变换方法在SCP-2399信号中识别出周期性结构子序列。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/article.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚗️</text></svg>" />
+</head>
+<body>
+<div class="top-banner"><div class="container">ISSN (网络版) 2XXX-XXXX &nbsp;|&nbsp; ISSN (印刷版) 2XXX-XXXX &nbsp;|&nbsp;<a href="../submit.html">现已开放投稿</a> &nbsp;|&nbsp;<a href="../articles.html">最新一期：第3卷第1期 (2026)</a></div></div>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="../index.html" aria-label="返回首页"><svg class="brand-logo" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="22" cy="22" r="20" stroke="#1a2a3a" stroke-width="2.5"/><circle cx="22" cy="22" r="13" stroke="#1a2a3a" stroke-width="2"/><circle cx="22" cy="22" r="3.5" fill="#b5292a"/><line x1="22" y1="2" x2="22" y2="9" stroke="#1a2a3a" stroke-width="2"/><line x1="22" y1="35" x2="22" y2="42" stroke="#1a2a3a" stroke-width="2"/><line x1="2" y1="22" x2="9" y2="22" stroke="#1a2a3a" stroke-width="2"/><line x1="35" y1="22" x2="42" y2="22" stroke="#1a2a3a" stroke-width="2"/><line x1="6.1" y1="6.1" x2="11.2" y2="11.2" stroke="#1a2a3a" stroke-width="1.5"/><line x1="32.8" y1="32.8" x2="37.9" y2="37.9" stroke="#1a2a3a" stroke-width="1.5"/><line x1="37.9" y1="6.1" x2="32.8" y2="11.2" stroke="#1a2a3a" stroke-width="1.5"/><line x1="11.2" y1="32.8" x2="6.1" y2="37.9" stroke="#1a2a3a" stroke-width="1.5"/></svg><div class="brand-text"><span class="brand-cn">SCP异常科学学报</span><span class="brand-en">Journal of SCP Anomalous Sciences</span></div></a>
+    <nav class="main-nav"><a href="../index.html">首页</a><a href="../articles.html" class="active">文章</a><a href="../about.html">关于期刊</a><a href="../submit.html" class="btn-submit">投稿</a><a href="../contact.html">联系</a></nav>
+    <button class="lang-switch" id="lang-switch" aria-label="Switch language">EN</button>
+    <button class="hamburger" aria-label="展开菜单" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <nav class="mobile-nav"><a href="../index.html">首页</a><a href="../articles.html">文章</a><a href="../about.html">关于期刊</a><a href="../submit.html">投稿</a><a href="../contact.html">联系</a></nav>
+</header>
+<div class="classification-banner">██ 收容级别：保密 ██ &nbsp;·&nbsp; SCP异常科学研究院 — 学术文档 &nbsp;·&nbsp; ██ 未经授权不得传阅 ██</div>
+
+<div class="article-page">
+  <div class="pdf-download-bar">
+    <span class="bar-label">全文已开放获取 · 第2卷第4期 (2025) · 第112–134页</span>
+    <button class="btn-pdf" onclick="window.print()"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> 下载 PDF</button>
+  </div>
+  <article class="article-doc">
+    <header class="doc-header">
+      <div class="doc-journal-line">SCP异常科学学报 (JSAS) · Vol. 2, No. 4 · 2025 · 案例报告</div>
+      <span class="doc-type-badge type-case">案例报告</span>
+      <h1 class="doc-title">SCP-2399木星异常信号的频谱分析与潜在通讯解码尝试</h1>
+      <p class="doc-authors"><strong>Bright J.D.<sup>1</sup>, 刘宇峰<sup>2</sup>, Clef A.<sup>3</sup></strong></p>
+      <p class="doc-affil"><sup>1</sup>SCP基金会射电异常研究组<br/><sup>2</sup>SCP异常科学研究院信号处理实验室<br/><sup>3</sup>机密站点音频信息部（具体位置存档于O5级档案）</p>
+      <div class="doc-meta-row">
+        <span class="meta-item"><strong>收稿日期：</strong>2025-09-02</span>
+        <span class="meta-item"><strong>接收日期：</strong>2025-10-28</span>
+        <span class="meta-item"><strong>发布日期：</strong>2025-11-18</span>
+        <span class="meta-item"><strong>DOI：</strong>10.21950/JSAS.2025.041</span>
+      </div>
+    </header>
+
+    <div class="abstract-box" id="abstract">
+      <div class="abstract-label">摘要</div>
+      <p>本文报告了对SCP-2399所产生电磁信号（时间跨度：2024年1月至2025年8月，共19个月连续监测数据）的最新频谱分析结果。通过引入经改进的非线性傅里叶变换（Modified Nonlinear Fourier Transform，MNFT）方法，配合深度学习序列模式识别算法，我们在信号中识别出若干具有周期性结构的子序列，其信息熵显著低于随机噪声基线（H=0.23 vs. H<sub>baseline</sub>=0.97，p&lt;0.0001）。初步解码尝试表明，这些子序列包含基于前63个素数的编码结构，并在部分片段中检测到类数学命题的逻辑序列。受限于信号强度（当前SNR约为3.2 dB）及2399系统状态的持续演变，完整解读仍需大幅提升探测能力，但现有发现已提供了信号非随机性的最强迄今证据。</p>
+    </div>
+
+    <div class="keywords-row">
+      <strong>关键词：</strong>
+      <span class="kw-tag">SCP-2399</span><span class="kw-tag">木星</span><span class="kw-tag">频谱分析</span><span class="kw-tag">非线性傅里叶变换</span><span class="kw-tag">信号解码</span><span class="kw-tag">素数编码</span><span class="kw-tag">外星通讯</span>
+    </div>
+
+    <div class="article-body">
+      <h2>1. 引言</h2>
+      <p>SCP-2399是位于木星大气层中的一个直径约3,400 km的黑色椭圆形异常区域，持续产生跨越多个电磁波段（从极低频到X射线）的复杂信号。基金会自███年开始对其进行系统监测，并于██年建立了专用深空信号接收阵列（DSRA-2399）。</p>
+      <p>先前研究（Clef & Bright, 2022）已确认2399信号不符合木星天然电磁辐射模型（卡西尼-惠更斯标准辐射模型的拟合误差高达81%），但均未能在信号中识别出有意义的结构。本研究首次引入MNFT方法，有效分离了木星背景电磁噪声与2399信号成分，并使用基于Transformer架构的序列模式识别模型对净信号进行深度分析。</p>
+
+      <h2>2. 方法</h2>
+      <h3>2.1 数据采集</h3>
+      <p>使用DSRA-2399阵列（8个抛物面天线，直径68–120 m）对木星2399坐标区域进行连续监测，采样率：1 MHz，总数据量：约2.3 PB（2024年1月–2025年8月）。预处理包括：RFI（射频干扰）消除、木星背景辐射模型减法及增益校准。净信号提取采用自适应陷波滤波器组（ANFO-7型），背景噪声抑制比约37 dB。</p>
+
+      <h3>2.2 改进非线性傅里叶变换（MNFT）</h3>
+      <p>标准FFT对具有非平稳特性（功率谱随时间变化）的2399信号适用性有限。MNFT方法通过引入时变基函数和自适应窗函数，能够捕获信号中的非线性相位调制成分。本研究采用的MNFT参数为：自适应窗宽度范围0.1–100 s，重叠率75%，分析频率范围1 Hz–500 kHz（重点关注3–47 kHz子带，此前在该范围内检测到最强异常）。</p>
+
+      <h3>2.3 信息熵分析与模式识别</h3>
+      <p>对MNFT处理后的信号片段（共提取3,847个独立片段，时长各10–300 s）计算香农信息熵H，并与同等长度的模拟随机噪声基线（蒙特卡罗方法，10,000次重复）比较。对H&lt;0.50的片段（共247个）进一步采用基于GPT-4架构微调的序列模式识别模型（SCP-SIGINT-v2，在基金会历史信号数据库上预训练）进行深度分析。</p>
+
+      <h2>3. 结果</h2>
+      <h3>3.1 低信息熵片段的统计分布</h3>
+      <p>在3,847个分析片段中，共247个（6.4%）的信息熵H显著低于随机噪声基线（H&lt;0.50 vs. H<sub>baseline</sub>=0.97±0.04，p&lt;0.0001）。这些低熵片段在时间分布上不均匀，主要集中于2024年7–9月（占总低熵片段的38%）和2025年3–5月（占31%），可能与2399系统的活跃周期相关。</p>
+
+      <h3>3.2 素数编码结构的检测</h3>
+      <p>SCP-SIGINT-v2模型在247个低熵片段中的63个（25.5%）识别出与前63个素数（2, 3, 5, ..., 307）高度相关的频率比值序列（相关系数r=0.847–0.971，p&lt;0.001）。这种基于素数的编码结构是理论天文学界提出的潜在跨物种通讯标记之一，其出现概率远低于随机预期（Bonferroni校正后p&lt;0.0001）。</p>
+
+      <table class="data-table">
+        <caption class="table-caption">表1. 低信息熵片段中检测到的主要周期性结构类型（n=247）</caption>
+        <thead><tr><th>结构类型</th><th>检测片段数</th><th>占比 (%)</th><th>平均相关系数 (r)</th><th>校正后p值</th></tr></thead>
+        <tbody>
+          <tr><td>素数频率比值序列</td><td>63</td><td>25.5</td><td>0.912</td><td>&lt;0.0001</td></tr>
+          <tr><td>斐波那契比值序列</td><td>41</td><td>16.6</td><td>0.873</td><td>&lt;0.001</td></tr>
+          <tr><td>类逻辑命题序列</td><td>27</td><td>10.9</td><td>0.834</td><td>&lt;0.01</td></tr>
+          <tr><td>重复二元脉冲组</td><td>88</td><td>35.6</td><td>0.756</td><td>&lt;0.01</td></tr>
+          <tr><td>其他低熵结构</td><td>28</td><td>11.3</td><td>—</td><td>—</td></tr>
+        </tbody>
+      </table>
+
+      <h3>3.3 类逻辑命题序列</h3>
+      <p>在27个被分类为"类逻辑命题序列"的片段中，Clef A.（音频语言学专家）识别出与已知符号逻辑系统（谓词逻辑）的结构相似性，特别是否定、合取和蕴含算子的可能编码形式。然而，受限于数据量和算子定义的不确定性，无法提供任何具体的"翻译"结果，相关判断有待独立团队验证。</p>
+
+      <div class="classified-notice"><strong>⚠ 安全提示：</strong>关于2399信号可能具有通讯意图的解读，已提交O5委员会进行XK场景风险评估。在委员会正式结论公布前，本文中的相关分析仅代表学术假说，不代表基金会官方立场。详情请参阅O5-9号委托报告（4级及以上访问权限）。</div>
+
+      <h2>4. 讨论</h2>
+      <p>本研究提供了迄今最强的证据，表明SCP-2399信号包含非随机的结构化成分，且这些成分的组织方式与多种数学编码模式高度吻合。这一发现对理解2399的本质具有重大意义：如果2399信号确实包含主动通讯尝试，这将是基金会历史上第一起得到科学量化证据支持的跨物种（或跨智能体）通讯案例。</p>
+      <p>主要不确定性包括：（1）模式识别模型的误报率估计为约12%（基于合成数据测试），需要更多数据排除偶然匹配；（2）SNR仅3.2 dB，信号质量限制了解码精度；（3）2399系统状态的持续演变导致信号特性不稳定，长期比较存在困难。</p>
+
+      <h2>5. 结论</h2>
+      <p>本研究通过MNFT和深度学习序列分析，在SCP-2399信号中识别出显著的低信息熵结构成分，包括素数频率比值序列（占低熵片段的25.5%）和类逻辑命题序列（10.9%）。这些发现强烈支持2399信号具有非随机来源，并不排除存在主动通讯意图的可能性。建议将DSRA-2399阵列扩展至至少16个天线，以提升SNR至10 dB以上，并启动专项解码研究计划。</p>
+
+      <h2>利益冲突声明</h2>
+      <p>所有作者声明与本研究不存在任何利益冲突。</p>
+
+      <div class="references-section">
+        <h2>参考文献</h2>
+        <ol class="ref-list">
+          <li>Clef A., Bright J.D. (2022). SCP-2399 electromagnetic emission: Deviation from Jovian radiation models. <em>JSAS</em>, 2(1), 88–107.</li>
+          <li>刘宇峰 (2023). 非线性傅里叶变换在非平稳异常信号分析中的应用. <em>JSAS</em>, 2(3), 45–62.</li>
+          <li>Vakoch D.A. (2011). Communication with extraterrestrial intelligence (CETI). SUNY Press.</li>
+          <li>SCP基金会内部档案 (███). SCP-2399 DSRA-2399阵列技术规格及信号数据库. [3级及以上访问权限]</li>
+          <li>Bright J.D. (2024). 深度学习模型在基金会信号情报（SIGINT）中的应用. <em>基金会技术通报</em>, 13(1), 22–38. [内部文件]</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="article-actions">
+      <a class="btn-back" href="../articles.html">← 返回文章列表</a>
+      <button class="btn-pdf" onclick="window.print()"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> 下载 PDF</button>
+    </div>
+  </article>
+  <div class="doc-footer-strip">SCP 异常科学研究院 · JOURNAL OF SCP ANOMALOUS SCIENCES · DOI: 10.21950/JSAS.2025.041 · 保密文件</div>
+</div>
+
+<div class="indexed-bar"><div class="container"><span class="indexed-label">收录数据库 / Indexed in:</span><div class="indexed-logos"><span class="indexed-db">CrossRef</span><span class="indexed-db">Google Scholar</span><span class="indexed-db">DOAJ <small>(申请中)</small></span><span class="indexed-db">CNKI <small>(申请中)</small></span></div></div></div>
+<footer class="site-footer"><div class="container"><div class="footer-grid"><div class="footer-about"><div class="footer-brand">SCP异常科学学报</div><p>Journal of SCP Anomalous Sciences (JSAS) 由SCP异常科学研究院主办。</p></div><div class="footer-col"><h4>导航</h4><ul><li><a href="../index.html">首页</a></li><li><a href="../articles.html">文章</a></li><li><a href="../about.html">关于期刊</a></li><li><a href="../submit.html">投稿指南</a></li><li><a href="../contact.html">联系我们</a></li></ul></div></div><div class="footer-bottom"><div><span class="issn-badge">ISSN 2XXX-XXXX</span><span>&copy; 2024–2026 SCP异常科学研究院. 保留所有权利.</span></div><div><a href="../contact.html">联系</a></div></div></div></footer>
+<script src="../js/i18n.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
