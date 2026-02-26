@@ -87,7 +87,7 @@
     var t = translations[lang] || translations.zh;
     document.querySelectorAll("[data-i18n]").forEach(function (el) {
       var key = el.getAttribute("data-i18n");
-      if (t[key] !== undefined) el.innerHTML = t[key];
+      if (t[key] !== undefined) el.textContent = t[key];
     });
     document.querySelectorAll("[data-i18n-placeholder]").forEach(function (el) {
       var key = el.getAttribute("data-i18n-placeholder");
