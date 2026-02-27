@@ -169,7 +169,7 @@
       "submit.form.safety": "安全审批编号（Keter及以上须填写）",
       "submit.form.safety.ph": "O5委员会审批编号",
       "submit.form.coi": "利益冲突声明 *",
-      "submit.form.coi.ph": "如无利益冲突，请填写"本研究无利益冲突"",
+      "submit.form.coi.ph": "如无利益冲突，请填写「本研究无利益冲突」",
       "submit.form.file": "上传稿件文件 * （.docx / .tex，≤20MB）",
       "contact.card.office": "编辑部信息",
       "contact.card.contact": "联系方式",
@@ -194,7 +194,29 @@
       "privacy.desc": "SCP基金会异常科学学报 — 用户数据保护与隐私声明",
       "terms.breadcrumb": "使用条款",
       "terms.title": "使用条款",
-      "terms.desc": "SCP基金会异常科学学报 — 网站使用条款与法律声明"
+      "terms.desc": "SCP基金会异常科学学报 — 网站使用条款与法律声明",
+      "article.download.pdf": "下载 PDF",
+      "article.access.open": "全文已开放获取",
+      "article.abstract.label": "摘要",
+      "article.keywords.label": "关键词：",
+      "article.meta.received": "收稿日期：",
+      "article.meta.revised": "修回日期：",
+      "article.meta.accepted": "接收日期：",
+      "article.meta.published": "发布日期：",
+      "article.back.list": "← 返回文章列表",
+      "article.classification": "██ 收容级别：保密 ██ · SCP异常科学研究院 — 学术文档 · ██ 未经授权不得传阅 ██",
+      "article.abstract.link": "摘要",
+      "article.pdf.link": "PDF ↓",
+      "security.badge": "绝密",
+      "security.bar.text": "██ 4级权限文件 · LEVEL 4 CLEARANCE REQUIRED · 未经授权访问将受到追责 ██",
+      "brand.name": "SCP异常科学学报",
+      "aria.back_home": "返回首页",
+      "aria.main_nav": "主导航",
+      "aria.mobile_nav": "移动导航",
+      "aria.menu_expand": "展开菜单",
+      "vol.issue.1.1": "第1期 · 2026年2月",
+      "vol.issue.2.4": "第4期 · 2025年11月",
+      "vol.issue.2.3": "第3期 · 2025年8月"
     },
     en: {
       "nav.home": "Home",
@@ -383,7 +405,29 @@
       "privacy.desc": "Journal of SCP Anomalous Sciences — User Data Protection & Privacy Statement",
       "terms.breadcrumb": "Terms of Use",
       "terms.title": "Terms of Use",
-      "terms.desc": "Journal of SCP Anomalous Sciences — Terms of Use & Legal Notices"
+      "terms.desc": "Journal of SCP Anomalous Sciences — Terms of Use & Legal Notices",
+      "article.download.pdf": "Download PDF",
+      "article.access.open": "Open Access",
+      "article.abstract.label": "Abstract",
+      "article.keywords.label": "Keywords:",
+      "article.meta.received": "Received:",
+      "article.meta.revised": "Revised:",
+      "article.meta.accepted": "Accepted:",
+      "article.meta.published": "Published:",
+      "article.back.list": "← Back to Articles",
+      "article.classification": "██ CONTAINMENT CLASS: CLASSIFIED ██ · JSAS Academic Document · ██ RESTRICTED DISTRIBUTION ██",
+      "article.abstract.link": "Abstract",
+      "article.pdf.link": "PDF ↓",
+      "security.badge": "TOP SECRET",
+      "security.bar.text": "██ LEVEL 4 CLEARANCE REQUIRED · UNAUTHORIZED ACCESS PROHIBITED ██",
+      "brand.name": "Journal of SCP Anomalous Sciences",
+      "aria.back_home": "Back to Home",
+      "aria.main_nav": "Main navigation",
+      "aria.mobile_nav": "Mobile navigation",
+      "aria.menu_expand": "Expand menu",
+      "vol.issue.1.1": "Issue 1 · February 2026",
+      "vol.issue.2.4": "Issue 4 · November 2025",
+      "vol.issue.2.3": "Issue 3 · August 2025"
     },
     "zh-TW": {
       "nav.home": "首頁",
@@ -572,7 +616,29 @@
       "privacy.desc": "SCP基金會異常科學學報 — 用戶資料保護與隱私聲明",
       "terms.breadcrumb": "使用條款",
       "terms.title": "使用條款",
-      "terms.desc": "SCP基金會異常科學學報 — 網站使用條款與法律聲明"
+      "terms.desc": "SCP基金會異常科學學報 — 網站使用條款與法律聲明",
+      "article.download.pdf": "下載 PDF",
+      "article.access.open": "全文已開放獲取",
+      "article.abstract.label": "摘要",
+      "article.keywords.label": "關鍵詞：",
+      "article.meta.received": "收稿日期：",
+      "article.meta.revised": "修回日期：",
+      "article.meta.accepted": "接收日期：",
+      "article.meta.published": "發布日期：",
+      "article.back.list": "← 返回文章列表",
+      "article.classification": "██ 收容級別：保密 ██ · SCP異常科學研究院 — 學術文檔 · ██ 未經授權不得傳閱 ██",
+      "article.abstract.link": "摘要",
+      "article.pdf.link": "PDF ↓",
+      "security.badge": "機密",
+      "security.bar.text": "██ 4級權限文件 · LEVEL 4 CLEARANCE REQUIRED · 未經授權訪問將受到追責 ██",
+      "brand.name": "SCP異常科學學報",
+      "aria.back_home": "返回首頁",
+      "aria.main_nav": "主導航",
+      "aria.mobile_nav": "移動導航",
+      "aria.menu_expand": "展開選單",
+      "vol.issue.1.1": "第1期 · 2026年2月",
+      "vol.issue.2.4": "第4期 · 2025年11月",
+      "vol.issue.2.3": "第3期 · 2025年8月"
     }
   };
 
@@ -598,6 +664,9 @@
     document.querySelectorAll("[data-lang]").forEach(function (el) {
       el.style.display = (el.getAttribute("data-lang") === lang) ? "" : "none";
     });
+    /* Update page title if data-i18n-title attribute is set on html element */
+    var titleKey = document.documentElement.getAttribute("data-i18n-title");
+    if (titleKey && t[titleKey]) document.title = t[titleKey];
     /* Set html lang attribute */
     if (lang === "en") {
       document.documentElement.lang = "en";
