@@ -272,3 +272,61 @@
     revealEls.forEach(function(el) { revealObs.observe(el); });
   }
 })();
+
+/* ── Hume Level real-time dynamic status bar ── */
+(function () {
+  "use strict";
+  var fill      = document.getElementById("hume-fill");
+  var valueEl   = document.getElementById("hume-value");
+  var statusEl  = document.getElementById("hume-status");
+  var tsEl      = document.getElementById("hume-ts");
+  if (!fill || !valueEl) return;
+
+  /* Baseline Hume Level: standard reality ~113.7 */
+  var baseHume = 113.7;
+  var current  = baseHume;
+
+  function pad(n) { return n < 10 ? "0" + n : "" + n; }
+
+  function updateTimestamp() {
+    var now = new Date();
+    return now.getFullYear() + "-" + pad(now.getMonth() + 1) + "-" + pad(now.getDate()) +
+           " " + pad(now.getHours()) + ":" + pad(now.getMinutes()) + ":" + pad(now.getSeconds()) +
+           " (站点时间)";
+  }
+
+  function getStatus(val) {
+    if (val >= 100) return { label: "STABLE · 稳定", cls: "stable" };
+    if (val >= 60)  return { label: "CAUTION · 注意", cls: "caution" };
+    return            { label: "CRITICAL · 危急", cls: "critical" };
+  }
+
+  function updateHume() {
+    /* Random walk ±0.6 per tick, biased toward baseline */
+    var drift = (baseHume - current) * 0.04;
+    current += drift + (Math.random() - 0.5) * 1.2;
+    /* Clamp to sensible range */
+    current = Math.max(20, Math.min(150, current));
+
+    var pct = Math.min(100, (current / 150) * 100);
+    fill.style.width = pct.toFixed(1) + "%";
+
+    /* Color of fill based on value */
+    if (current >= 100) {
+      fill.style.background = "linear-gradient(90deg, #1a7a1a, #7adb7a)";
+    } else if (current >= 60) {
+      fill.style.background = "linear-gradient(90deg, #7a6000, #f0c040)";
+    } else {
+      fill.style.background = "linear-gradient(90deg, #7a0000, #ff6060)";
+    }
+
+    valueEl.textContent = current.toFixed(1);
+    var s = getStatus(current);
+    statusEl.textContent = s.label;
+    statusEl.className   = "hume-status " + s.cls;
+    if (tsEl) tsEl.textContent = updateTimestamp();
+  }
+
+  updateHume();
+  setInterval(updateHume, 3000);
+})();
