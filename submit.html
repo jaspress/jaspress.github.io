@@ -16,7 +16,7 @@
 <!-- TOP BANNER -->
 <div class="top-banner">
   <div class="container">
-    ISSN (网络版) 2XXX-XXXX &nbsp;|&nbsp; ISSN (印刷版) 2XXX-XXXX &nbsp;|&nbsp;
+    <span data-i18n="banner.issn">ISSN (网络版) 2XXX-XXXX &nbsp;|&nbsp; ISSN (印刷版) 2XXX-XXXX</span> &nbsp;|&nbsp;
     <a href="submit.html" data-i18n="banner.submit">现已开放投稿</a> &nbsp;|&nbsp;
     <a href="articles.html" data-i18n="banner.latest">最新一期：第3卷第1期 (2026)</a>
   </div>
@@ -82,7 +82,8 @@
     <div>
       <!-- Article Types -->
       <div class="content-card">
-        <h2>可接受的文章类型</h2>
+        <h2 data-i18n="submit.section.types">可接受的文章类型</h2>
+        <div data-lang="zh">
         <ul>
           <li><strong>研究论文（Original Research）：</strong>报告原创实验或理论研究结果，无字数上限，但建议不超过8,000字（不含参考文献）。</li>
           <li><strong>综述文章（Review Article）：</strong>系统综述某一研究方向的最新进展，建议10,000字以内。须经编委会邀约或预先沟通。</li>
@@ -91,21 +92,61 @@
           <li><strong>方法学报告（Methods）：</strong>描述新颖的研究方法或实验技术，3,000–6,000字。</li>
           <li><strong>评述（Commentary）：</strong>对已发表文章或领域热点的学术评论，限2,500字。</li>
         </ul>
+        </div>
+        <div data-lang="en" style="display:none">
+        <ul>
+          <li><strong>Original Research:</strong> Reports of original experimental or theoretical research. No strict word limit, but ≤8,000 words (excluding references) recommended.</li>
+          <li><strong>Review Article:</strong> Systematic review of recent advances in a research area. ≤10,000 words. Must be invited or pre-approved by the Editorial Board.</li>
+          <li><strong>Case Report:</strong> Detailed description and scientific analysis of a specific SCP anomaly. 3,000–5,000 words.</li>
+          <li><strong>Research Letter:</strong> Preliminary but significant findings. ≤2,000 words; 1–2 figures/tables.</li>
+          <li><strong>Methods Article:</strong> Describes novel research methods or experimental techniques. 3,000–6,000 words.</li>
+          <li><strong>Commentary:</strong> Academic commentary on published articles or current debates. ≤2,500 words.</li>
+        </ul>
+        </div>
+        <div data-lang="zh-TW" style="display:none">
+        <ul>
+          <li><strong>研究論文（Original Research）：</strong>報告原創實驗或理論研究結果，無字數上限，但建議不超過8,000字（不含參考文獻）。</li>
+          <li><strong>綜述文章（Review Article）：</strong>系統綜述某一研究方向的最新進展，建議10,000字以內。須經編委會邀約或預先溝通。</li>
+          <li><strong>案例報告（Case Report）：</strong>針對特定SCP異常的詳細描述與科學分析，建議3,000–5,000字。</li>
+          <li><strong>研究快報（Letter）：</strong>報告初步但具有重要價值的發現，限2,000字以內，1–2幅圖/表。</li>
+          <li><strong>方法學報告（Methods）：</strong>描述新穎的研究方法或實驗技術，3,000–6,000字。</li>
+          <li><strong>評述（Commentary）：</strong>對已發表文章或領域熱點的學術評論，限2,500字。</li>
+        </ul>
+        </div>
       </div>
 
       <!-- Format Requirements -->
       <div class="content-card">
-        <h2>格式要求</h2>
+        <h2 data-i18n="submit.section.format">格式要求</h2>
 
-        <h3>基本格式</h3>
+        <h3 data-i18n="submit.section.format.basic">基本格式</h3>
+        <div data-lang="zh">
         <ul>
           <li>语言：中文（需附400字以内英文扩展摘要）</li>
           <li>字体：正文宋体（中文）/ Times New Roman（英文）12pt，行距1.5倍</li>
           <li>文件格式：.docx（Word 2016及以上）或 .tex（LaTeX，附模板）</li>
           <li>图片分辨率：≥300 DPI（TIFF或EPS格式）</li>
         </ul>
+        </div>
+        <div data-lang="en" style="display:none">
+        <ul>
+          <li>Language: Chinese (with English extended abstract ≤400 words required)</li>
+          <li>Font: Body text in Song (Chinese) / Times New Roman (English), 12pt, 1.5 line spacing</li>
+          <li>File format: .docx (Word 2016 or later) or .tex (LaTeX, template provided)</li>
+          <li>Image resolution: ≥300 DPI (TIFF or EPS format)</li>
+        </ul>
+        </div>
+        <div data-lang="zh-TW" style="display:none">
+        <ul>
+          <li>語言：中文（需附400字以內英文擴展摘要）</li>
+          <li>字體：正文宋體（中文）/ Times New Roman（英文）12pt，行距1.5倍</li>
+          <li>文件格式：.docx（Word 2016及以上）或 .tex（LaTeX，附模板）</li>
+          <li>圖片解析度：≥300 DPI（TIFF或EPS格式）</li>
+        </ul>
+        </div>
 
-        <h3>稿件结构（研究论文）</h3>
+        <h3 data-i18n="submit.section.format.structure">稿件结构（研究论文）</h3>
+        <div data-lang="zh">
         <ol>
           <li>题目（中英文）</li>
           <li>作者信息（姓名、单位、联系邮箱；首作者与通讯作者须标注；需脱敏编号，不含真实身份信息）</li>
@@ -119,119 +160,172 @@
           <li>利益冲突声明</li>
           <li>参考文献（GB/T 7714–2015格式）</li>
         </ol>
+        </div>
+        <div data-lang="en" style="display:none">
+        <ol>
+          <li>Title (Chinese and English)</li>
+          <li>Author information (name, affiliation, contact email; corresponding author must be indicated; anonymized IDs required, no real identity information)</li>
+          <li>Abstract (Chinese ≤400 characters; English Abstract ≤250 words)</li>
+          <li>Keywords (3–8, bilingual)</li>
+          <li>Introduction</li>
+          <li>Materials &amp; Methods (including anomaly class and safety level description)</li>
+          <li>Results</li>
+          <li>Discussion</li>
+          <li>Conclusion</li>
+          <li>Conflict of Interest Statement</li>
+          <li>References (format: GB/T 7714–2015 or APA)</li>
+        </ol>
+        </div>
+        <div data-lang="zh-TW" style="display:none">
+        <ol>
+          <li>題目（中英文）</li>
+          <li>作者資訊（姓名、單位、聯絡郵箱；首作者與通訊作者須標注；需脫敏編號，不含真實身份資訊）</li>
+          <li>摘要（中文400字以內；英文Abstract 250詞以內）</li>
+          <li>關鍵詞（3–8個，中英文對照）</li>
+          <li>引言</li>
+          <li>材料與方法（含異常等級與安全等級說明）</li>
+          <li>結果</li>
+          <li>討論</li>
+          <li>結論</li>
+          <li>利益衝突聲明</li>
+          <li>參考文獻（GB/T 7714–2015格式）</li>
+        </ol>
+        </div>
 
-        <h3>参考文献示例</h3>
+        <h3 data-i18n="submit.section.format.refs">参考文献示例</h3>
+        <div data-lang="zh">
         <p style="font-size:.85rem; background:var(--bg); padding:10px 14px; border-radius:var(--radius); font-family:monospace; line-height:1.8;">
           [1] 张远航, 李明哲. SCP-682再生机制的量子纠缠假说[J]. SCP异常科学学报, 2026, 3(1): 1-18.<br/>
           [2] Gears M F. Containment-grade materials: a review[J]. J SCP Anomalous Sci, 2025, 2(3): 22-46.
         </p>
+        </div>
+        <div data-lang="en" style="display:none">
+        <p style="font-size:.85rem; background:var(--bg); padding:10px 14px; border-radius:var(--radius); font-family:monospace; line-height:1.8;">
+          [1] Zhang Y., Li M. Quantum entanglement hypothesis for SCP-682 regeneration[J]. JSAS, 2026, 3(1): 1-18.<br/>
+          [2] Gears M F. Containment-grade materials: a review[J]. J SCP Anomalous Sci, 2025, 2(3): 22-46.
+        </p>
+        </div>
+        <div data-lang="zh-TW" style="display:none">
+        <p style="font-size:.85rem; background:var(--bg); padding:10px 14px; border-radius:var(--radius); font-family:monospace; line-height:1.8;">
+          [1] 張遠航, 李明哲. SCP-682再生機制的量子糾纏假說[J]. SCP異常科學學報, 2026, 3(1): 1-18.<br/>
+          [2] Gears M F. Containment-grade materials: a review[J]. J SCP Anomalous Sci, 2025, 2(3): 22-46.
+        </p>
+        </div>
 
-        <div class="notice">
+        <div class="notice" data-lang="zh">
           <strong>⚠️ 安全提示：</strong>投稿中严禁包含任何可能导致信息危害的直接引述或图像。
           涉及Keter及以上级异常的研究，须在投稿系统中提交O5委员会审批编号。
+        </div>
+        <div class="notice" data-lang="en" style="display:none">
+          <strong>⚠️ Safety Notice:</strong> Submissions must not contain any direct quotations or images that may cause infohazardous effects. Research involving Keter-class or higher anomalies must include an O5 Council approval number at submission.
+        </div>
+        <div class="notice" data-lang="zh-TW" style="display:none">
+          <strong>⚠️ 安全提示：</strong>投稿中嚴禁包含任何可能導致資訊危害的直接引述或圖像。涉及Keter及以上級異常的研究，須在投稿系統中提交O5委員會審批編號。
         </div>
       </div>
 
       <!-- Submission Process -->
       <div class="content-card">
-        <h2>投稿流程</h2>
+        <h2 data-i18n="submit.section.process">投稿流程</h2>
+        <div data-lang="zh">
         <ol class="step-list">
-          <li>
-            <strong>注册账号</strong><br/>
-            通过本院内部认证系统完成账号注册，需提供有效的研究院工号或合作机构证明。
-          </li>
-          <li>
-            <strong>准备稿件</strong><br/>
-            按照上述格式要求准备稿件，确保作者身份信息已做匿名化处理，以满足双盲评审要求。
-          </li>
-          <li>
-            <strong>伦理与安全审查</strong><br/>
-            确认稿件已通过所在单位伦理委员会审批（涉及D级人员实验须提供知情同意书）。
-          </li>
-          <li>
-            <strong>在线提交</strong><br/>
-            通过下方在线表单上传主文件及补充材料，填写必要的元数据信息。
-          </li>
-          <li>
-            <strong>初审（7个工作日）</strong><br/>
-            编辑部将对稿件进行格式符合性与研究范围核查，不符合要求的稿件将被退回修改。
-          </li>
-          <li>
-            <strong>外审（约45天）</strong><br/>
-            符合要求的稿件将送交至少2位专业评审人进行双盲同行评审。
-          </li>
-          <li>
-            <strong>修改与决定</strong><br/>
-            作者根据评审意见修改稿件，编辑作出接受、大修、小修或拒稿决定。
-          </li>
-          <li>
-            <strong>接受与发表</strong><br/>
-            稿件接受后，将在接受后2个工作日内发布预印本，并安排纳入正式期次。
-          </li>
+          <li><strong>注册账号</strong><br/>通过本院内部认证系统完成账号注册，需提供有效的研究院工号或合作机构证明。</li>
+          <li><strong>准备稿件</strong><br/>按照上述格式要求准备稿件，确保作者身份信息已做匿名化处理，以满足双盲评审要求。</li>
+          <li><strong>伦理与安全审查</strong><br/>确认稿件已通过所在单位伦理委员会审批（涉及D级人员实验须提供知情同意书）。</li>
+          <li><strong>在线提交</strong><br/>通过下方在线表单上传主文件及补充材料，填写必要的元数据信息。</li>
+          <li><strong>初审（7个工作日）</strong><br/>编辑部将对稿件进行格式符合性与研究范围核查，不符合要求的稿件将被退回修改。</li>
+          <li><strong>外审（约45天）</strong><br/>符合要求的稿件将送交至少2位专业评审人进行双盲同行评审。</li>
+          <li><strong>修改与决定</strong><br/>作者根据评审意见修改稿件，编辑作出接受、大修、小修或拒稿决定。</li>
+          <li><strong>接受与发表</strong><br/>稿件接受后，将在接受后2个工作日内发布预印本，并安排纳入正式期次。</li>
         </ol>
+        </div>
+        <div data-lang="en" style="display:none">
+        <ol class="step-list">
+          <li><strong>Register an Account</strong><br/>Complete registration through the Institute's internal authentication system. A valid Institute staff ID or partner institution credentials are required.</li>
+          <li><strong>Prepare Your Manuscript</strong><br/>Prepare your manuscript according to the format requirements above. Ensure all author identifiers are anonymized to satisfy double-blind review requirements.</li>
+          <li><strong>Ethics &amp; Safety Review</strong><br/>Confirm that your manuscript has received institutional ethics committee approval (research involving D-class personnel requires informed consent documentation).</li>
+          <li><strong>Online Submission</strong><br/>Upload the main manuscript file and supplementary materials via the form below, and fill in all required metadata.</li>
+          <li><strong>Initial Review (7 business days)</strong><br/>The Editorial Office will check format compliance and scope. Non-compliant manuscripts will be returned for revision.</li>
+          <li><strong>Peer Review (~45 days)</strong><br/>Compliant manuscripts will be sent to at least 2 external reviewers for double-blind peer review.</li>
+          <li><strong>Revision &amp; Decision</strong><br/>Authors revise based on reviewer feedback. The editor makes a final decision: accept, major revision, minor revision, or reject.</li>
+          <li><strong>Acceptance &amp; Publication</strong><br/>Upon acceptance, a preprint will be posted within 2 business days and the article will be scheduled for inclusion in the next issue.</li>
+        </ol>
+        </div>
+        <div data-lang="zh-TW" style="display:none">
+        <ol class="step-list">
+          <li><strong>註冊帳號</strong><br/>通過本院內部認證系統完成帳號註冊，需提供有效的研究院工號或合作機構證明。</li>
+          <li><strong>準備稿件</strong><br/>按照上述格式要求準備稿件，確保作者身份資訊已做匿名化處理，以滿足雙盲審查要求。</li>
+          <li><strong>倫理與安全審查</strong><br/>確認稿件已通過所在單位倫理委員會審批（涉及D級人員實驗須提供知情同意書）。</li>
+          <li><strong>線上提交</strong><br/>通過下方線上表單上傳主文件及補充材料，填寫必要的元數據資訊。</li>
+          <li><strong>初審（7個工作日）</strong><br/>編輯部將對稿件進行格式符合性與研究範圍核查，不符合要求的稿件將被退回修改。</li>
+          <li><strong>外審（約45天）</strong><br/>符合要求的稿件將送交至少2位專業審查人進行雙盲同儕審查。</li>
+          <li><strong>修改與決定</strong><br/>作者根據審查意見修改稿件，編輯作出接受、大修、小修或拒稿決定。</li>
+          <li><strong>接受與發表</strong><br/>稿件接受後，將在接受後2個工作日內發布預印本，並安排納入正式期次。</li>
+        </ol>
+        </div>
       </div>
 
       <!-- Online Submission Form -->
       <div class="content-card">
-        <h2>在线投稿表单</h2>
+        <h2 data-i18n="submit.section.form">在线投稿表单</h2>
         <p style="margin-bottom:16px; font-size:.9rem; color:var(--muted);">
-          请确认已阅读上方全部投稿指南后填写以下表单。带 * 号为必填项。
+          <span data-i18n="submit.form.notice">请确认已阅读上方全部投稿指南后填写以下表单。带 * 号为必填项。</span>
         </p>
         <form class="submit-form manuscript-form" novalidate>
           <div class="form-row">
             <div class="form-group">
-              <label for="ms-title">稿件标题 *</label>
-              <input type="text" id="ms-title" required placeholder="请输入稿件中文标题" />
+              <label for="ms-title" data-i18n="submit.form.title">稿件标题 *</label>
+              <input type="text" id="ms-title" required data-i18n-placeholder="submit.form.title.ph" placeholder="请输入稿件中文标题" />
             </div>
             <div class="form-group">
-              <label for="ms-type">文章类型 *</label>
+              <label for="ms-type" data-i18n="submit.form.type">文章类型 *</label>
               <select id="ms-type" required>
-                <option value="">请选择</option>
-                <option>研究论文</option>
-                <option>综述文章</option>
-                <option>案例报告</option>
-                <option>研究快报</option>
-                <option>方法学报告</option>
-                <option>评述</option>
+                <option value="" data-i18n="submit.form.type.choose">请选择</option>
+                <option data-i18n="submit.form.type.research">研究论文</option>
+                <option data-i18n="submit.form.type.review">综述文章</option>
+                <option data-i18n="submit.form.type.case">案例报告</option>
+                <option data-i18n="submit.form.type.letter">研究快报</option>
+                <option data-i18n="submit.form.type.methods">方法学报告</option>
+                <option data-i18n="submit.form.type.commentary">评述</option>
               </select>
             </div>
           </div>
           <div class="form-row">
             <div class="form-group">
-              <label for="ms-author">通讯作者姓名 *</label>
-              <input type="text" id="ms-author" required placeholder="姓名（脱敏编号亦可）" />
+              <label for="ms-author" data-i18n="submit.form.author">通讯作者姓名 *</label>
+              <input type="text" id="ms-author" required data-i18n-placeholder="submit.form.author.ph" placeholder="姓名（脱敏编号亦可）" />
             </div>
             <div class="form-group">
-              <label for="ms-email">通讯作者邮箱 *</label>
+              <label for="ms-email" data-i18n="submit.form.email">通讯作者邮箱 *</label>
               <input type="email" id="ms-email" required placeholder="example@scp-sci.org" />
             </div>
           </div>
           <div class="form-group">
-            <label for="ms-affil">所属机构 *</label>
-            <input type="text" id="ms-affil" required placeholder="SCP研究院/分部/合作机构" />
+            <label for="ms-affil" data-i18n="submit.form.affil">所属机构 *</label>
+            <input type="text" id="ms-affil" required data-i18n-placeholder="submit.form.affil.ph" placeholder="SCP研究院/分部/合作机构" />
           </div>
           <div class="form-group">
-            <label for="ms-abstract">中文摘要 * （400字以内）</label>
-            <textarea id="ms-abstract" rows="5" required placeholder="请粘贴中文摘要…"></textarea>
+            <label for="ms-abstract" data-i18n="submit.form.abstract">中文摘要 * （400字以内）</label>
+            <textarea id="ms-abstract" rows="5" required data-i18n-placeholder="submit.form.abstract.ph" placeholder="请粘贴中文摘要…"></textarea>
           </div>
           <div class="form-group">
-            <label for="ms-keywords">关键词 *（3–8个，用逗号分隔）</label>
-            <input type="text" id="ms-keywords" required placeholder="例：异常物理学, SCP-682, 量子纠缠, 再生机制" />
+            <label for="ms-keywords" data-i18n="submit.form.keywords">关键词 *（3–8个，用逗号分隔）</label>
+            <input type="text" id="ms-keywords" required data-i18n-placeholder="submit.form.keywords.ph" placeholder="例：异常物理学, SCP-682, 量子纠缠, 再生机制" />
           </div>
           <div class="form-group">
-            <label for="ms-scp">涉及SCP编号（如有）</label>
-            <input type="text" id="ms-scp" placeholder="例：SCP-682, SCP-500" />
+            <label for="ms-scp" data-i18n="submit.form.scp">涉及SCP编号（如有）</label>
+            <input type="text" id="ms-scp" data-i18n-placeholder="submit.form.scp.ph" placeholder="例：SCP-682, SCP-500" />
           </div>
           <div class="form-group">
-            <label for="ms-safety">安全审批编号（Keter及以上须填写）</label>
-            <input type="text" id="ms-safety" placeholder="O5委员会审批编号" />
+            <label for="ms-safety" data-i18n="submit.form.safety">安全审批编号（Keter及以上须填写）</label>
+            <input type="text" id="ms-safety" data-i18n-placeholder="submit.form.safety.ph" placeholder="O5委员会审批编号" />
           </div>
           <div class="form-group">
-            <label for="ms-coi">利益冲突声明 *</label>
-            <textarea id="ms-coi" rows="2" required placeholder="如无利益冲突，请填写"本研究无利益冲突""></textarea>
+            <label for="ms-coi" data-i18n="submit.form.coi">利益冲突声明 *</label>
+            <textarea id="ms-coi" rows="2" required data-i18n-placeholder="submit.form.coi.ph" placeholder="如无利益冲突，请填写"本研究无利益冲突""></textarea>
           </div>
           <div class="form-group">
-            <label for="ms-file">上传稿件文件 * （.docx / .tex，≤20MB）</label>
+            <label for="ms-file" data-i18n="submit.form.file">上传稿件文件 * （.docx / .tex，≤20MB）</label>
             <input type="file" id="ms-file" accept=".docx,.doc,.tex,.pdf" required />
           </div>
           <button type="submit" class="btn btn-danger btn-block" style="padding:12px;" data-i18n="submit.btn">提 交 稿 件</button>
@@ -244,52 +338,114 @@
       <div class="sidebar-widget">
         <div class="widget-header" data-i18n="submit.sidebar.dates">重要日期</div>
         <div class="widget-body">
-          <ul>
+          <div data-lang="zh"><ul>
             <li><strong>2026年第2期</strong><br/><span style="font-size:.8rem;color:var(--muted);">截稿：2026-03-31</span></li>
             <li><strong>时间异常专题</strong><br/><span style="font-size:.8rem;color:var(--muted);">截稿：2026-05-15</span></li>
             <li><strong>第4届异常科学研讨会</strong><br/><span style="font-size:.8rem;color:var(--muted);">摘要提交：2026-04-01</span></li>
-          </ul>
+          </ul></div>
+          <div data-lang="en" style="display:none"><ul>
+            <li><strong>Issue 2, 2026</strong><br/><span style="font-size:.8rem;color:var(--muted);">Deadline: 2026-03-31</span></li>
+            <li><strong>Special Issue: Temporal Anomalics</strong><br/><span style="font-size:.8rem;color:var(--muted);">Deadline: 2026-05-15</span></li>
+            <li><strong>4th Anomalous Science Symposium</strong><br/><span style="font-size:.8rem;color:var(--muted);">Abstract submission: 2026-04-01</span></li>
+          </ul></div>
+          <div data-lang="zh-TW" style="display:none"><ul>
+            <li><strong>2026年第2期</strong><br/><span style="font-size:.8rem;color:var(--muted);">截稿：2026-03-31</span></li>
+            <li><strong>時間異常專題</strong><br/><span style="font-size:.8rem;color:var(--muted);">截稿：2026-05-15</span></li>
+            <li><strong>第4屆異常科學研討會</strong><br/><span style="font-size:.8rem;color:var(--muted);">摘要提交：2026-04-01</span></li>
+          </ul></div>
         </div>
       </div>
 
       <div class="sidebar-widget">
         <div class="widget-header" data-i18n="submit.sidebar.timeline">审稿时间线</div>
         <div class="widget-body" style="font-size:.85rem; color:#444; line-height:1.8;">
-          <div>📋 初审：<strong>7个工作日</strong></div>
-          <div>🔍 外审：<strong>约45天</strong></div>
-          <div>✏️ 修改期：<strong>30天</strong></div>
-          <div>✅ 接受→上线：<strong>2个工作日</strong></div>
+          <div data-lang="zh">
+            <div>📋 初审：<strong>7个工作日</strong></div>
+            <div>🔍 外审：<strong>约45天</strong></div>
+            <div>✏️ 修改期：<strong>30天</strong></div>
+            <div>✅ 接受→上线：<strong>2个工作日</strong></div>
+          </div>
+          <div data-lang="en" style="display:none">
+            <div>📋 Initial review: <strong>7 business days</strong></div>
+            <div>🔍 Peer review: <strong>~45 days</strong></div>
+            <div>✏️ Revision period: <strong>30 days</strong></div>
+            <div>✅ Accept → Online: <strong>2 business days</strong></div>
+          </div>
+          <div data-lang="zh-TW" style="display:none">
+            <div>📋 初審：<strong>7個工作日</strong></div>
+            <div>🔍 外審：<strong>約45天</strong></div>
+            <div>✏️ 修改期：<strong>30天</strong></div>
+            <div>✅ 接受→上線：<strong>2個工作日</strong></div>
+          </div>
         </div>
       </div>
 
       <div class="sidebar-widget">
         <div class="widget-header" data-i18n="submit.sidebar.fee">版面费政策</div>
         <div class="widget-body" style="font-size:.85rem; color:#444; line-height:1.7;">
-          <p><strong>院内成员：</strong>免费</p>
-          <p><strong>非成员：</strong>¥2,000/篇</p>
-          <p><strong>低收入机构：</strong>可申请费用减免</p>
-          <p style="margin-top:8px; font-size:.78rem; color:var(--muted);">费用仅在稿件被接受后收取。</p>
+          <div data-lang="zh">
+            <p><strong>院内成员：</strong>免费</p>
+            <p><strong>非成员：</strong>¥2,000/篇</p>
+            <p><strong>低收入机构：</strong>可申请费用减免</p>
+            <p style="margin-top:8px; font-size:.78rem; color:var(--muted);">费用仅在稿件被接受后收取。</p>
+          </div>
+          <div data-lang="en" style="display:none">
+            <p><strong>Institute members:</strong> Free</p>
+            <p><strong>Non-members:</strong> ¥2,000 per article</p>
+            <p><strong>Low-income institutions:</strong> Fee waiver available</p>
+            <p style="margin-top:8px; font-size:.78rem; color:var(--muted);">Fees are charged only upon acceptance.</p>
+          </div>
+          <div data-lang="zh-TW" style="display:none">
+            <p><strong>院內成員：</strong>免費</p>
+            <p><strong>非成員：</strong>¥2,000/篇</p>
+            <p><strong>低收入機構：</strong>可申請費用減免</p>
+            <p style="margin-top:8px; font-size:.78rem; color:var(--muted);">費用僅在稿件被接受後收取。</p>
+          </div>
         </div>
       </div>
 
       <div class="sidebar-widget">
         <div class="widget-header" data-i18n="submit.sidebar.questions">有疑问？</div>
         <div class="widget-body" style="font-size:.85rem;">
-          <p>如对投稿流程有疑问，请联系编辑部：</p>
-          <p style="margin-top:8px;"><strong>📧</strong> <a href="mailto:editorial@jsas.scp.org">editorial@jsas.scp.org</a></p>
-          <p><strong>🕐</strong> 周一至周五 09:00–17:00 (UTC+8)</p>
+          <div data-lang="zh">
+            <p>如对投稿流程有疑问，请联系编辑部：</p>
+            <p style="margin-top:8px;"><strong>📧</strong> <a href="mailto:editorial@jsas.scp.org">editorial@jsas.scp.org</a></p>
+            <p><strong>🕐</strong> 周一至周五 09:00–17:00 (UTC+8)</p>
+          </div>
+          <div data-lang="en" style="display:none">
+            <p>For questions about the submission process, contact the Editorial Office:</p>
+            <p style="margin-top:8px;"><strong>📧</strong> <a href="mailto:editorial@jsas.scp.org">editorial@jsas.scp.org</a></p>
+            <p><strong>🕐</strong> Mon–Fri 09:00–17:00 (UTC+8)</p>
+          </div>
+          <div data-lang="zh-TW" style="display:none">
+            <p>如對投稿流程有疑問，請聯繫編輯部：</p>
+            <p style="margin-top:8px;"><strong>📧</strong> <a href="mailto:editorial@jsas.scp.org">editorial@jsas.scp.org</a></p>
+            <p><strong>🕐</strong> 週一至週五 09:00–17:00 (UTC+8)</p>
+          </div>
         </div>
       </div>
 
       <div class="sidebar-widget">
         <div class="widget-header" data-i18n="submit.sidebar.templates">下载模板</div>
         <div class="widget-body">
-          <ul>
+          <div data-lang="zh"><ul>
             <li><a href="templates/word-template.txt" download="JSAS投稿Word模板.txt">📄 Word稿件模板 (.docx)</a></li>
             <li><a href="templates/latex-template.tex" download="JSAS投稿LaTeX模板.tex">📄 LaTeX模板 (.tex)</a></li>
             <li><a href="templates/submission-checklist.txt" download="JSAS投稿检查清单.txt">📋 投稿检查清单</a></li>
             <li><a href="templates/ethics-statement.txt" download="JSAS伦理声明模板.txt">📋 伦理声明模板</a></li>
-          </ul>
+          </ul></div>
+          <div data-lang="en" style="display:none"><ul>
+            <li><a href="templates/word-template.txt" download="JSAS-Word-Template.txt">📄 Word Manuscript Template (.docx)</a></li>
+            <li><a href="templates/latex-template.tex" download="JSAS-LaTeX-Template.tex">📄 LaTeX Template (.tex)</a></li>
+            <li><a href="templates/submission-checklist.txt" download="JSAS-Submission-Checklist.txt">📋 Submission Checklist</a></li>
+            <li><a href="templates/ethics-statement.txt" download="JSAS-Ethics-Statement.txt">📋 Ethics Statement Template</a></li>
+          </ul></div>
+          <div data-lang="zh-TW" style="display:none"><ul>
+            <li><a href="templates/word-template.txt" download="JSAS投稿Word模板.txt">📄 Word稿件模板 (.docx)</a></li>
+            <li><a href="templates/latex-template.tex" download="JSAS投稿LaTeX模板.tex">📄 LaTeX模板 (.tex)</a></li>
+            <li><a href="templates/submission-checklist.txt" download="JSAS投稿檢查清單.txt">📋 投稿檢查清單</a></li>
+            <li><a href="templates/ethics-statement.txt" download="JSAS倫理聲明模板.txt">📋 倫理聲明模板</a></li>
+          </ul></div>
         </div>
       </div>
     </aside>
@@ -317,7 +473,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-about">
-        <div class="footer-brand">SCP异常科学学报</div>
+        <div class="footer-brand" data-i18n="footer.brand">SCP异常科学学报</div>
         <p data-i18n="footer.about.text">
           Journal of SCP Anomalous Sciences (JSAS) 由SCP异常科学研究院主办，
           致力于在严格的同行评审框架下推动异常科学领域的学术交流与知识积累。
