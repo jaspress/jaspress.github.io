@@ -89,7 +89,10 @@
     /* Prev button */
     var prev = document.createElement("button");
     prev.className = "page-btn";
-    prev.textContent = "← 上一页";
+    prev.setAttribute("data-i18n", "pagination.prev");
+    var _lang = localStorage.getItem("jsas_lang") || "zh";
+    var _prevTexts = { zh: "← 上一页", en: "← Prev", "zh-TW": "← 上一頁" };
+    prev.textContent = _prevTexts[_lang] || _prevTexts.zh;
     prev.disabled = (activePage <= 1);
     prev.addEventListener("click", function () { renderPage(currentPage - 1); });
     pagination.appendChild(prev);
@@ -109,7 +112,8 @@
     var next = document.createElement("button");
     next.className = "page-btn";
     next.setAttribute("data-i18n", "pagination.next");
-    next.textContent = "下一页 →";
+    var _nextTexts = { zh: "下一页 →", en: "Next →", "zh-TW": "下一頁 →" };
+    next.textContent = _nextTexts[_lang] || _nextTexts.zh;
     next.disabled = (activePage >= totalPages);
     next.addEventListener("click", function () { renderPage(currentPage + 1); });
     pagination.appendChild(next);
@@ -150,6 +154,18 @@
     counters.forEach(function (c) { io.observe(c); });
   }
 
+  /* ── Translation helper for dynamic text ── */
+  function getT(key) {
+    var lang = localStorage.getItem("jsas_lang") || "zh";
+    var texts = {
+      "contact.sent":        { zh: "已发送 ✓",    en: "Sent ✓",                   "zh-TW": "已發送 ✓" },
+      "contact.submit.reset":{ zh: "提交",         en: "Submit",                   "zh-TW": "提交" },
+      "submit.sent":         { zh: "投稿已提交 ✓", en: "Manuscript Submitted ✓",  "zh-TW": "投稿已提交 ✓" }
+    };
+    if (!texts[key]) return key;
+    return texts[key][lang] || texts[key].zh;
+  }
+
   /* ── Contact / submit form placeholder handler ── */
   var contactForm = document.querySelector(".contact-form");
   if (contactForm) {
@@ -163,11 +179,11 @@
       });
       if (!valid) return;
       var btn = contactForm.querySelector('[type="submit"]');
-      btn.textContent = "已发送 ✓";
+      btn.textContent = getT("contact.sent");
       btn.disabled = true;
       setTimeout(function () {
         contactForm.reset();
-        btn.textContent = "提交";
+        btn.textContent = getT("contact.submit.reset");
         btn.disabled = false;
         required.forEach(function (f) { f.style.borderColor = ""; });
       }, 3000);
@@ -186,7 +202,7 @@
       });
       if (!valid) return;
       var btn = submitForm.querySelector('[type="submit"]');
-      btn.textContent = "投稿已提交 ✓";
+      btn.textContent = getT("submit.sent");
       btn.disabled = true;
     });
   }
@@ -289,16 +305,24 @@
   function pad(n) { return n < 10 ? "0" + n : "" + n; }
 
   function updateTimestamp() {
+    var lang = localStorage.getItem("jsas_lang") || "zh";
+    var label = { zh: "站点时间", en: "Site Time", "zh-TW": "站點時間" };
     var now = new Date();
     return now.getFullYear() + "-" + pad(now.getMonth() + 1) + "-" + pad(now.getDate()) +
            " " + pad(now.getHours()) + ":" + pad(now.getMinutes()) + ":" + pad(now.getSeconds()) +
-           " (站点时间)";
+           " (" + (label[lang] || label.zh) + ")";
   }
 
   function getStatus(val) {
-    if (val >= 100) return { label: "STABLE · 稳定", cls: "stable" };
-    if (val >= 60)  return { label: "CAUTION · 注意", cls: "caution" };
-    return            { label: "CRITICAL · 危急", cls: "critical" };
+    var lang = localStorage.getItem("jsas_lang") || "zh";
+    var labels = {
+      stable:   { zh: "STABLE · 稳定",   en: "STABLE · Nominal",    "zh-TW": "STABLE · 穩定" },
+      caution:  { zh: "CAUTION · 注意",  en: "CAUTION · Alert",     "zh-TW": "CAUTION · 注意" },
+      critical: { zh: "CRITICAL · 危急", en: "CRITICAL · Emergency", "zh-TW": "CRITICAL · 危急" }
+    };
+    if (val >= 100) return { label: labels.stable[lang]   || labels.stable.zh,   cls: "stable" };
+    if (val >= 60)  return { label: labels.caution[lang]  || labels.caution.zh,  cls: "caution" };
+    return                 { label: labels.critical[lang] || labels.critical.zh, cls: "critical" };
   }
 
   function updateHume() {

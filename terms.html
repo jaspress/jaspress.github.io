@@ -15,15 +15,15 @@
 
 <div class="top-banner">
   <div class="container">
-    ISSN (网络版) 2XXX-XXXX &nbsp;|&nbsp; ISSN (印刷版) 2XXX-XXXX &nbsp;|&nbsp;
-    <a href="submit.html">现已开放投稿</a> &nbsp;|&nbsp;
-    <a href="articles.html">最新一期：第3卷第1期 (2026)</a>
+    <span data-i18n="banner.issn">ISSN (网络版) 2XXX-XXXX &nbsp;|&nbsp; ISSN (印刷版) 2XXX-XXXX</span> &nbsp;|&nbsp;
+    <a href="submit.html" data-i18n="banner.submit">现已开放投稿</a> &nbsp;|&nbsp;
+    <a href="articles.html" data-i18n="banner.latest">最新一期：第3卷第1期 (2026)</a>
   </div>
 </div>
 
 <header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="index.html" aria-label="返回首页">
+    <a class="brand" href="index.html" aria-label="返回首页" data-i18n-aria="aria.back_home">
       <svg class="brand-logo" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <circle cx="22" cy="22" r="20" stroke="#1a2a3a" stroke-width="2.5"/>
         <circle cx="22" cy="22" r="13" stroke="#1a2a3a" stroke-width="2"/>
@@ -38,11 +38,11 @@
         <line x1="11.2" y1="32.8" x2="6.1" y2="37.9" stroke="#1a2a3a" stroke-width="1.5"/>
       </svg>
       <div class="brand-text">
-        <span class="brand-cn">SCP异常科学学报</span>
+        <span class="brand-cn" data-i18n="brand.name">SCP异常科学学报</span>
         <span class="brand-en">Journal of SCP Anomalous Sciences</span>
       </div>
     </a>
-    <nav class="main-nav" aria-label="主导航">
+    <nav class="main-nav" aria-label="主导航" data-i18n-aria="aria.main_nav">
       <a href="index.html" data-i18n="nav.home">首页</a>
       <a href="articles.html" data-i18n="nav.articles">文章</a>
       <a href="about.html" data-i18n="nav.about">关于期刊</a>
@@ -50,11 +50,11 @@
       <a href="contact.html" data-i18n="nav.contact">联系</a>
     </nav>
     <button class="lang-switch" id="lang-switch" aria-label="Switch language">EN</button>
-    <button class="hamburger" aria-label="展开菜单" aria-expanded="false">
+    <button class="hamburger" aria-label="展开菜单" data-i18n-aria="aria.menu_expand" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
-  <nav class="mobile-nav" aria-label="移动导航">
+  <nav class="mobile-nav" aria-label="移动导航" data-i18n-aria="aria.mobile_nav">
     <a href="index.html" data-i18n="nav.home">首页</a>
     <a href="articles.html" data-i18n="nav.articles">文章</a>
     <a href="about.html" data-i18n="nav.about">关于期刊</a>
@@ -65,16 +65,17 @@
 
 <section class="page-hero">
   <div class="container">
-    <div class="breadcrumb"><a href="index.html">首页</a><span>›</span><span class="bc-text">使用条款</span></div>
-    <h1>使用条款</h1>
-    <p>SCP基金会异常科学学报 — 网站使用条款与法律声明</p>
+    <div class="breadcrumb"><a href="index.html" data-i18n="nav.home">首页</a><span>›</span><span class="bc-text" data-i18n="terms.breadcrumb">使用条款</span></div>
+    <h1 data-i18n="terms.title">使用条款</h1>
+    <p data-i18n="terms.desc">SCP基金会异常科学学报 — 网站使用条款与法律声明</p>
   </div>
 </section>
 
 <div class="container" style="padding: 40px 0;">
   <div class="content-card">
-    <p style="font-size:.85rem;color:var(--muted);margin-bottom:20px;">最后更新日期：2026年2月1日 &nbsp;·&nbsp; 生效日期：2024年10月1日</p>
+    <p style="font-size:.85rem;color:var(--muted);margin-bottom:20px;"><span data-lang="zh">最后更新日期：2026年2月1日 &nbsp;·&nbsp; 生效日期：2024年10月1日</span><span data-lang="en" style="display:none">Last updated: 2026-02-01 &nbsp;·&nbsp; Effective date: 2024-10-01</span><span data-lang="zh-TW" style="display:none">最後更新日期：2026年2月1日 &nbsp;·&nbsp; 生效日期：2024年10月1日</span></p>
 
+    <div data-lang="zh">
     <h2>1. 接受条款</h2>
     <p>访问或使用 SCP基金会异常科学学报（JSAS）网站及相关服务，即表示您同意遵守本使用条款。如不同意本条款，请停止使用本站。</p>
 
@@ -113,6 +114,89 @@
 
     <h2 style="margin-top:28px;">9. 联系方式</h2>
     <p>如对本使用条款有任何疑问，请联系：<a href="mailto:legal@jsas.scp.org">legal@jsas.scp.org</a></p>
+    </div>
+
+    <div data-lang="en" style="display:none">
+    <h2>1. Acceptance of Terms</h2>
+    <p>By accessing or using the Journal of SCP Anomalous Sciences (JSAS) website and related services, you agree to comply with these Terms of Use. If you do not agree, please stop using this site.</p>
+
+    <h2 style="margin-top:28px;">2. Intellectual Property and Open Access License</h2>
+    <p>All published articles in JSAS are released under the <strong>CC BY 4.0 (Creative Commons Attribution 4.0 International)</strong> license, which permits free reading, downloading, copying, distribution, and adaptation — including for commercial use — provided the original authors are correctly attributed.</p>
+    <p style="margin-top:10px;">The website interface design, logo, typographic styles, and original non-article text are copyrighted by the SCP Institute of Anomalous Sciences, all rights reserved. Unauthorized reproduction, modification, or commercial use is prohibited.</p>
+    <p style="margin-top:10px;">Some article content relates to SCP Foundation creative commons community content, which is governed by the <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a> license.</p>
+
+    <h2 style="margin-top:28px;">3. User Conduct</h2>
+    <p>By using this site, you agree to:</p>
+    <ul class="scope-list">
+      <li>Not interfere with, disrupt, or gain unauthorized access to the site's servers or networks;</li>
+      <li>Not use automated tools (crawlers, bots, etc.) to scrape site content at excessive rates;</li>
+      <li>Not upload or transmit viruses, malicious code, or other harmful content;</li>
+      <li>Not impersonate others or misrepresent your identity;</li>
+      <li>Not transmit or attempt to transmit any cognitohazardous content (serious warning);</li>
+      <li>Comply with all applicable local, national, and international laws and regulations.</li>
+    </ul>
+
+    <h2 style="margin-top:28px;">4. Disclaimer</h2>
+    <p>All articles published by JSAS have undergone peer review, but the Editorial Office makes no express or implied warranty regarding the completeness, accuracy, or applicability of article content. Research conclusions in articles represent the authors' views only and do not represent the official position of the SCP Institute of Anomalous Sciences or the Foundation.</p>
+    <p style="margin-top:10px;"><strong>Special Notice:</strong> Some articles in this journal involve fictional SCP universe content. All SCP-related descriptions are academic-style creative works based on the SCP Foundation creative writing community and do not represent real-world entities, organizations, or phenomena.</p>
+    <p style="margin-top:10px;">The Editorial Office accepts no liability for any loss resulting from use of site content or inability to access this site.</p>
+
+    <h2 style="margin-top:28px;">5. License to Submit Content</h2>
+    <p>By submitting a manuscript to JSAS, the author grants the SCP Institute of Anomalous Sciences a non-exclusive worldwide license to publish, reproduce, distribute, and adapt the manuscript in any medium under CC BY 4.0. Authors retain copyright while granting the above rights to JSAS.</p>
+
+    <h2 style="margin-top:28px;">6. Third-Party Links</h2>
+    <p>This site may contain links to third-party websites. These links are provided for user convenience only; the Editorial Office is not responsible for the content, privacy policies, or security of linked websites.</p>
+
+    <h2 style="margin-top:28px;">7. Governing Law and Dispute Resolution</h2>
+    <p>These Terms are governed by applicable law. Any disputes arising from use of this site should first be resolved through friendly negotiation; failing that, disputes shall be submitted to a court of competent jurisdiction in the location of the Editorial Office.</p>
+
+    <h2 style="margin-top:28px;">8. Amendments</h2>
+    <p>The Institute reserves the right to amend these Terms at any time. Amended terms will be published on this page; continued use of the site after amendments take effect constitutes acceptance of the revised terms.</p>
+
+    <h2 style="margin-top:28px;">9. Contact</h2>
+    <p>For questions about these Terms of Use: <a href="mailto:legal@jsas.scp.org">legal@jsas.scp.org</a></p>
+    </div>
+
+    <div data-lang="zh-TW" style="display:none">
+    <h2>1. 接受條款</h2>
+    <p>訪問或使用 SCP基金會異常科學學報（JSAS）網站及相關服務，即表示您同意遵守本使用條款。如不同意本條款，請停止使用本站。</p>
+
+    <h2 style="margin-top:28px;">2. 知識產權與開放獲取許可</h2>
+    <p>本刊所有已發表文章採用 <strong>CC BY 4.0（知識共享署名4.0國際許可協議）</strong> 發布，允許在正確署名原作者的前提下自由閱讀、下載、複製、分發及改編，包括商業用途。</p>
+    <p style="margin-top:10px;">網站界面設計、logo、排版樣式及非文章內容的原創文字版權歸SCP異常科學研究院所有，保留所有權利。未經授權不得複製、修改或用於商業用途。</p>
+    <p style="margin-top:10px;">部分文章內容涉及SCP基金會創意共享社區內容，此類內容受 <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a> 許可協議約束。</p>
+
+    <h2 style="margin-top:28px;">3. 用戶行為規範</h2>
+    <p>使用本站時，您同意：</p>
+    <ul class="scope-list">
+      <li>不以任何方式干擾、破壞或未經授權訪問本站伺服器或網絡；</li>
+      <li>不使用自動化工具（爬蟲、機器人等）以過高頻率抓取本站內容；</li>
+      <li>不上傳或傳播病毒、惡意代碼或其他有害內容；</li>
+      <li>不冒充他人或虛假陳述身份資訊；</li>
+      <li>不傳播或嘗試傳播任何認知危害（cognitohazardous）內容（嚴重警告）；</li>
+      <li>遵守適用的地方、國家及國際法律法規。</li>
+    </ul>
+
+    <h2 style="margin-top:28px;">4. 免責聲明</h2>
+    <p>本刊發表的所有文章均經過同儕審查，但編輯部不對文章內容的完整性、準確性或適用性作出任何明示或暗示的保證。文章所描述的研究結論僅代表作者觀點，不代表SCP異常科學研究院或基金會的官方立場。</p>
+    <p style="margin-top:10px;"><strong>特別聲明：</strong>本刊部分文章涉及虛構的SCP宇宙世界觀內容，所有SCP相關描述均為基於SCP基金會創意寫作社區的學術風格創作，不代表現實存在的實體、組織或現象。</p>
+    <p style="margin-top:10px;">對於因使用本站內容或無法訪問本站所造成的任何損失，編輯部不承擔責任。</p>
+
+    <h2 style="margin-top:28px;">5. 投稿內容的授權</h2>
+    <p>向本刊提交稿件，即表示作者授予SCP異常科學研究院在全球範圍內以任何媒介發表、複製、分發和改編該稿件的非專屬許可，並遵循CC BY 4.0協議。作者保留版權，但同時授予本刊上述權利。</p>
+
+    <h2 style="margin-top:28px;">6. 第三方連結</h2>
+    <p>本站可能包含指向第三方網站的連結。這些連結僅為方便用戶而提供，編輯部不對連結目標網站的內容、隱私政策或安全性負責。</p>
+
+    <h2 style="margin-top:28px;">7. 適用法律與爭議解決</h2>
+    <p>本條款受適用法律管轄。因使用本站引發的任何爭議，雙方應首先通過友好協商解決；協商不成的，提交編輯部所在地有管轄權的法院解決。</p>
+
+    <h2 style="margin-top:28px;">8. 條款修改</h2>
+    <p>我院保留隨時修改本使用條款的權利。修改後的條款將在本頁面發布，修改生效後繼續使用本站即表示接受修改後的條款。</p>
+
+    <h2 style="margin-top:28px;">9. 聯絡方式</h2>
+    <p>如對本使用條款有任何疑問，請聯繫：<a href="mailto:legal@jsas.scp.org">legal@jsas.scp.org</a></p>
+    </div>
   </div>
 </div>
 
@@ -134,7 +218,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-about">
-        <div class="footer-brand">SCP异常科学学报</div>
+        <div class="footer-brand" data-i18n="footer.brand">SCP异常科学学报</div>
         <p data-i18n="footer.about.text">Journal of SCP Anomalous Sciences (JSAS) 由SCP异常科学研究院主办，致力于在严格的同行评审框架下推动异常科学领域的学术交流与知识积累。本刊采用开放获取政策，所有文章在发表后可免费获取全文。</p>
       </div>
       <div class="footer-col">

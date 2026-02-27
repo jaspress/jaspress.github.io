@@ -16,8 +16,8 @@
 <!-- SECURITY WARNING BANNER -->
 <div class="security-warning-bar">
   <div class="sw-inner">
-    <span class="sw-badge">绝密</span>
-    <span>██ 4级权限文件 · LEVEL 4 CLEARANCE REQUIRED · 未经授权访问将受到追责 ██</span>
+    <span class="sw-badge" data-i18n="security.badge">绝密</span>
+    <span data-i18n="security.bar.text">██ 4级权限文件 · LEVEL 4 CLEARANCE REQUIRED · 未经授权访问将受到追责 ██</span>
     <span class="sw-badge">TOP SECRET</span>
   </div>
 </div>
@@ -25,7 +25,7 @@
 <!-- TOP BANNER -->
 <div class="top-banner">
   <div class="container">
-    ISSN (网络版) 2XXX-XXXX &nbsp;|&nbsp; ISSN (印刷版) 2XXX-XXXX &nbsp;|&nbsp;
+    <span data-i18n="banner.issn">ISSN (网络版) 2XXX-XXXX &nbsp;|&nbsp; ISSN (印刷版) 2XXX-XXXX</span> &nbsp;|&nbsp;
     <a href="submit.html" data-i18n="banner.submit">现已开放投稿</a> &nbsp;|&nbsp;
     <a href="articles.html" data-i18n="banner.latest">最新一期：第3卷第1期 (2026)</a>
   </div>
@@ -34,7 +34,7 @@
 <!-- SITE HEADER -->
 <header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="index.html" aria-label="返回首页">
+    <a class="brand" href="index.html" aria-label="返回首页" data-i18n-aria="aria.back_home">
       <svg class="brand-logo" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <circle cx="22" cy="22" r="20" stroke="#1a2a3a" stroke-width="2.5"/>
         <circle cx="22" cy="22" r="13" stroke="#1a2a3a" stroke-width="2"/>
@@ -49,11 +49,11 @@
         <line x1="11.2" y1="32.8" x2="6.1" y2="37.9" stroke="#1a2a3a" stroke-width="1.5"/>
       </svg>
       <div class="brand-text">
-        <span class="brand-cn">SCP异常科学学报</span>
+        <span class="brand-cn" data-i18n="brand.name">SCP异常科学学报</span>
         <span class="brand-en">Journal of SCP Anomalous Sciences</span>
       </div>
     </a>
-    <nav class="main-nav" aria-label="主导航">
+    <nav class="main-nav" aria-label="主导航" data-i18n-aria="aria.main_nav">
       <a href="index.html" data-i18n="nav.home">首页</a>
       <a href="articles.html" data-i18n="nav.articles">文章</a>
       <a href="about.html" class="active" data-i18n="nav.about">关于期刊</a>
@@ -61,11 +61,11 @@
       <a href="contact.html" data-i18n="nav.contact">联系</a>
     </nav>
     <button class="lang-switch" id="lang-switch" aria-label="Switch language">EN</button>
-    <button class="hamburger" aria-label="展开菜单" aria-expanded="false">
+    <button class="hamburger" aria-label="展开菜单" data-i18n-aria="aria.menu_expand" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
-  <nav class="mobile-nav" aria-label="移动导航">
+  <nav class="mobile-nav" aria-label="移动导航" data-i18n-aria="aria.mobile_nav">
     <a href="index.html" data-i18n="nav.home">首页</a>
     <a href="articles.html" data-i18n="nav.articles">文章</a>
     <a href="about.html" data-i18n="nav.about">关于期刊</a>
@@ -89,6 +89,7 @@
   <!-- Mission -->
   <div class="content-card">
     <h2 data-i18n="about.section.mission">办刊宗旨</h2>
+    <div data-lang="zh">
     <p>
       <em>SCP基金会异常科学学报</em>（Journal of SCP Anomalous Sciences，JSAS）由
       <strong>SCP异常科学研究院</strong>（SCP Institute of Anomalous Sciences，SIAS）主办，
@@ -115,13 +116,36 @@
       <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.zh" target="_blank" rel="noopener">CC BY-SA 3.0</a>
       开放获取协议。
     </p>
+    </div>
+    <div data-lang="en" style="display:none">
+    <p>The <em>Journal of SCP Anomalous Sciences</em> (JSAS) is published by the <strong>SCP Institute of Anomalous Sciences</strong> (SIAS) and the <strong>Institute of Anomalous Science Press</strong>. It is the only rigorously peer-reviewed, globally open-access comprehensive academic journal within the SCP system.</p>
+    <p>JSAS focuses on three core areas:</p>
+    <ul style="margin: 0 0 12px 20px; font-size:.92rem; color:#444; line-height:1.75;">
+      <li><strong>Non-Standard Physics:</strong> Anomalous phenomena and theories beyond existing physical frameworks;</li>
+      <li><strong>Metaphysics:</strong> The nature of reality, causality, time, and consciousness in anomalous contexts;</li>
+      <li><strong>Containment Engineering:</strong> Development of novel containment materials, methods, and protocols for safe and effective anomaly containment.</li>
+    </ul>
+    <p>Founded in 2024, JSAS aims to provide a rigorous and transparent academic platform for scholars, researchers, and containment specialists working in anomalous science — advancing the field from documentation toward understanding, from individual cases toward systematic theory, and ultimately serving more effective containment and human safety.</p>
+    <p>JSAS is published semiannually (two issues per year), adhering strictly to COPE publication ethics guidelines. All submitted manuscripts undergo double-blind peer review. Manuscripts involving high-class anomalies (Keter and above) are subject to an additional safety review by the Editorial Board. All published articles are released under the <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a> open access license.</p>
+    </div>
+    <div data-lang="zh-TW" style="display:none">
+    <p><em>SCP基金會異常科學學報</em>（Journal of SCP Anomalous Sciences，JSAS）由<strong>SCP異常科學研究院</strong>（SCP Institute of Anomalous Sciences，SIAS）主辦，由<strong>異常科學研究院出版社</strong>（Institute of Anomalous Science Press）出版，是目前SCP體系內唯一經過嚴格同儕審查、面向全球開放獲取的綜合性學術期刊。</p>
+    <p>本刊聚焦於三大核心領域：</p>
+    <ul style="margin: 0 0 12px 20px; font-size:.92rem; color:#444; line-height:1.75;">
+      <li><strong>非標準物理學</strong>（Non-Standard Physics）：涵蓋超越現有物理框架的異常現象與理論；</li>
+      <li><strong>形而上學</strong>（Metaphysics）：研究現實本質、因果律、時間與意識等基礎性哲學-科學問題在異常語境下的表現；</li>
+      <li><strong>收容工程學</strong>（Containment Engineering）：研發新型收容材料、方法與協議，服務於安全有效的異常物體收容。</li>
+    </ul>
+    <p>本刊創辦於2024年，旨在為從事異常科學研究的學者、研究員及收容專家提供一個規範、透明的學術交流平台，推動異常現象從記錄走向理解，從個案走向系統理論，最終服務於更有效的收容與人類安全保障工作。</p>
+    <p>本刊採用半年刊制度（Semiannual Publication），每年出版兩期，嚴格遵守學術出版倫理（COPE）準則。所有提交稿件須經雙盲同儕審查。在涉及高等級異常（Keter及以上）的研究中，編輯部將額外啟動安全性審查程序。所有已發表文章遵循<a href="https://creativecommons.org/licenses/by-sa/3.0/deed.zh" target="_blank" rel="noopener">CC BY-SA 3.0</a>開放獲取協議。</p>
+    </div>
   </div>
 
   <!-- Info Grid -->
   <div class="about-grid">
     <div class="info-box">
       <h3 data-i18n="about.section.info">基本信息</h3>
-      <ul>
+      <div data-lang="zh"><ul>
         <li><strong>全称：</strong>SCP基金会异常科学学报</li>
         <li><strong>英文名：</strong>Journal of SCP Anomalous Sciences</li>
         <li><strong>缩写：</strong>JSAS</li>
@@ -133,11 +157,36 @@
         <li><strong>版权政策：</strong><a href="https://creativecommons.org/licenses/by-sa/3.0/deed.zh" target="_blank" rel="noopener">CC BY-SA 3.0</a></li>
         <li><strong>ISSN (网络版)：</strong>2XXX-XXXX</li>
         <li><strong>ISSN (印刷版)：</strong>2XXX-XXXX</li>
-      </ul>
+      </ul></div>
+      <div data-lang="en" style="display:none"><ul>
+        <li><strong>Full Name:</strong> Journal of SCP Anomalous Sciences</li>
+        <li><strong>Abbreviation:</strong> JSAS</li>
+        <li><strong>Host Institution:</strong> SCP Institute of Anomalous Sciences</li>
+        <li><strong>Publisher:</strong> Institute of Anomalous Science Press</li>
+        <li><strong>Founded:</strong> 2024</li>
+        <li><strong>Frequency:</strong> Semiannual (2 issues per year)</li>
+        <li><strong>Language:</strong> Chinese (with English extended abstracts)</li>
+        <li><strong>License:</strong> <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a></li>
+        <li><strong>ISSN (Online):</strong> 2XXX-XXXX</li>
+        <li><strong>ISSN (Print):</strong> 2XXX-XXXX</li>
+      </ul></div>
+      <div data-lang="zh-TW" style="display:none"><ul>
+        <li><strong>全稱：</strong>SCP基金會異常科學學報</li>
+        <li><strong>英文名：</strong>Journal of SCP Anomalous Sciences</li>
+        <li><strong>縮寫：</strong>JSAS</li>
+        <li><strong>主辦機構：</strong>SCP異常科學研究院</li>
+        <li><strong>出版社：</strong>異常科學研究院出版社（Institute of Anomalous Science Press）</li>
+        <li><strong>創刊年份：</strong>2024年</li>
+        <li><strong>出版頻率：</strong>半年刊（Semiannual，每年2期）</li>
+        <li><strong>語言：</strong>中文（含英文擴展摘要）</li>
+        <li><strong>版權政策：</strong><a href="https://creativecommons.org/licenses/by-sa/3.0/deed.zh" target="_blank" rel="noopener">CC BY-SA 3.0</a></li>
+        <li><strong>ISSN (網路版)：</strong>2XXX-XXXX</li>
+        <li><strong>ISSN (印刷版)：</strong>2XXX-XXXX</li>
+      </ul></div>
     </div>
     <div class="info-box">
       <h3 data-i18n="about.section.pub">出版信息</h3>
-      <ul>
+      <div data-lang="zh"><ul>
         <li><strong>同行评审：</strong>双盲评审，通常需2~3位外审专家</li>
         <li><strong>审稿周期：</strong>初审7个工作日；外审45天</li>
         <li><strong>接受率：</strong>约28%（2025年统计）</li>
@@ -147,13 +196,36 @@
         <li><strong>撤稿政策：</strong>遵循COPE撤稿准则</li>
         <li><strong>版权协议：</strong><a href="https://creativecommons.org/licenses/by-sa/3.0/deed.zh" target="_blank" rel="noopener">CC BY-SA 3.0</a></li>
         <li><strong>收录数据库：</strong>CrossRef（已注册）、Google Scholar（收录中）、DOAJ（申请中）、CNKI（申请中）、OpenAIRE（申请中）、Dimensions（申请中）</li>
-      </ul>
+      </ul></div>
+      <div data-lang="en" style="display:none"><ul>
+        <li><strong>Peer Review:</strong> Double-blind; 2–3 external reviewers</li>
+        <li><strong>Review Timeline:</strong> Initial review: 7 business days; Peer review: 45 days</li>
+        <li><strong>Acceptance Rate:</strong> ~28% (2025 statistics)</li>
+        <li><strong>APC:</strong> Free for Institute members; ¥2,000/article for non-members</li>
+        <li><strong>Expedited Review:</strong> Available on request</li>
+        <li><strong>Data Sharing:</strong> Open data encouraged; classified data exemptions available</li>
+        <li><strong>Retraction Policy:</strong> Follows COPE Retraction Guidelines</li>
+        <li><strong>License:</strong> <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a></li>
+        <li><strong>Indexing:</strong> CrossRef (registered), Google Scholar (indexed), DOAJ (pending), CNKI (pending), OpenAIRE (pending), Dimensions (pending)</li>
+      </ul></div>
+      <div data-lang="zh-TW" style="display:none"><ul>
+        <li><strong>同儕審查：</strong>雙盲審查，通常需2~3位外審專家</li>
+        <li><strong>審稿週期：</strong>初審7個工作日；外審45天</li>
+        <li><strong>接受率：</strong>約28%（2025年統計）</li>
+        <li><strong>版面費：</strong>本院成員免費；非成員 ¥2,000/篇</li>
+        <li><strong>快速發表通道：</strong>加急審稿（需額外申請）</li>
+        <li><strong>數據共享政策：</strong>鼓勵數據開放，涉密數據可申請豁免</li>
+        <li><strong>撤稿政策：</strong>遵循COPE撤稿準則</li>
+        <li><strong>版權協議：</strong><a href="https://creativecommons.org/licenses/by-sa/3.0/deed.zh" target="_blank" rel="noopener">CC BY-SA 3.0</a></li>
+        <li><strong>收錄資料庫：</strong>CrossRef（已註冊）、Google Scholar（收錄中）、DOAJ（申請中）、CNKI（申請中）、OpenAIRE（申請中）、Dimensions（申請中）</li>
+      </ul></div>
     </div>
   </div>
 
   <!-- Scope -->
   <div class="content-card" style="margin-top:24px;">
     <h2 data-i18n="about.section.scope">研究范围</h2>
+    <div data-lang="zh">
     <p>
       本刊接受涵盖（但不限于）以下方向的原创研究、综述、案例报告与快报：
     </p>
@@ -177,6 +249,53 @@
     <p style="margin-top:12px; font-size:.88rem; color: var(--muted);">
       * 涉及Apollyon级异常的研究须附加SCP基金会O5委员会审批文件方可提交。
     </p>
+    </div>
+    <div data-lang="en" style="display:none">
+    <p>JSAS accepts original research, reviews, case reports, and letters covering (but not limited to) the following areas:</p>
+    <ul class="scope-list">
+      <li><strong>Anomalous Physics:</strong> Superluminal phenomena, negative-mass matter, localized spacetime distortion, zero-point energy anomalies</li>
+      <li><strong>Biological Anomalics:</strong> Taxonomy, morphology, behavior, and evolutionary hypotheses for anomalous organisms</li>
+      <li><strong>Cognitive &amp; Information Anomalics:</strong> Cognitive penetration mechanisms, infohazard protection and desensitization</li>
+      <li><strong>Trans-Dimensional &amp; Multiverse Research:</strong> Parallel universe evidence, dimensional rift mechanisms and containment</li>
+      <li><strong>Containment Science:</strong> Novel containment materials, facility design standards, emergency containment protocols</li>
+      <li><strong>Anomalous Chemistry &amp; Materials:</strong> Non-standard elements, cross-phase matter, anomalous catalysis</li>
+      <li><strong>Temporal Anomalics:</strong> Localized temporal reversal, time-loop detection and termination methodology</li>
+      <li><strong>Anomalous Ethics &amp; Policy:</strong> Humanitarian containment principles, anomalous entity rights (Commentary only)</li>
+      <li><strong>Quantum Topological Anomalics:</strong> Non-Euclidean spaces, topological defects, anomalous representations in higher-dimensional manifolds</li>
+      <li><strong>Neural Interface &amp; Parapsychics:</strong> Neuroscientific mechanisms of remote sensing, telepathy, and mind-control anomalies</li>
+      <li><strong>Anomalous Information Technology:</strong> Anomalous computing systems, autonomous AI anomalies, infohazard propagation models</li>
+      <li><strong>Linguistic &amp; Memetic Hazards:</strong> Trigger-phrase mechanisms, runology, cognitohazardous memetic agents</li>
+      <li><strong>Anomalous Ecology:</strong> Population dynamics, niche occupation, and biosphere interactions of anomalous organisms</li>
+      <li><strong>Antimatter &amp; Dark Energy Anomalics:</strong> Observations and theory of anomalous phenomena related to antimatter/dark energy</li>
+      <li><strong>Containment Failure Analysis:</strong> Systematic analysis, predictive models, and disaster prevention frameworks for containment breaches</li>
+    </ul>
+    <p style="margin-top:12px; font-size:.88rem; color: var(--muted);">
+      * Research involving Apollyon-class anomalies must include an SCP Foundation O5 Council approval document at submission.
+    </p>
+    </div>
+    <div data-lang="zh-TW" style="display:none">
+    <p>本刊接受涵蓋（但不限於）以下方向的原創研究、綜述、案例報告與快報：</p>
+    <ul class="scope-list">
+      <li><strong>異常物理學 (Anomalous Physics)：</strong>超光速現象、負質量物質、局部時空扭曲、零點能量異常</li>
+      <li><strong>生物異常學 (Biological Anomalics)：</strong>異常生物的分類、形態學、行為學及進化假說</li>
+      <li><strong>認知與資訊異常 (Cognitive &amp; Information Anomalics)：</strong>認知滲透機制、資訊危害防護與脫敏技術</li>
+      <li><strong>跨維度與多宇宙研究 (Trans-Dimensional &amp; Multiverse Research)：</strong>平行宇宙證據、維度裂縫機制與封堵技術</li>
+      <li><strong>收容科學 (Containment Science)：</strong>新型收容材料、設施設計標準、應急收容協議</li>
+      <li><strong>異常化學與材料科學 (Anomalous Chemistry &amp; Materials)：</strong>非標準元素、跨相態物質、異常催化</li>
+      <li><strong>時間異常學 (Temporal Anomalics)：</strong>局部時間逆流、時間圈檢測與終止方法論</li>
+      <li><strong>異常倫理學與政策 (Anomalous Ethics &amp; Policy)：</strong>人道主義收容原則、異常體權益（限評述）</li>
+      <li><strong>量子拓撲異常學 (Quantum Topological Anomalics)：</strong>非歐幾何空間、拓撲缺陷與高維流形中的異常表徵</li>
+      <li><strong>神經接口與靈能學 (Neural Interface &amp; Parapsychics)：</strong>遙感、心靈感應、精神控制型異常的神經科學機制</li>
+      <li><strong>異常資訊技術 (Anomalous Information Technology)：</strong>異常計算系統、自主AI異常、資訊型異常傳播模型</li>
+      <li><strong>語言與符號危害學 (Linguistic &amp; Memetic Hazards)：</strong>觸發型話語、符文學、模因型資訊危害的作用機制</li>
+      <li><strong>異常生態學 (Anomalous Ecology)：</strong>異常生物的種群動態、生態位、與正常生物圈的交互作用</li>
+      <li><strong>反物質與暗能量異常 (Antimatter &amp; Dark Energy Anomalics)：</strong>與反物質/暗能量相關異常現象的觀測與理論</li>
+      <li><strong>收容失效模式分析 (Containment Failure Analysis)：</strong>收容失效的系統性分析、預測模型與災難預防框架</li>
+    </ul>
+    <p style="margin-top:12px; font-size:.88rem; color: var(--muted);">
+      * 涉及Apollyon級異常的研究須附加SCP基金會O5委員會審批文件方可提交。
+    </p>
+    </div>
   </div>
 
   <!-- Editorial Board -->
@@ -188,8 +307,8 @@
       <div class="board-card">
         <div class="board-avatar">张</div>
         <div class="board-name">张远航 教授</div>
-        <div class="board-title">主编 (Editor-in-Chief)</div>
-        <div class="board-affil">SCP异常科学研究院 · 异常物理学部</div>
+        <div class="board-title"><span data-lang="zh">主编 (Editor-in-Chief)</span><span data-lang="en" style="display:none">Editor-in-Chief</span><span data-lang="zh-TW" style="display:none">主編 (Editor-in-Chief)</span></div>
+        <div class="board-affil"><span data-lang="zh">SCP异常科学研究院 · 异常物理学部</span><span data-lang="en" style="display:none">SCP Institute of Anomalous Sciences · Anomalous Physics Division</span><span data-lang="zh-TW" style="display:none">SCP異常科學研究院 · 異常物理學部</span></div>
       </div>
     </div>
   </div>
@@ -200,19 +319,19 @@
       <div class="board-card">
         <div class="board-avatar">李</div>
         <div class="board-name">李明哲 研究员</div>
-        <div class="board-title">副主编 · 生物异常方向</div>
-        <div class="board-affil">SCP 生物安全实验室</div>
+        <div class="board-title"><span data-lang="zh">副主编 · 生物异常方向</span><span data-lang="en" style="display:none">Associate Editor · Biological Anomalics</span><span data-lang="zh-TW" style="display:none">副主編 · 生物異常方向</span></div>
+        <div class="board-affil"><span data-lang="zh">SCP 生物安全实验室</span><span data-lang="en" style="display:none">SCP Biosafety Laboratory</span><span data-lang="zh-TW" style="display:none">SCP 生物安全實驗室</span></div>
       </div>
       <div class="board-card">
         <div class="board-avatar">陈</div>
         <div class="board-name">陈晓琳 博士</div>
-        <div class="board-title">副主编 · 认知异常方向</div>
-        <div class="board-affil">SCP 记忆信息学中心</div>
+        <div class="board-title"><span data-lang="zh">副主编 · 认知异常方向</span><span data-lang="en" style="display:none">Associate Editor · Cognitive Anomalics</span><span data-lang="zh-TW" style="display:none">副主編 · 認知異常方向</span></div>
+        <div class="board-affil"><span data-lang="zh">SCP 记忆信息学中心</span><span data-lang="en" style="display:none">SCP Memory Informatics Center</span><span data-lang="zh-TW" style="display:none">SCP 記憶資訊學中心</span></div>
       </div>
       <div class="board-card">
         <div class="board-avatar" style="background:#2c3e50;">G</div>
         <div class="board-name">Dr. Gears</div>
-        <div class="board-title">副主编 · 收容科学</div>
+        <div class="board-title"><span data-lang="zh">副主编 · 收容科学</span><span data-lang="en" style="display:none">Associate Editor · Containment Science</span><span data-lang="zh-TW" style="display:none">副主編 · 收容科學</span></div>
         <div class="board-affil">SCP Engineering Division</div>
       </div>
     </div>
@@ -224,50 +343,50 @@
       <div class="board-card">
         <div class="board-avatar" style="background:#1e8449;">K</div>
         <div class="board-name">Kondraki W.L.</div>
-        <div class="board-title">委员 · 异常物理学</div>
+        <div class="board-title"><span data-lang="zh">委员 · 异常物理学</span><span data-lang="en" style="display:none">Member · Anomalous Physics</span><span data-lang="zh-TW" style="display:none">委員 · 異常物理學</span></div>
         <div class="board-affil">SCP Foundation</div>
       </div>
       <div class="board-card">
         <div class="board-avatar">王</div>
         <div class="board-name">王思远 副研究员</div>
-        <div class="board-title">委员 · 跨维度研究</div>
-        <div class="board-affil">SCP 多维观测站</div>
+        <div class="board-title"><span data-lang="zh">委员 · 跨维度研究</span><span data-lang="en" style="display:none">Member · Trans-Dimensional Research</span><span data-lang="zh-TW" style="display:none">委員 · 跨維度研究</span></div>
+        <div class="board-affil"><span data-lang="zh">SCP 多维观测站</span><span data-lang="en" style="display:none">SCP Multi-Dimensional Observatory</span><span data-lang="zh-TW" style="display:none">SCP 多維觀測站</span></div>
       </div>
       <div class="board-card">
         <div class="board-avatar" style="background:#884ea0;">B</div>
         <div class="board-name">Bright J.D.</div>
-        <div class="board-title">委员 · 时间异常学</div>
+        <div class="board-title"><span data-lang="zh">委员 · 时间异常学</span><span data-lang="en" style="display:none">Member · Temporal Anomalics</span><span data-lang="zh-TW" style="display:none">委員 · 時間異常學</span></div>
         <div class="board-affil">SCP Foundation</div>
       </div>
       <div class="board-card">
         <div class="board-avatar">伊</div>
         <div class="board-name">伊藤千夏 博士</div>
-        <div class="board-title">委员 · 认知信息</div>
-        <div class="board-affil">SCP 东亚研究分部</div>
+        <div class="board-title"><span data-lang="zh">委员 · 认知信息</span><span data-lang="en" style="display:none">Member · Cognitive Information</span><span data-lang="zh-TW" style="display:none">委員 · 認知資訊</span></div>
+        <div class="board-affil"><span data-lang="zh">SCP 东亚研究分部</span><span data-lang="en" style="display:none">SCP East Asia Research Division</span><span data-lang="zh-TW" style="display:none">SCP 東亞研究分部</span></div>
       </div>
       <div class="board-card">
         <div class="board-avatar" style="background:#b7950b;">C</div>
         <div class="board-name">Clef A.</div>
-        <div class="board-title">委员 · 异常乐理学</div>
+        <div class="board-title"><span data-lang="zh">委员 · 异常乐理学</span><span data-lang="en" style="display:none">Member · Anomalous Music Theory</span><span data-lang="zh-TW" style="display:none">委員 · 異常樂理學</span></div>
         <div class="board-affil">SCP Foundation</div>
       </div>
       <div class="board-card">
         <div class="board-avatar">赵</div>
         <div class="board-name">赵雯静 教授</div>
-        <div class="board-title">委员 · 异常材料学</div>
-        <div class="board-affil">SCP 化学研究所</div>
+        <div class="board-title"><span data-lang="zh">委员 · 异常材料学</span><span data-lang="en" style="display:none">Member · Anomalous Materials Science</span><span data-lang="zh-TW" style="display:none">委員 · 異常材料學</span></div>
+        <div class="board-affil"><span data-lang="zh">SCP 化学研究所</span><span data-lang="en" style="display:none">SCP Chemistry Research Institute</span><span data-lang="zh-TW" style="display:none">SCP 化學研究所</span></div>
       </div>
       <div class="board-card">
         <div class="board-avatar" style="background:#1a5276;">W</div>
         <div class="board-name">Wright E.H.</div>
-        <div class="board-title">委员 · 热力学异常</div>
+        <div class="board-title"><span data-lang="zh">委员 · 热力学异常</span><span data-lang="en" style="display:none">Member · Thermodynamic Anomalics</span><span data-lang="zh-TW" style="display:none">委員 · 熱力學異常</span></div>
         <div class="board-affil">SCP Physics Lab</div>
       </div>
       <div class="board-card">
         <div class="board-avatar">石</div>
         <div class="board-name">石原莉子 博士</div>
-        <div class="board-title">委员 · 异常生化</div>
-        <div class="board-affil">SCP 东亚研究分部</div>
+        <div class="board-title"><span data-lang="zh">委员 · 异常生化</span><span data-lang="en" style="display:none">Member · Anomalous Biochemistry</span><span data-lang="zh-TW" style="display:none">委員 · 異常生化</span></div>
+        <div class="board-affil"><span data-lang="zh">SCP 东亚研究分部</span><span data-lang="en" style="display:none">SCP East Asia Research Division</span><span data-lang="zh-TW" style="display:none">SCP 東亞研究分部</span></div>
       </div>
     </div>
   </div>
@@ -275,7 +394,8 @@
 
   <!-- Peer Review Policy -->
   <div class="content-card" id="peer-review" style="margin-top:24px;">
-    <h2>同行评审政策</h2>
+    <h2 data-i18n="about.section.peer_review">同行评审政策</h2>
+    <div data-lang="zh">
     <p>本刊采用<strong>双盲同行评审</strong>制度，即评审人不知晓作者身份，作者亦不知晓评审人身份。所有提交稿件须经至少2位具有相关专业背景的外部专家独立评审。</p>
     <ul class="scope-list" style="margin-top:12px;">
       <li><strong>初审：</strong>编辑部在收稿后7个工作日内完成格式符合性与研究范围核查，不达标稿件退回作者修改，不进入外审流程。</li>
@@ -286,11 +406,37 @@
       <li><strong>申诉：</strong>作者如对拒稿决定有异议，可在30天内向主编提交书面申诉，提供新证据或补充说明。申诉结果为最终决定。</li>
     </ul>
     <p style="margin-top:12px; font-size:.88rem; color:var(--muted);">本刊评审政策遵循 COPE（出版伦理委员会）同行评审最佳实践指南。</p>
+    </div>
+    <div data-lang="en" style="display:none">
+    <p>JSAS employs a <strong>double-blind peer review</strong> system: reviewers do not know the authors' identities, and authors do not know the reviewers' identities. All submitted manuscripts are independently reviewed by at least 2 external experts with relevant expertise.</p>
+    <ul class="scope-list" style="margin-top:12px;">
+      <li><strong>Initial Review:</strong> The Editorial Office completes a format compliance and scope check within 7 business days of receipt. Non-compliant manuscripts are returned to authors and do not proceed to external review.</li>
+      <li><strong>External Review:</strong> Compliant manuscripts are sent to 2–3 peer reviewers; the review period is approximately 45 days. Reviewers must declare no conflict of interest.</li>
+      <li><strong>Review Outcomes:</strong> Accept, minor revision, major revision for re-review, or reject. Major-revision manuscripts must be resubmitted within 30 days; overdue submissions are treated as voluntary withdrawal.</li>
+      <li><strong>Safety Review:</strong> Manuscripts involving Keter-class or higher anomalies must complete an O5 Council safety review before external review.</li>
+      <li><strong>Editorial Decision:</strong> The Editor-in-Chief makes the final publication decision after fully considering reviewer feedback. The decision is not influenced by reviewer identity, nationality, or institution.</li>
+      <li><strong>Appeals:</strong> Authors may submit a written appeal to the Editor-in-Chief within 30 days of a rejection decision, providing new evidence or additional explanation. The appeal outcome is final.</li>
+    </ul>
+    <p style="margin-top:12px; font-size:.88rem; color:var(--muted);">JSAS peer review policy follows the COPE Best Practice Guidelines for Peer Review.</p>
+    </div>
+    <div data-lang="zh-TW" style="display:none">
+    <p>本刊採用<strong>雙盲同儕審查</strong>制度，即審查人不知曉作者身份，作者亦不知曉審查人身份。所有提交稿件須經至少2位具有相關專業背景的外部專家獨立審查。</p>
+    <ul class="scope-list" style="margin-top:12px;">
+      <li><strong>初審：</strong>編輯部在收稿後7個工作日內完成格式符合性與研究範圍核查，不達標稿件退回作者修改，不進入外審流程。</li>
+      <li><strong>外審：</strong>符合要求的稿件送交2–3名同儕專家，外審週期約45天。審查人須聲明無利益衝突。</li>
+      <li><strong>審查結果：</strong>接受、小修後接受、大修後重審、拒稿。大修稿件須在30天內提交修改版，逾期視為主動撤稿。</li>
+      <li><strong>安全審查：</strong>涉及Keter及以上級別異常的稿件，在外審前須完成O5委員會安全審查。</li>
+      <li><strong>編輯決定：</strong>主編在充分考慮外審意見後作出最終發表決定，最終決定不受審查人身份、國籍或機構影響。</li>
+      <li><strong>申訴：</strong>作者如對拒稿決定有異議，可在30天內向主編提交書面申訴，提供新證據或補充說明。申訴結果為最終決定。</li>
+    </ul>
+    <p style="margin-top:12px; font-size:.88rem; color:var(--muted);">本刊審查政策遵循 COPE（出版倫理委員會）同儕審查最佳實踐指南。</p>
+    </div>
   </div>
 
   <!-- Ethics Statement -->
   <div class="content-card" id="ethics" style="margin-top:24px;">
-    <h2>伦理声明</h2>
+    <h2 data-i18n="about.section.ethics">伦理声明</h2>
+    <div data-lang="zh">
     <p>本刊在发表过程中严格遵循学术出版伦理规范，要求所有相关方（作者、编辑、评审人）遵守以下原则：</p>
     <ul class="scope-list" style="margin-top:12px;">
       <li><strong>原创性：</strong>投稿须为原创研究，未在其他期刊发表，未同时提交其他期刊。抄袭、自我抄袭及数据造假等行为将导致稿件立即退稿，并向作者所在机构通报。</li>
@@ -302,11 +448,39 @@
       <li><strong>撤稿：</strong>如发现已发表文章存在重大数据错误、学术不端或安全问题，编辑部保留启动撤稿程序的权利，遵循COPE撤稿准则。</li>
     </ul>
     <p style="margin-top:12px; font-size:.88rem; color:var(--muted);">学术不端举报请发送至：<a href="mailto:integrity@jsas.scp.org">integrity@jsas.scp.org</a>（端对端加密，严格保密）</p>
+    </div>
+    <div data-lang="en" style="display:none">
+    <p>JSAS strictly follows academic publication ethics standards and requires all parties (authors, editors, reviewers) to adhere to the following principles:</p>
+    <ul class="scope-list" style="margin-top:12px;">
+      <li><strong>Originality:</strong> Submissions must be original research not published elsewhere and not simultaneously submitted to another journal. Plagiarism, self-plagiarism, and data fabrication will result in immediate rejection and notification to the author's institution.</li>
+      <li><strong>Data Integrity:</strong> Research data must be authentic, complete, and reproducible. JSAS encourages open data sharing; classified data exemptions may be requested.</li>
+      <li><strong>Author Contributions:</strong> All listed authors must have made substantial contributions to the research and take responsibility for the content. Honorary authorship and ghostwriting are not accepted.</li>
+      <li><strong>Conflicts of Interest:</strong> All authors must declare any conflicts of interest (financial, academic, or personal) in the manuscript.</li>
+      <li><strong>Informed Consent:</strong> Research involving D-class personnel or other human subjects must provide informed consent documentation approved by an institutional ethics committee.</li>
+      <li><strong>Anomalous Research Ethics:</strong> Research conducted on sentient or cognitively capable anomalous entities must comply with the Foundation's Humanoid Anomaly Research Ethics Guidelines (HAERG-2024).</li>
+      <li><strong>Retraction:</strong> If significant data errors, misconduct, or safety issues are discovered in a published article, the Editorial Office reserves the right to initiate retraction proceedings in accordance with COPE Retraction Guidelines.</li>
+    </ul>
+    <p style="margin-top:12px; font-size:.88rem; color:var(--muted);">To report misconduct: <a href="mailto:integrity@jsas.scp.org">integrity@jsas.scp.org</a> (end-to-end encrypted, strictly confidential)</p>
+    </div>
+    <div data-lang="zh-TW" style="display:none">
+    <p>本刊在發表過程中嚴格遵循學術出版倫理規範，要求所有相關方（作者、編輯、審查人）遵守以下原則：</p>
+    <ul class="scope-list" style="margin-top:12px;">
+      <li><strong>原創性：</strong>投稿須為原創研究，未在其他期刊發表，未同時提交其他期刊。抄襲、自我抄襲及數據造假等行為將導致稿件立即退稿，並向作者所在機構通報。</li>
+      <li><strong>數據完整性：</strong>研究數據須真實、完整、可重複。本刊鼓勵數據公開共享，涉密數據須經申請豁免。</li>
+      <li><strong>作者貢獻：</strong>所有列名作者須對研究有實質貢獻，並對文章內容負責。不接受名譽作者或代筆行為。</li>
+      <li><strong>利益衝突：</strong>所有作者須在稿件中聲明是否存在利益衝突（經濟、學術或個人關係）。</li>
+      <li><strong>知情同意：</strong>涉及D級人員或其他人類受試者的研究，須提供經機構倫理委員會審批的知情同意文件。</li>
+      <li><strong>異常研究倫理：</strong>對有意識或具備認知能力的異常實體進行研究，須遵循基金會《人形異常研究倫理指引》（HAERG-2024）的相關規定。</li>
+      <li><strong>撤稿：</strong>如發現已發表文章存在重大數據錯誤、學術不端或安全問題，編輯部保留啟動撤稿程序的權利，遵循COPE撤稿準則。</li>
+    </ul>
+    <p style="margin-top:12px; font-size:.88rem; color:var(--muted);">學術不端舉報請發送至：<a href="mailto:integrity@jsas.scp.org">integrity@jsas.scp.org</a>（端對端加密，嚴格保密）</p>
+    </div>
   </div>
 
   <!-- Copyright Policy -->
   <div class="content-card" id="copyright" style="margin-top:24px;">
-    <h2>版权政策</h2>
+    <h2 data-i18n="about.section.copyright">版权政策</h2>
+    <div data-lang="zh">
     <p>本刊所有已发表文章采用 <strong><a href="https://creativecommons.org/licenses/by-sa/3.0/deed.zh" target="_blank" rel="noopener">知识共享署名-相同方式共享 3.0（CC BY-SA 3.0）</a></strong> 许可协议发布，由异常科学研究院出版社（Institute of Anomalous Science Press）出版。</p>
     <ul class="scope-list" style="margin-top:12px;">
       <li><strong>作者版权：</strong>作者保留其文章的版权，同时授予本刊在全球范围内以任何媒介发表、复制、分发和改编该文章的非专属许可。</li>
@@ -317,6 +491,31 @@
       <li><strong>涉密内容豁免：</strong>部分文章中的特定涉密信息（如SCP编号、收容细节）可能受基金会安全协议的额外限制，此类内容在文章中会明确标注。</li>
     </ul>
     <p style="margin-top:12px;">版权相关事宜请联系：<a href="mailto:copyright@jsas.scp.org">copyright@jsas.scp.org</a></p>
+    </div>
+    <div data-lang="en" style="display:none">
+    <p>All articles published by JSAS are released under the <strong><a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0)</a></strong> license, published by the Institute of Anomalous Science Press.</p>
+    <ul class="scope-list" style="margin-top:12px;">
+      <li><strong>Author Copyright:</strong> Authors retain copyright of their articles and grant JSAS a non-exclusive worldwide license to publish, reproduce, distribute, and adapt the article in any medium.</li>
+      <li><strong>Reader Rights:</strong> Anyone may freely read, download, copy, distribute, display, and adapt JSAS articles — including for commercial purposes — provided the original source is correctly attributed (author name, journal name, volume, page, DOI).</li>
+      <li><strong>ShareAlike:</strong> Adaptations or derivative works based on JSAS articles must be released under CC BY-SA 3.0 or a compatible license; more restrictive terms may not be imposed.</li>
+      <li><strong>Attribution:</strong> Use of JSAS articles must credit the original authors and source; it must not imply endorsement of the adapted work by the original authors.</li>
+      <li><strong>Preprints:</strong> Authors may post preprints of their articles on any preprint server (e.g., arXiv, bioRxiv) without additional permission from JSAS.</li>
+      <li><strong>Classified Content Exemptions:</strong> Certain classified information in some articles (e.g., SCP numbers, containment details) may be subject to additional Foundation security protocol restrictions; such content will be clearly marked in the article.</li>
+    </ul>
+    <p style="margin-top:12px;">For copyright inquiries: <a href="mailto:copyright@jsas.scp.org">copyright@jsas.scp.org</a></p>
+    </div>
+    <div data-lang="zh-TW" style="display:none">
+    <p>本刊所有已發表文章採用 <strong><a href="https://creativecommons.org/licenses/by-sa/3.0/deed.zh" target="_blank" rel="noopener">知識共享署名-相同方式共享 3.0（CC BY-SA 3.0）</a></strong> 許可協議發布，由異常科學研究院出版社（Institute of Anomalous Science Press）出版。</p>
+    <ul class="scope-list" style="margin-top:12px;">
+      <li><strong>作者版權：</strong>作者保留其文章的版權，同時授予本刊在全球範圍內以任何媒介發表、複製、分發和改編該文章的非專屬許可。</li>
+      <li><strong>讀者權利：</strong>任何人均可在正確注明原文出處（作者姓名、期刊名稱、卷期、頁碼、DOI）的前提下，自由閱讀、下載、複製、分發、展示及改編本刊文章，包括用於商業目的。</li>
+      <li><strong>相同方式共享：</strong>改編或基於本刊文章的衍生作品，須以 CC BY-SA 3.0 或兼容許可協議發布，不得以更嚴格的條款限制他人的相同使用權。</li>
+      <li><strong>署名要求：</strong>使用本刊文章時須注明原作者姓名及原始出處；不得聲稱原作者認可改編版本。</li>
+      <li><strong>預印本：</strong>作者可在任意預印本伺服器（如arXiv、bioRxiv等）發布其文章的預印本，無需獲得本刊額外許可。</li>
+      <li><strong>涉密內容豁免：</strong>部分文章中的特定涉密資訊（如SCP編號、收容細節）可能受基金會安全協議的額外限制，此類內容在文章中會明確標注。</li>
+    </ul>
+    <p style="margin-top:12px;">版權相關事宜請聯繫：<a href="mailto:copyright@jsas.scp.org">copyright@jsas.scp.org</a></p>
+    </div>
   </div>
 
 </div><!-- /container -->
@@ -341,7 +540,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-about">
-        <div class="footer-brand">SCP异常科学学报</div>
+        <div class="footer-brand" data-i18n="footer.brand">SCP异常科学学报</div>
         <p data-i18n="footer.about.text">
           Journal of SCP Anomalous Sciences (JSAS) 由SCP异常科学研究院主办，
           致力于在严格的同行评审框架下推动异常科学领域的学术交流与知识积累。

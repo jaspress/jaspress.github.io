@@ -16,7 +16,7 @@
 <!-- TOP BANNER -->
 <div class="top-banner">
   <div class="container">
-    ISSN (网络版) 2XXX-XXXX &nbsp;|&nbsp; ISSN (印刷版) 2XXX-XXXX &nbsp;|&nbsp;
+    <span data-i18n="banner.issn">ISSN (网络版) 2XXX-XXXX &nbsp;|&nbsp; ISSN (印刷版) 2XXX-XXXX</span> &nbsp;|&nbsp;
     <a href="submit.html" data-i18n="banner.submit">现已开放投稿</a> &nbsp;|&nbsp;
     <a href="articles.html" data-i18n="banner.latest">最新一期：第3卷第1期 (2026)</a>
   </div>
@@ -25,7 +25,7 @@
 <!-- SITE HEADER -->
 <header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="index.html" aria-label="返回首页">
+    <a class="brand" href="index.html" aria-label="返回首页" data-i18n-aria="aria.back_home">
       <svg class="brand-logo" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <circle cx="22" cy="22" r="20" stroke="#1a2a3a" stroke-width="2.5"/>
         <circle cx="22" cy="22" r="13" stroke="#1a2a3a" stroke-width="2"/>
@@ -40,11 +40,11 @@
         <line x1="11.2" y1="32.8" x2="6.1" y2="37.9" stroke="#1a2a3a" stroke-width="1.5"/>
       </svg>
       <div class="brand-text">
-        <span class="brand-cn">SCP异常科学学报</span>
+        <span class="brand-cn" data-i18n="brand.name">SCP异常科学学报</span>
         <span class="brand-en">Journal of SCP Anomalous Sciences</span>
       </div>
     </a>
-    <nav class="main-nav" aria-label="主导航">
+    <nav class="main-nav" aria-label="主导航" data-i18n-aria="aria.main_nav">
       <a href="index.html" data-i18n="nav.home">首页</a>
       <a href="articles.html" data-i18n="nav.articles">文章</a>
       <a href="about.html" data-i18n="nav.about">关于期刊</a>
@@ -52,11 +52,11 @@
       <a href="contact.html" class="active" data-i18n="nav.contact">联系</a>
     </nav>
     <button class="lang-switch" id="lang-switch" aria-label="Switch language">EN</button>
-    <button class="hamburger" aria-label="展开菜单" aria-expanded="false">
+    <button class="hamburger" aria-label="展开菜单" data-i18n-aria="aria.menu_expand" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
-  <nav class="mobile-nav" aria-label="移动导航">
+  <nav class="mobile-nav" aria-label="移动导航" data-i18n-aria="aria.mobile_nav">
     <a href="index.html" data-i18n="nav.home">首页</a>
     <a href="articles.html" data-i18n="nav.articles">文章</a>
     <a href="about.html" data-i18n="nav.about">关于期刊</a>
@@ -81,74 +81,89 @@
     <!-- Contact Info Cards -->
     <div>
       <div class="contact-card">
-        <h3><span class="contact-icon">🏛️</span> 编辑部信息</h3>
+        <h3><span class="contact-icon">🏛️</span> <span data-i18n="contact.card.office">编辑部信息</span></h3>
+        <div data-lang="zh">
         <ul class="contact-info-list">
-          <li>
-            <span class="ci-label">机构全称</span>
-            <span>SCP异常科学研究院学报编辑部</span>
-          </li>
-          <li>
-            <span class="ci-label">英文名</span>
-            <span>Editorial Office, Journal of SCP Anomalous Sciences</span>
-          </li>
-          <li>
-            <span class="ci-label">主办单位</span>
-            <span>SCP异常科学研究院 (SIAS)</span>
-          </li>
-          <li>
-            <span class="ci-label">编辑部地址</span>
-            <span>SCP基金会 Area-██ 科研大楼 A-302室（具体地址保密）</span>
-          </li>
-          <li>
-            <span class="ci-label">工作时间</span>
-            <span>周一至周五 09:00–17:00 (UTC+8)</span>
-          </li>
+          <li><span class="ci-label">机构全称</span><span>SCP异常科学研究院学报编辑部</span></li>
+          <li><span class="ci-label">英文名</span><span>Editorial Office, Journal of SCP Anomalous Sciences</span></li>
+          <li><span class="ci-label">主办单位</span><span>SCP异常科学研究院 (SIAS)</span></li>
+          <li><span class="ci-label">编辑部地址</span><span>SCP基金会 Area-██ 科研大楼 A-302室（具体地址保密）</span></li>
+          <li><span class="ci-label">工作时间</span><span>周一至周五 09:00–17:00 (UTC+8)</span></li>
         </ul>
+        </div>
+        <div data-lang="en" style="display:none">
+        <ul class="contact-info-list">
+          <li><span class="ci-label">Full Name</span><span>Editorial Office, JSAS — SCP Institute of Anomalous Sciences</span></li>
+          <li><span class="ci-label">English Name</span><span>Editorial Office, Journal of SCP Anomalous Sciences</span></li>
+          <li><span class="ci-label">Host Institution</span><span>SCP Institute of Anomalous Sciences (SIAS)</span></li>
+          <li><span class="ci-label">Address</span><span>SCP Foundation Area-██, Research Building A-302 (exact address classified)</span></li>
+          <li><span class="ci-label">Working Hours</span><span>Mon–Fri 09:00–17:00 (UTC+8)</span></li>
+        </ul>
+        </div>
+        <div data-lang="zh-TW" style="display:none">
+        <ul class="contact-info-list">
+          <li><span class="ci-label">機構全稱</span><span>SCP異常科學研究院學報編輯部</span></li>
+          <li><span class="ci-label">英文名</span><span>Editorial Office, Journal of SCP Anomalous Sciences</span></li>
+          <li><span class="ci-label">主辦單位</span><span>SCP異常科學研究院 (SIAS)</span></li>
+          <li><span class="ci-label">編輯部地址</span><span>SCP基金會 Area-██ 科研大樓 A-302室（具體地址保密）</span></li>
+          <li><span class="ci-label">工作時間</span><span>週一至週五 09:00–17:00 (UTC+8)</span></li>
+        </ul>
+        </div>
       </div>
 
       <div class="contact-card" style="margin-top:20px;">
-        <h3><span class="contact-icon">📬</span> 联系方式</h3>
+        <h3><span class="contact-icon">📬</span> <span data-i18n="contact.card.contact">联系方式</span></h3>
+        <div data-lang="zh">
         <ul class="contact-info-list">
-          <li>
-            <span class="ci-label">总编邮箱</span>
-            <span><a href="mailto:editor-in-chief@jsas.scp.org">editor-in-chief@jsas.scp.org</a></span>
-          </li>
-          <li>
-            <span class="ci-label">投稿咨询</span>
-            <span><a href="mailto:editorial@jsas.scp.org">editorial@jsas.scp.org</a></span>
-          </li>
-          <li>
-            <span class="ci-label">评审咨询</span>
-            <span><a href="mailto:review@jsas.scp.org">review@jsas.scp.org</a></span>
-          </li>
-          <li>
-            <span class="ci-label">版权/授权</span>
-            <span><a href="mailto:copyright@jsas.scp.org">copyright@jsas.scp.org</a></span>
-          </li>
-          <li>
-            <span class="ci-label">技术支持</span>
-            <span><a href="mailto:tech@jsas.scp.org">tech@jsas.scp.org</a></span>
-          </li>
+          <li><span class="ci-label">总编邮箱</span><span><a href="mailto:editor-in-chief@jsas.scp.org">editor-in-chief@jsas.scp.org</a></span></li>
+          <li><span class="ci-label">投稿咨询</span><span><a href="mailto:editorial@jsas.scp.org">editorial@jsas.scp.org</a></span></li>
+          <li><span class="ci-label">评审咨询</span><span><a href="mailto:review@jsas.scp.org">review@jsas.scp.org</a></span></li>
+          <li><span class="ci-label">版权/授权</span><span><a href="mailto:copyright@jsas.scp.org">copyright@jsas.scp.org</a></span></li>
+          <li><span class="ci-label">技术支持</span><span><a href="mailto:tech@jsas.scp.org">tech@jsas.scp.org</a></span></li>
         </ul>
+        </div>
+        <div data-lang="en" style="display:none">
+        <ul class="contact-info-list">
+          <li><span class="ci-label">Editor-in-Chief</span><span><a href="mailto:editor-in-chief@jsas.scp.org">editor-in-chief@jsas.scp.org</a></span></li>
+          <li><span class="ci-label">Submission Inquiries</span><span><a href="mailto:editorial@jsas.scp.org">editorial@jsas.scp.org</a></span></li>
+          <li><span class="ci-label">Review Inquiries</span><span><a href="mailto:review@jsas.scp.org">review@jsas.scp.org</a></span></li>
+          <li><span class="ci-label">Copyright/Licensing</span><span><a href="mailto:copyright@jsas.scp.org">copyright@jsas.scp.org</a></span></li>
+          <li><span class="ci-label">Technical Support</span><span><a href="mailto:tech@jsas.scp.org">tech@jsas.scp.org</a></span></li>
+        </ul>
+        </div>
+        <div data-lang="zh-TW" style="display:none">
+        <ul class="contact-info-list">
+          <li><span class="ci-label">總編郵箱</span><span><a href="mailto:editor-in-chief@jsas.scp.org">editor-in-chief@jsas.scp.org</a></span></li>
+          <li><span class="ci-label">投稿諮詢</span><span><a href="mailto:editorial@jsas.scp.org">editorial@jsas.scp.org</a></span></li>
+          <li><span class="ci-label">審查諮詢</span><span><a href="mailto:review@jsas.scp.org">review@jsas.scp.org</a></span></li>
+          <li><span class="ci-label">版權/授權</span><span><a href="mailto:copyright@jsas.scp.org">copyright@jsas.scp.org</a></span></li>
+          <li><span class="ci-label">技術支援</span><span><a href="mailto:tech@jsas.scp.org">tech@jsas.scp.org</a></span></li>
+        </ul>
+        </div>
       </div>
 
       <div class="contact-card" style="margin-top:20px;">
-        <h3><span class="contact-icon">❓</span> 常见问题</h3>
-        <div style="font-size:.9rem; line-height:1.8; color:#444;">
-          <p><strong>Q：稿件提交后多久会收到初审结果？</strong><br/>
-          A：初审通常在7个工作日内完成，届时您将收到系统自动通知邮件。</p>
-
-          <p style="margin-top:10px;"><strong>Q：如何查询稿件状态？</strong><br/>
-          A：请登录投稿系统，在"我的稿件"页面查看实时进度。如长时间未收到反馈，可发邮件至 editorial@jsas.scp.org 查询。</p>
-
-          <p style="margin-top:10px;"><strong>Q：发表后可以修改或撤稿吗？</strong><br/>
-          A：接受后的文章原则上不予修改。确有必要时，可申请发表勘误。撤稿须符合COPE撤稿准则，并经编委会批准。</p>
-
-          <p style="margin-top:10px;"><strong>Q：文章发表后读者可以免费获取吗？</strong><br/>
-          A：是的。本刊采用CC BY 4.0开放获取政策，所有文章发表后即可免费阅读和下载。</p>
-
-          <p style="margin-top:10px;"><strong>Q：非SCP研究院成员可以投稿吗？</strong><br/>
-          A：欢迎！外部合作机构的研究人员均可投稿，需支付¥2,000版面费（或申请减免）。</p>
+        <h3><span class="contact-icon">❓</span> <span data-i18n="contact.card.faq">常见问题</span></h3>
+        <div data-lang="zh" style="font-size:.9rem; line-height:1.8; color:#444;">
+          <p><strong>Q：稿件提交后多久会收到初审结果？</strong><br/>A：初审通常在7个工作日内完成，届时您将收到系统自动通知邮件。</p>
+          <p style="margin-top:10px;"><strong>Q：如何查询稿件状态？</strong><br/>A：请登录投稿系统，在"我的稿件"页面查看实时进度。如长时间未收到反馈，可发邮件至 editorial@jsas.scp.org 查询。</p>
+          <p style="margin-top:10px;"><strong>Q：发表后可以修改或撤稿吗？</strong><br/>A：接受后的文章原则上不予修改。确有必要时，可申请发表勘误。撤稿须符合COPE撤稿准则，并经编委会批准。</p>
+          <p style="margin-top:10px;"><strong>Q：文章发表后读者可以免费获取吗？</strong><br/>A：是的。本刊采用CC BY 4.0开放获取政策，所有文章发表后即可免费阅读和下载。</p>
+          <p style="margin-top:10px;"><strong>Q：非SCP研究院成员可以投稿吗？</strong><br/>A：欢迎！外部合作机构的研究人员均可投稿，需支付¥2,000版面费（或申请减免）。</p>
+        </div>
+        <div data-lang="en" style="display:none; font-size:.9rem; line-height:1.8; color:#444;">
+          <p><strong>Q: How long does initial review take?</strong><br/>A: Initial review is normally completed within 7 business days. You will receive an automated notification email.</p>
+          <p style="margin-top:10px;"><strong>Q: How can I check the status of my manuscript?</strong><br/>A: Log into the submission system and check "My Manuscripts" for real-time progress. If you have not received feedback for an extended period, email editorial@jsas.scp.org.</p>
+          <p style="margin-top:10px;"><strong>Q: Can a published article be modified or retracted?</strong><br/>A: Published articles cannot normally be modified. If necessary, a corrigendum may be requested. Retraction must comply with COPE retraction guidelines and requires Editorial Board approval.</p>
+          <p style="margin-top:10px;"><strong>Q: Can readers access published articles for free?</strong><br/>A: Yes. JSAS operates under a CC BY 4.0 open access policy — all articles are freely available immediately upon publication.</p>
+          <p style="margin-top:10px;"><strong>Q: Can non-SCP Institute researchers submit?</strong><br/>A: Absolutely! Researchers from external partner institutions are welcome to submit. A ¥2,000 APC applies (waivers available).</p>
+        </div>
+        <div data-lang="zh-TW" style="display:none; font-size:.9rem; line-height:1.8; color:#444;">
+          <p><strong>Q：稿件提交後多久會收到初審結果？</strong><br/>A：初審通常在7個工作日內完成，屆時您將收到系統自動通知郵件。</p>
+          <p style="margin-top:10px;"><strong>Q：如何查詢稿件狀態？</strong><br/>A：請登入投稿系統，在「我的稿件」頁面查看實時進度。如長時間未收到反饋，可發郵件至 editorial@jsas.scp.org 查詢。</p>
+          <p style="margin-top:10px;"><strong>Q：發表後可以修改或撤稿嗎？</strong><br/>A：接受後的文章原則上不予修改。確有必要時，可申請發表勘誤。撤稿須符合COPE撤稿準則，並經編委會批准。</p>
+          <p style="margin-top:10px;"><strong>Q：文章發表後讀者可以免費獲取嗎？</strong><br/>A：是的。本刊採用CC BY 4.0開放獲取政策，所有文章發表後即可免費閱讀和下載。</p>
+          <p style="margin-top:10px;"><strong>Q：非SCP研究院成員可以投稿嗎？</strong><br/>A：歡迎！外部合作機構的研究人員均可投稿，需支付¥2,000版面費（或申請減免）。</p>
         </div>
       </div>
     </div>
@@ -156,50 +171,55 @@
     <!-- Contact Form -->
     <div>
       <div class="contact-card">
-        <h3><span class="contact-icon">✉️</span> 在线留言</h3>
+        <h3><span class="contact-icon">✉️</span> <span data-i18n="contact.card.message">在线留言</span></h3>
         <p style="font-size:.88rem; color:var(--muted); margin-bottom:16px;">
-          如有一般性咨询，请填写以下留言表单，编辑部将在3个工作日内回复。
+          <span data-lang="zh">如有一般性咨询，请填写以下留言表单，编辑部将在3个工作日内回复。</span>
+          <span data-lang="en" style="display:none">For general inquiries, please complete the form below. The Editorial Office will respond within 3 business days.</span>
+          <span data-lang="zh-TW" style="display:none">如有一般性諮詢，請填寫以下留言表單，編輯部將在3個工作日內回覆。</span>
         </p>
         <form class="submit-form contact-form" novalidate>
           <div class="form-group">
-            <label for="c-name">姓名 *</label>
-            <input type="text" id="c-name" required placeholder="您的姓名" />
+            <label for="c-name" data-i18n="contact.form.name">姓名 *</label>
+            <input type="text" id="c-name" required data-i18n-placeholder="contact.form.name.ph" placeholder="您的姓名" />
           </div>
           <div class="form-group">
-            <label for="c-email">邮箱 *</label>
+            <label for="c-email" data-i18n="contact.form.email">邮箱 *</label>
             <input type="email" id="c-email" required placeholder="your@email.com" />
           </div>
           <div class="form-group">
-            <label for="c-subject">主题 *</label>
+            <label for="c-subject" data-i18n="contact.form.subject">主题 *</label>
             <select id="c-subject" required>
-              <option value="">请选择咨询类型</option>
-              <option>投稿咨询</option>
-              <option>稿件状态查询</option>
-              <option>评审相关</option>
-              <option>版权与授权</option>
-              <option>技术问题</option>
-              <option>其他</option>
+              <option value="" data-i18n="contact.form.subject.choose">请选择咨询类型</option>
+              <option data-i18n="contact.form.subject.submission">投稿咨询</option>
+              <option data-i18n="contact.form.subject.status">稿件状态查询</option>
+              <option data-i18n="contact.form.subject.review">评审相关</option>
+              <option data-i18n="contact.form.subject.copyright">版权与授权</option>
+              <option data-i18n="contact.form.subject.tech">技术问题</option>
+              <option data-i18n="contact.form.subject.other">其他</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="c-msg">留言内容 *</label>
-            <textarea id="c-msg" rows="6" required placeholder="请详细描述您的问题或咨询内容…"></textarea>
+            <label for="c-msg" data-i18n="contact.form.message">留言内容 *</label>
+            <textarea id="c-msg" rows="6" required data-i18n-placeholder="contact.form.message.ph" placeholder="请详细描述您的问题或咨询内容…"></textarea>
           </div>
           <button type="submit" class="btn btn-primary btn-block" style="padding:12px;" data-i18n="contact.btn">提 交</button>
         </form>
       </div>
 
       <div class="contact-card" style="margin-top:20px;">
-        <h3><span class="contact-icon">🔒</span> 机密举报</h3>
-        <p style="font-size:.88rem; color:#444; line-height:1.7;">
-          如需举报研究不端、数据造假或安全违规行为，请通过
-          <strong>机密举报系统</strong>（需院内身份验证）提交，
-          所有举报信息严格保密并独立调查。
-        </p>
-        <p style="margin-top:8px; font-size:.85rem;">
-          📧 <a href="mailto:integrity@jsas.scp.org">integrity@jsas.scp.org</a>
-          （端对端加密，仅总编和伦理委员会主席可查阅）
-        </p>
+        <h3><span class="contact-icon">🔒</span> <span data-i18n="contact.card.confidential">机密举报</span></h3>
+        <div data-lang="zh">
+        <p style="font-size:.88rem; color:#444; line-height:1.7;">如需举报研究不端、数据造假或安全违规行为，请通过<strong>机密举报系统</strong>（需院内身份验证）提交，所有举报信息严格保密并独立调查。</p>
+        <p style="margin-top:8px; font-size:.85rem;">📧 <a href="mailto:integrity@jsas.scp.org">integrity@jsas.scp.org</a>（端对端加密，仅总编和伦理委员会主席可查阅）</p>
+        </div>
+        <div data-lang="en" style="display:none">
+        <p style="font-size:.88rem; color:#444; line-height:1.7;">To report research misconduct, data fabrication, or security violations, submit via the <strong>Confidential Reporting System</strong> (Institute credentials required). All reports are strictly confidential and independently investigated.</p>
+        <p style="margin-top:8px; font-size:.85rem;">📧 <a href="mailto:integrity@jsas.scp.org">integrity@jsas.scp.org</a> (end-to-end encrypted; accessible only by Editor-in-Chief and Ethics Committee Chair)</p>
+        </div>
+        <div data-lang="zh-TW" style="display:none">
+        <p style="font-size:.88rem; color:#444; line-height:1.7;">如需舉報研究不端、數據造假或安全違規行為，請通過<strong>機密舉報系統</strong>（需院內身份驗證）提交，所有舉報資訊嚴格保密並獨立調查。</p>
+        <p style="margin-top:8px; font-size:.85rem;">📧 <a href="mailto:integrity@jsas.scp.org">integrity@jsas.scp.org</a>（端對端加密，僅總編和倫理委員會主席可查閱）</p>
+        </div>
       </div>
     </div>
 
@@ -226,7 +246,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-about">
-        <div class="footer-brand">SCP异常科学学报</div>
+        <div class="footer-brand" data-i18n="footer.brand">SCP异常科学学报</div>
         <p data-i18n="footer.about.text">
           Journal of SCP Anomalous Sciences (JSAS) 由SCP异常科学研究院主办，
           致力于在严格的同行评审框架下推动异常科学领域的学术交流与知识积累。
